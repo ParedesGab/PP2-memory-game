@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 1px solid #e84610;
 }
 
 /* CSS Variables (:root pseudo-class)*/
@@ -22,6 +23,4 @@
 body {
   font-family: var(--secondary-font);
   background-color: var(--secondary-color);
-  border: 2px solid #e84610;
-  padding-top: 57.15px;
 }
