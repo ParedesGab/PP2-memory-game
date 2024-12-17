@@ -36,7 +36,7 @@ main {
   margin: 60px auto;
   display: flex;
   flex-direction: column;
-  /*border: 2px solid #aee810;*/
+  border: 2px solid #10e846;
   align-items: center;
   text-align: center;
 }
@@ -44,7 +44,6 @@ main {
 
 #title {
   background-color: rgb(225, 225, 225, 0.8);
-  /*background-color: rgba(11, 3, 56, 0.7);*/
   padding: 10px;
   color: rgba(25, 4, 65);
   box-shadow: 0 2px 20px 12px #58585f;
@@ -61,16 +60,9 @@ h2 {
   letter-spacing: 0.1rem;
 }
 
-
-
-#title i {
-  font-size: 2.5rem;
-}
-
 #container {
-  margin: 60px 20px;
-  padding: 15px;
-  border: 2px solid #4a10e8;
+  margin: 60px auto;
+  border: 2px solid #ff34ff;
   position: relative;
   display: flex;
   flex-direction: column;
