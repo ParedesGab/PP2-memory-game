@@ -7,49 +7,61 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
   /*border: 1px solid #e84610;*/
 }
 
 /* CSS Variables (:root pseudo-class)*/
 :root {
   --primary-font: "Rajdhani", sans-serif;
-  --secondary-font: "Macondo", cursive;
-  --primary-color: rgb(20, 108, 68);
+  --secondary-font: "Roboto", sans-serif;
+  --primary-color: rgb(85, 3, 85);
   --secondary-color: #f3fff8;
-  --highlight-color: #f1af5d;
-  --highlight-color-light: #7a9fc2;
+  --highlight-color: #eeb26a;
+  --highlight-color-light: #b0cde7;
 }
 
 /* Global styles */
 body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
   font-family: var(--primary-font);
-  background-color: var(--secondary-color);
-  border: 2px solid #e8108a;
-  justify-content: center;
-  align-items: center;
+  /*rder: 2px solid #e8108a;*/
+  background: url("../images/background-universe-compressed.webp") no-repeat center center/cover;
+  /*color: white;*/
+
 }
 
 /*Main content*/
 main {
   flex: 1 0 auto;
-  margin-top: 47px;
+  margin: 60px auto;
   display: flex;
   flex-direction: column;
+  /*border: 2px solid #aee810;*/
+  align-items: center;
+  text-align: center;
+}
+
+
+#title {
+  background-color: rgb(225, 225, 225, 0.8);
+  /*background-color: rgba(11, 3, 56, 0.7);*/
+  padding: 10px;
+  color: rgba(25, 4, 65);
+  box-shadow: 0 2px 20px 12px #58585f;
 }
 
 h1 {
-  font-size: 2rem;
-  /*text-transform: uppercase;
-  letter-spacing:0.1rem*/
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
-#title {
-  align-items: center;
+h2 {
+  font-size: 1.9rem;
+  letter-spacing: 0.1rem;
 }
+
+
 
 #title i {
   font-size: 2.5rem;
@@ -58,7 +70,7 @@ h1 {
 #container {
   margin: 60px 20px;
   padding: 15px;
-  border: 2px solid #10e829;
+  border: 2px solid #4a10e8;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -87,7 +99,7 @@ h1 {
 }
 
 .score {
-  background-color: #e84610;
+  background-color: #4f610c;
   padding: 15px;
 }
 
