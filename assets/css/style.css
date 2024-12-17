@@ -16,8 +16,8 @@
   --secondary-font: "Roboto", sans-serif;
   --primary-color: rgb(25, 4, 65);
   --secondary-color: #f3fff8;
-  --highlight-color: #4c085e;
-  --highlight-color-light: #b0cde7;
+  --highlight-color: #8e04b4;
+  --highlight-color-light: #9984e2;
 }
 
 /* Global styles */
@@ -28,6 +28,11 @@ body {
   background: url("../images/background-universe-compressed.webp") no-repeat center center/cover;
   /*overflow: hidden;*/
   /*color: white;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 /* Main */
@@ -37,7 +42,6 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
 }
 
 /* Section1: Title */
@@ -113,14 +117,23 @@ h2 {
 }
 
 .restart:focus {
-  background-color: #b098c9;
+  background-color: var(--highlight-color-light);
+  color: var(--primary-color);
 }
 
 /* Footer */
 #footer {
-  background-color: #b098c9;
+  /*background-color: #b098c9;*/
+  border: 1px solid #ffffff;
+  margin: 25px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 #footer i {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
 }
