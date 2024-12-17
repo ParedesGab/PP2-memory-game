@@ -14,7 +14,7 @@
 :root {
   --primary-font: "Rajdhani", sans-serif;
   --secondary-font: "Roboto", sans-serif;
-  --primary-color: rgb(85, 3, 85);
+  --primary-color: rgb(25, 4, 65);
   --secondary-color: #f3fff8;
   --highlight-color: #eeb26a;
   --highlight-color-light: #b0cde7;
@@ -24,7 +24,7 @@
 body {
   min-height: 100vh;
   font-family: var(--primary-font);
-  /*rder: 2px solid #e8108a;*/
+  /*border: 2px solid #e8108a;*/
   background: url("../images/background-universe-compressed.webp") no-repeat center center/cover;
   /*overflow: hidden;*/
   /*color: white;*/
@@ -36,7 +36,6 @@ main {
   margin: 60px auto;
   display: flex;
   flex-direction: column;
-  border: 2px solid #10e846;
   align-items: center;
   text-align: center;
 }
@@ -45,7 +44,7 @@ main {
 #title {
   background-color: rgb(225, 225, 225, 0.8);
   padding: 10px;
-  color: rgba(25, 4, 65);
+  color: var(--primary-color);
   box-shadow: 0 2px 20px 12px #58585f;
 }
 
@@ -62,7 +61,7 @@ h2 {
 
 /* Section2: Memory Game */
 #container .cards {
-  margin: 60px auto;
+  margin: 60px 0px 30px auto;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 140px);
@@ -73,13 +72,29 @@ h2 {
   cursor: pointer;
   width: 140px;
   height: 140px;
-  box-shadow: 0 2px 20px 3px #58585f
+  box-shadow: 0 2px 20px 3px #58585f;
 }
 
 /* Section3: Control Area */
+
+#controls {
+  display: flex;
+  padding: 25px;
+  background-color: rgb(225, 225, 225, 0.8);
+  width: max-content;
+  color: var(--primary-color);
+  text-transform: uppercase;
+}
+
+.score-area {
+  display: flex;
+  align-items: center;
+}
+
+.chances,
 .score {
-  background-color: #4f610c;
-  padding: 15px;
+  border: 2px solid #e8108a;
+
 }
 
 .restart {
@@ -87,6 +102,7 @@ h2 {
   padding: 15px;
   border-radius: 50%;
   cursor: pointer;
+  color: var(--primary-color);
 }
 
 .restart:focus {
