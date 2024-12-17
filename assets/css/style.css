@@ -26,11 +26,11 @@ body {
   font-family: var(--primary-font);
   /*rder: 2px solid #e8108a;*/
   background: url("../images/background-universe-compressed.webp") no-repeat center center/cover;
+  /*overflow: hidden;*/
   /*color: white;*/
-
 }
 
-/*Main content*/
+/* Main */
 main {
   flex: 1 0 auto;
   margin: 60px auto;
@@ -41,7 +41,7 @@ main {
   text-align: center;
 }
 
-
+/* Section1: Title */
 #title {
   background-color: rgb(225, 225, 225, 0.8);
   padding: 10px;
@@ -60,36 +60,23 @@ h2 {
   letter-spacing: 0.1rem;
 }
 
-#container {
+/* Section2: Memory Game */
+#container .cards {
   margin: 60px auto;
-  border: 2px solid #ff34ff;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 60px;
-  align-items: center;
-  justify-content: center;
-}
-
-.cards {
-  background-color: var(--highlight-color);
   width: 100%;
-  height: 200px;
-  flex-wrap: wrap;
-  gap: 10px;
-  transform-style: preserve-3d;
-  perspective: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 140px);
+  gap: 20px;
 }
 
 .cards button {
   cursor: pointer;
-  width: 22%;
-  height: 22%;
+  width: 140px;
+  height: 140px;
+  box-shadow: 0 2px 20px 3px #58585f
 }
 
+/* Section3: Control Area */
 .score {
   background-color: #4f610c;
   padding: 15px;
@@ -106,6 +93,7 @@ h2 {
   background-color: #b098c9;
 }
 
+/* Footer */
 #footer {
   background-color: #b098c9;
 }
