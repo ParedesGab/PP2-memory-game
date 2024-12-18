@@ -1,5 +1,44 @@
+// Global variables (include them in functions later)
 const emojis = ["😊", "😊", "😂", "😂", "❤️", "❤️", "😁", "😁", "😘", "😘", "😎", "😎", "🤩", "🤩", "😶‍🌫️", "😶‍🌫️"];
 console.log(emojis.length); // output:16
+
+
+/** Function to create the memory card buttons, with class "btn" */
+
+/** Function to create data-id attribute*/
+
+/** Function to run the memory game */
+
+/** Function to check if there is a match */
+
+/** Function to check if there is no match */
+
+/** Function to decrease the chances left */
+
+/** Function to increment the score every time there is a match */
+
+/** Function to restart the game */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /**Generates a random number between 0 and 1 */
 function randomValues(a, b) {

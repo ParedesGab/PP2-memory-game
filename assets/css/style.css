@@ -44,8 +44,8 @@ main {
   align-items: center;
 }
 
-/* Section1: Title */
-#title {
+/* Section1: Heading */
+.heading {
   background-color: rgb(225, 225, 225, 0.8);
   padding: 10px;
   color: var(--primary-color);
@@ -64,7 +64,7 @@ h2 {
 }
 
 /* Section2: Memory Game */
-#container .cards {
+.container .cards {
   margin: 60px 0px 30px auto;
   width: 100%;
   display: grid;
@@ -72,7 +72,7 @@ h2 {
   gap: 20px;
 }
 
-.cards button {
+.cards .btn {
   cursor: pointer;
   width: 110px;
   height: 110px;
@@ -81,7 +81,7 @@ h2 {
 
 /* Section3: Control Area */
 
-#controls {
+.controls {
   display: flex;
   background-color: rgb(225, 225, 225, 0.8);
   box-shadow: 0 2px 20px 3px #58585f;
@@ -96,9 +96,9 @@ h2 {
   display: flex;
 }
 
-.chances,
-.score,
-.restart {
+#chances,
+#score,
+#restart {
   border: 3px solid #ffffff;
   margin: 25px;
   background-color: var(--primary-color);
@@ -108,7 +108,7 @@ h2 {
   font-size: 1.3rem;
 }
 
-.restart {
+#restart {
   background-color: var(--highlight-color);
   border: 3px solid var(--primary-color);
   padding: 15px;
@@ -116,7 +116,7 @@ h2 {
   cursor: pointer;
 }
 
-.restart:focus {
+#restart:focus {
   background-color: var(--highlight-color-light);
   color: var(--primary-color);
 }
@@ -125,7 +125,7 @@ h2 {
 #footer {
   /*background-color: #b098c9;*/
   border: 1px solid #ffffff;
-  margin: 25px;
+  margin-top: 40px;
   background-color: var(--primary-color);
   color: white;
   padding: 10px;
