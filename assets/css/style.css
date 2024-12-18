@@ -98,7 +98,7 @@ h2 {
 
 #chances,
 #score,
-#restart {
+.btn--restart {
   border: 3px solid #ffffff;
   margin: 25px;
   background-color: var(--primary-color);
@@ -108,7 +108,7 @@ h2 {
   font-size: 1.3rem;
 }
 
-#restart {
+.btn--restart {
   background-color: var(--highlight-color);
   border: 3px solid var(--primary-color);
   padding: 15px;
@@ -116,7 +116,7 @@ h2 {
   cursor: pointer;
 }
 
-#restart:focus {
+.btn--restart:focus {
   background-color: var(--highlight-color-light);
   color: var(--primary-color);
 }

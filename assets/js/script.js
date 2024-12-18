@@ -3,7 +3,22 @@ const emojis = ["😊", "😊", "😂", "😂", "❤️", "❤️", "😁", "�
 console.log(emojis.length); // output:16
 
 // Code to be executed when the DOM finishes loading
-document.addEventListener("click", function () {
+document.addEventListener("DOMContentLoaded", function () {
+  let buttons = document.getElementsByTagName("button");
+  console.log(buttons); //Returns 17 buttons (i.e., memory card and the reset button)
+  console.log(buttons.length); // output: 17
+
+  for (i = 0; i < buttons.length; i++) {
+    let button = buttons[i];
+    console.log(button); //<button data-id="0" class="btn">A</button> / <button data-id="submit" class="btn--restart">Restart Game</button>/ ... etc.
+  }
+
+  //Another way to write it
+  console.log("----------------------------------");
+  /*for (let button of buttons) {
+    console.log(button); // e.g., <button data-id="0" class="btn">A</button> / <button data-id="submit" class="btn--restart">Restart Game</button>/ ... etc.
+  }*/
+
 
 })
 
@@ -66,7 +81,7 @@ function restartGame() {}
 
 
 
-/**Generates a random number between 0 and 1 */
+/**Generates a random number between 0 and 1 
 function randomValues(a, b) {
   let randomNumber = Math.random(); //create random number between 0 and 1
   if (randomNumber > 0.5) { //50% probability
@@ -79,11 +94,31 @@ console.log(randomValues()); // output: -2 or 1
 
 /** Sorts an array randomly by comparing two elements of the array (a and b)
  * Together with randomValues, they check which comes first, if a or b.
- */
+
 function sortEmojis(emojis) {
   return emojis.sort(randomValues);
 }
 
-//console.log(sortEmojis(emojis));
+//console.log(sortEmojis(emojis));*/
 
-// 
+
+
+
+// Notes
+// Code to be executed when the DOM finishes loading
+/**document.addEventListener("DOMContentLoaded", function () {
+  let buttons = document.getElementsByTagName("button");
+  console.log(buttons); //Returns 17 buttons (i.e., memory card and the reset button)
+  console.log(buttons.length); // output: 17
+
+  for (let button of buttons) {
+    console.log(button); // e.g., <button data-id="0" class="btn">A</button> / <button data-id="submit" class="btn--restart">Restart Game</button>/ ... etc.
+  }
+
+  //Another way to write it
+  console.log("----------------------------------");
+  for (i = 0; i < buttons.length; i++) {
+    let button = buttons[i];
+    console.log(button);
+  }
+})*/
