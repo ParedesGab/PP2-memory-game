@@ -2,22 +2,48 @@
 const emojis = ["😊", "😊", "😂", "😂", "❤️", "❤️", "😁", "😁", "😘", "😘", "😎", "😎", "🤩", "🤩", "😶‍🌫️", "😶‍🌫️"];
 console.log(emojis.length); // output:16
 
+// Code to be executed when the DOM finishes loading
+document.addEventListener("click", function () {
+
+})
+
+
 
 /** Function to create the memory card buttons, with class "btn" */
+function buttonCards() {
+
+}
 
 /** Function to create data-id attribute*/
 
 /** Function to run the memory game */
+// Code to be executed when user clicks a button
+
+function runMemoryGame() {
+
+}
+
 
 /** Function to check if there is a match */
+function checkMatch() {
+
+}
 
 /** Function to check if there is no match */
+function checkNoMatch() {
+
+}
 
 /** Function to decrease the chances left */
+function decreaseChances() {
+
+}
 
 /** Function to increment the score every time there is a match */
+function incrementScore() {}
 
 /** Function to restart the game */
+function restartGame() {}
 
 
 
