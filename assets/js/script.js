@@ -15,19 +15,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let buttonContainer = document.getElementById("container-cards");
     buttonContainer.appendChild(buttonCard);
-
-    console.log(buttonCard);
+    //console.log(buttonCard);
 
     //Get all buttons
     let buttons = document.getElementsByTagName("button");
-    //console.log(buttons[i]);
-    //console.log(buttons.length);
-    //console.log(buttons);
+    console.log(buttons[i]); // Same output as console.log(buttonCard);
+    //console.log(buttons); //Returns 17 buttons (i.e., memory card and the reset button)
+    //console.log(buttons.length); // output: 17
   }
 
   /**let buttons = document.getElementsByTagName("button");
-  console.log(buttons); //Returns 17 buttons (i.e., memory card and the reset button)
-  console.log(buttons.length); // output: 17
+  
 
   for (i = 0; i < buttons.length; i++) {
     let button = buttons[i];
