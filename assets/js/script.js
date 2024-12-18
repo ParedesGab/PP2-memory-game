@@ -1,9 +1,37 @@
 // Global variables (include them in functions later)
-const emojis = ["😊", "😊", "😂", "😂", "❤️", "❤️", "😁", "😁", "😘", "😘", "😎", "😎", "🤩", "🤩", "😶‍🌫️", "😶‍🌫️"];
+let emojis = ["😊", "😊", "😂", "😂", "❤️", "❤️", "😁", "😁", "😘", "😘", "😎", "😎", "🤩", "🤩", "😶‍🌫️", "😶‍🌫️"];
 console.log(emojis.length); // output:16
 
+
+/**Function that generates a random number between 0 and 1 */
+function randomValues(a, b) {
+  let randomNumber = Math.random(); //create random number between 0 and 1
+  if (randomNumber > 0.5) { //50% probability
+    return 2;
+  } else {
+    return -1 //incorrect
+  }
+}
+console.log(randomValues()); // output: -2 or 1 
+
+/** Function that sorts an array randomly by comparing two elements of the array (a and b)
+ * Together with randomValues, they check which comes first, if a or b.*/
+function sortEmojis(emojis) {
+  let sortedEmojis = emojis.sort(randomValues);
+  return sortedEmojis;
+}
+
+let sortedEmojis = sortEmojis(emojis);
+console.log(sortedEmojis);
+console.log("----");
+
+
+
+
+
+
 // Code to be executed when the DOM finishes loading
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function buttonCards() {
 
   // Build 16 button cards with class name "btn" and id from 0 to 15
   for (i = 0; i < emojis.length; i++) {
@@ -24,22 +52,12 @@ document.addEventListener("DOMContentLoaded", function () {
     //console.log(buttons.length); // output: 17
   }
 
-  /**let buttons = document.getElementsByTagName("button");
-  
-
-  for (i = 0; i < buttons.length; i++) {
-    let button = buttons[i];
-    console.log(button); //<button data-id="0" class="btn">A</button> / <button data-id="submit" class="btn--restart">Restart Game</button>/ ... etc.
-  }*/
-
-
 })
 
 
-/** Function to create the memory card buttons, with class "btn" */
-function buttonCards() {
 
-}
+
+
 
 /** Function to create data-id attribute*/
 
@@ -91,25 +109,7 @@ function restartGame() {}
 
 
 
-/**Generates a random number between 0 and 1 
-function randomValues(a, b) {
-let randomNumber = Math.random(); //create random number between 0 and 1
-if (randomNumber > 0.5) { //50% probability
-  return 2;
-} else {
-  return -1 //incorrect
-}
-}
-console.log(randomValues()); // output: -2 or 1 
 
-/** Sorts an array randomly by comparing two elements of the array (a and b)
-* Together with randomValues, they check which comes first, if a or b.
-
-function sortEmojis(emojis) {
-return emojis.sort(randomValues);
-}
-
-//console.log(sortEmojis(emojis));*/
 
 
 
