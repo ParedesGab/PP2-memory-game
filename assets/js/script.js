@@ -2,36 +2,40 @@
 const emojis = ["😊", "😊", "😂", "😂", "❤️", "❤️", "😁", "😁", "😘", "😘", "😎", "😎", "🤩", "🤩", "😶‍🌫️", "😶‍🌫️"];
 console.log(emojis.length); // output:16
 
-// Build 16 button cards with class name "btnA"
-for (i = 0; i < emojis.length; i++) {
-  let buttonCard = document.createElement("button");
-  buttonCard.classList.add("btn");
-
-  let buttonContainer = document.getElementById("container-cards");
-  buttonContainer.appendChild(buttonCard);
-  console.log(buttonCard);
-}
-
-//
-
 // Code to be executed when the DOM finishes loading
-/**document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementsByTagName("button");
+document.addEventListener("DOMContentLoaded", function () {
+
+  // Build 16 button cards with class name "btn" and id from 0 to 15
+  for (i = 0; i < emojis.length; i++) {
+    let buttonCard = document.createElement("button");
+    buttonCard.classList.add("btn");
+
+    let idValue = String(i); //Convert i to a string
+    buttonCard.id = idValue; // Return the id: "0", "1"... "15"
+
+    let buttonContainer = document.getElementById("container-cards");
+    buttonContainer.appendChild(buttonCard);
+
+    console.log(buttonCard);
+
+    //Get all buttons
+    let buttons = document.getElementsByTagName("button");
+    //console.log(buttons[i]);
+    //console.log(buttons.length);
+    //console.log(buttons);
+  }
+
+  /**let buttons = document.getElementsByTagName("button");
   console.log(buttons); //Returns 17 buttons (i.e., memory card and the reset button)
   console.log(buttons.length); // output: 17
 
   for (i = 0; i < buttons.length; i++) {
     let button = buttons[i];
     console.log(button); //<button data-id="0" class="btn">A</button> / <button data-id="submit" class="btn--restart">Restart Game</button>/ ... etc.
-  }
+  }*/
 
-  //Another way to write it
-  console.log("----------------------------------");
-  /*for (let button of buttons) {
-    console.log(button); // e.g., <button data-id="0" class="btn">A</button> / <button data-id="submit" class="btn--restart">Restart Game</button>/ ... etc.
-  }
 
-})*/
+})
 
 
 /** Function to create the memory card buttons, with class "btn" */
