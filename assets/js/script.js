@@ -2,8 +2,20 @@
 const emojis = ["😊", "😊", "😂", "😂", "❤️", "❤️", "😁", "😁", "😘", "😘", "😎", "😎", "🤩", "🤩", "😶‍🌫️", "😶‍🌫️"];
 console.log(emojis.length); // output:16
 
+// Build 16 button cards with class name "btnA"
+for (i = 0; i < emojis.length; i++) {
+  let buttonCard = document.createElement("button");
+  buttonCard.classList.add("btn");
+
+  let buttonContainer = document.getElementById("container-cards");
+  buttonContainer.appendChild(buttonCard);
+  console.log(buttonCard);
+}
+
+//
+
 // Code to be executed when the DOM finishes loading
-document.addEventListener("DOMContentLoaded", function () {
+/**document.addEventListener("DOMContentLoaded", function () {
   let buttons = document.getElementsByTagName("button");
   console.log(buttons); //Returns 17 buttons (i.e., memory card and the reset button)
   console.log(buttons.length); // output: 17
@@ -17,11 +29,9 @@ document.addEventListener("DOMContentLoaded", function () {
   console.log("----------------------------------");
   /*for (let button of buttons) {
     console.log(button); // e.g., <button data-id="0" class="btn">A</button> / <button data-id="submit" class="btn--restart">Restart Game</button>/ ... etc.
-  }*/
+  }
 
-
-})
-
+})*/
 
 
 /** Function to create the memory card buttons, with class "btn" */
@@ -37,7 +47,6 @@ function buttonCards() {
 function runMemoryGame() {
 
 }
-
 
 /** Function to check if there is a match */
 function checkMatch() {
@@ -80,45 +89,43 @@ function restartGame() {}
 
 
 
-
 /**Generates a random number between 0 and 1 
 function randomValues(a, b) {
-  let randomNumber = Math.random(); //create random number between 0 and 1
-  if (randomNumber > 0.5) { //50% probability
-    return 2;
-  } else {
-    return -1 //incorrect
-  }
+let randomNumber = Math.random(); //create random number between 0 and 1
+if (randomNumber > 0.5) { //50% probability
+  return 2;
+} else {
+  return -1 //incorrect
+}
 }
 console.log(randomValues()); // output: -2 or 1 
 
 /** Sorts an array randomly by comparing two elements of the array (a and b)
- * Together with randomValues, they check which comes first, if a or b.
+* Together with randomValues, they check which comes first, if a or b.
 
 function sortEmojis(emojis) {
-  return emojis.sort(randomValues);
+return emojis.sort(randomValues);
 }
 
 //console.log(sortEmojis(emojis));*/
 
 
 
-
 // Notes
 // Code to be executed when the DOM finishes loading
 /**document.addEventListener("DOMContentLoaded", function () {
-  let buttons = document.getElementsByTagName("button");
-  console.log(buttons); //Returns 17 buttons (i.e., memory card and the reset button)
-  console.log(buttons.length); // output: 17
+let buttons = document.getElementsByTagName("button");
+console.log(buttons); //Returns 17 buttons (i.e., memory card and the reset button)
+console.log(buttons.length); // output: 17
 
-  for (let button of buttons) {
-    console.log(button); // e.g., <button data-id="0" class="btn">A</button> / <button data-id="submit" class="btn--restart">Restart Game</button>/ ... etc.
-  }
+for (let button of buttons) {
+  console.log(button); // e.g., <button data-id="0" class="btn">A</button> / <button data-id="submit" class="btn--restart">Restart Game</button>/ ... etc.
+}
 
-  //Another way to write it
-  console.log("----------------------------------");
-  for (i = 0; i < buttons.length; i++) {
-    let button = buttons[i];
-    console.log(button);
-  }
+//Another way to write it
+console.log("----------------------------------");
+for (i = 0; i < buttons.length; i++) {
+  let button = buttons[i];
+  console.log(button);
+}
 })*/
