@@ -1,19 +1,14 @@
 // Global variables (include them in functions later)
 let emojis = ["😊", "😊", "😂", "😂", "❤️", "❤️", "😁", "😁", "😘", "😘", "😎", "😎", "🤩", "🤩", "😶‍🌫️", "😶‍🌫️"];
-console.log(emojis.length); // output:16
+//console.log(emojis.length); // output:16
 
 
 /**Function that generates negative and positive random numbers between -0.5 and 0.5 */
 function randomValues(a, b) {
-  let randomNumber = Math.random() - 0.5; //create random number between 0 and 1
+  let randomNumber = Math.random() - 0.5; //create random number between -0.5 and 0.5
   return randomNumber;
-  /**if (randomNumber > 0.5) { //50% probability
-    return 2;
-  } else {
-    return -1
-  }*/
 }
-console.log(randomValues()); // output: -2 or 1 
+//console.log(randomValues()); // positive random numbers between -0.5 and 0.5
 
 
 /** Function that sorts an array randomly by comparing two elements of the array (a and b)
@@ -23,46 +18,51 @@ function sortEmojis(emojis) {
   return sortedEmojis;
 }
 
-console.log(sortEmojis) //this is the entire function as it is
-console.log(sortEmojis(emojis)); // while this is the randomly sorted array
+//console.log(sortEmojis) //this is the entire function as it is
+console.log(sortEmojis(emojis)); // this is the randomly sorted array
+console.log("----");
+
+/** Create 16 button cards with class name "btn" and id string values from 0 to 15 */
+for (let i = 0; i < emojis.length; i++) {
+  let buttonCard = document.createElement("button");
+  buttonCard.classList.add("btn");
+
+  let idValue = String(i); //Convert i to a string
+  buttonCard.id = idValue; // Return the id: "0", "1"... "15"
+
+  let buttonContainer = document.getElementById("container-cards");
+  buttonContainer.appendChild(buttonCard);
+  console.log(buttonCard);
+}
 console.log("----");
 
 // Code to be executed when the DOM finishes loading
-document.addEventListener("DOMContentLoaded", function buttonCards() {
+document.addEventListener("DOMContentLoaded", function () {
 
-  // Build 16 button cards with class name "btn" and id from 0 to 15
-  for (i = 0; i < emojis.length; i++) {
-    let buttonCard = document.createElement("button");
-    buttonCard.classList.add("btn");
+  //Get all buttons for them to be clicked
+  let allButtons = document.getElementsByTagName("button");
+  //console.log(allButtons); // Returns 17 buttons as an array. 
 
-    let idValue = String(i); //Convert i to a string
-    buttonCard.id = idValue; // Return the id: "0", "1"... "15"
-
-    let buttonContainer = document.getElementById("container-cards");
-    buttonContainer.appendChild(buttonCard);
-    //console.log(buttonCard);
-
-    //Get all buttons
-    let buttons = document.getElementsByTagName("button");
-    console.log(buttons[i]); // Same output as console.log(buttonCard);
-    //console.log(buttons); //Returns 17 buttons (i.e., memory card and the reset button)
-    //console.log(buttons.length); // output: 17
+  for (let button of allButtons) {
+    console.log(button); // Returns individually each button (including the submit button) 
+    button.addEventListener("click", function () {}) //when a button is clicked, the code that is inside this function will run.
   }
 })
 
+//}
+//
+//console.log(allButtons[i]); //Only <button data-id="submit" class="btn--restart">Restart Game</button>
+//console.log(allButtons.length); // output: 17
 
-
-
-
-
-/** Function to create data-id attribute*/
-
-/** Function to run the memory game */
+/** Function to run the memory game 
 // Code to be executed when user clicks a button
+let flippedCards = 0;
 
-function runMemoryGame() {
+function flippTheCards(idValue) {
+  flippedCards;
+  console.log(flippedCards);
+}*/
 
-}
 
 /** Function to check if there is a match */
 function checkMatch() {
