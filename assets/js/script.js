@@ -19,7 +19,8 @@ function sortEmojis(emojis) {
 }
 
 //console.log(sortEmojis) //this is the entire function as it is
-console.log(sortEmojis(emojis)); // this is the randomly sorted array
+let randomizedEmojis = sortEmojis(emojis)
+console.log(randomizedEmojis); // this is the randomly sorted array
 console.log("----");
 
 /** Create 16 button cards with class name "btn" and id string values from 0 to 15 */
@@ -45,7 +46,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
   for (let button of allButtons) {
     console.log(button); // Returns individually each button (including the submit button) 
-    button.addEventListener("click", function () {}) //when a button is clicked, the code that is inside this function will run.
+    button.addEventListener("click", function () { //when a button is clicked, the code that is inside this function will run.
+      if (this.getAttribute("data-type") === "submit") {
+        alert("you clicked submit");
+      } else {
+        let cardNumber = this.getAttribute("id");
+        alert("You clicked ${cardNumber}");
+      }
+    })
   }
 })
 
