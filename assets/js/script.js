@@ -47,11 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
   for (let button of allButtons) {
     console.log(button); // Returns individually each button (including the submit button) 
     button.addEventListener("click", function () { //when a button is clicked, the code that is inside this function will run.
-      if (this.getAttribute("data-type") === "submit") {
+      if (this.getAttribute("id") === "submit") {
         alert("you clicked submit");
       } else {
         let cardNumber = this.getAttribute("id");
-        alert("You clicked ${cardNumber}");
+        alert(`You clicked ${cardNumber}`);
       }
     })
   }
