@@ -3,32 +3,29 @@ let emojis = ["😊", "😊", "😂", "😂", "❤️", "❤️", "😁", "😁"
 console.log(emojis.length); // output:16
 
 
-/**Function that generates a random number between 0 and 1 */
+/**Function that generates negative and positive random numbers between -0.5 and 0.5 */
 function randomValues(a, b) {
-  let randomNumber = Math.random(); //create random number between 0 and 1
-  if (randomNumber > 0.5) { //50% probability
+  let randomNumber = Math.random() - 0.5; //create random number between 0 and 1
+  return randomNumber;
+  /**if (randomNumber > 0.5) { //50% probability
     return 2;
   } else {
-    return -1 //incorrect
-  }
+    return -1
+  }*/
 }
 console.log(randomValues()); // output: -2 or 1 
+
 
 /** Function that sorts an array randomly by comparing two elements of the array (a and b)
  * Together with randomValues, they check which comes first, if a or b.*/
 function sortEmojis(emojis) {
-  let sortedEmojis = emojis.sort(randomValues);
+  let sortedEmojis = emojis.sort(randomValues); //withot () calls out the entire function
   return sortedEmojis;
 }
 
-let sortedEmojis = sortEmojis(emojis);
-console.log(sortedEmojis);
+console.log(sortEmojis) //this is the entire function as it is
+console.log(sortEmojis(emojis)); // while this is the randomly sorted array
 console.log("----");
-
-
-
-
-
 
 // Code to be executed when the DOM finishes loading
 document.addEventListener("DOMContentLoaded", function buttonCards() {
@@ -51,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function buttonCards() {
     //console.log(buttons); //Returns 17 buttons (i.e., memory card and the reset button)
     //console.log(buttons.length); // output: 17
   }
-
 })
 
 
