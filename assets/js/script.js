@@ -4,6 +4,9 @@ let emojis = ["😊", "😊", "😂", "😂", "❤️", "❤️", "😁", "😁"
 
 let flippedCards = 0; // this variable will increase by 1 every time an user clicks a button
 
+let firstCard = null;
+let secondCard = null;
+
 /**Function that generates negative and positive random numbers between -0.5 and 0.5 */
 function randomValues(a, b) {
   let randomNumber = Math.random() - 0.5; //create random number between -0.5 and 0.5
@@ -59,9 +62,17 @@ document.addEventListener("DOMContentLoaded", function () {
 })
 
 /** Function that increases the amount of flipped cards by 1 every time an user clicks a button (code to be executed when user clicks a button)*/
-function flippTheCards() {
+function flippTheCards(cardNumber) {
   flippedCards++;
-  console.log(flippedCards);
+  console.log(flippedCards); //allows you to see the increase in the console!
+  // Note, "return" is not needed because you do not want the function to provide a value but rather to perform an action (i.e., of increasing the amount of flipped cards)
+
+  if (flippedCards === 1) { //Only for the first card
+    firstCard = document.getElementById(cardNumber);
+    firstCard.innerHTML = "first card flipped: TEXT BEING SHOWN?";
+
+  }
+
 }
 
 
