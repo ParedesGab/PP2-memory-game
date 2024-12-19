@@ -2,6 +2,7 @@
 let emojis = ["😊", "😊", "😂", "😂", "❤️", "❤️", "😁", "😁", "😘", "😘", "😎", "😎", "🤩", "🤩", "😶‍🌫️", "😶‍🌫️"];
 //console.log(emojis.length); // output:16
 
+let flippedCards = 0; // this variable will increase by 1 every time an user clicks a button
 
 /**Function that generates negative and positive random numbers between -0.5 and 0.5 */
 function randomValues(a, b) {
@@ -9,7 +10,6 @@ function randomValues(a, b) {
   return randomNumber;
 }
 //console.log(randomValues()); // positive random numbers between -0.5 and 0.5
-
 
 /** Function that sorts an array randomly by comparing two elements of the array (a and b)
  * Together with randomValues, they check which comes first, if a or b.*/
@@ -51,25 +51,18 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("you clicked submit");
       } else {
         let cardNumber = this.getAttribute("id");
-        alert(`You clicked ${cardNumber}`);
+        //alert(`You clicked ${cardNumber}`);
+        flippTheCards(cardNumber);
       }
     })
   }
 })
 
-//}
-//
-//console.log(allButtons[i]); //Only <button data-id="submit" class="btn--restart">Restart Game</button>
-//console.log(allButtons.length); // output: 17
-
-/** Function to run the memory game 
-// Code to be executed when user clicks a button
-let flippedCards = 0;
-
-function flippTheCards(idValue) {
-  flippedCards;
+/** Function that increases the amount of flipped cards by 1 every time an user clicks a button (code to be executed when user clicks a button)*/
+function flippTheCards() {
+  flippedCards++;
   console.log(flippedCards);
-}*/
+}
 
 
 /** Function to check if there is a match */
