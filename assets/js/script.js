@@ -22,8 +22,8 @@ function sortEmojis(emojis) {
 }
 
 //console.log(sortEmojis) //this is the entire function as it is
-let randomizedEmojis = sortEmojis(emojis)
-console.log(randomizedEmojis); // this is the randomly sorted array
+emojis = sortEmojis(emojis)
+console.log(emojis); // this is the randomly sorted array
 console.log("----");
 
 /** Create 16 button cards with class name "btn" and id string values from 0 to 15 */
@@ -36,9 +36,8 @@ for (let i = 0; i < emojis.length; i++) {
 
   let buttonContainer = document.getElementById("container-cards");
   buttonContainer.appendChild(buttonCard);
-  console.log(buttonCard);
+  //console.log(buttonCard);
 }
-console.log("----");
 
 // Code to be executed when the DOM finishes loading
 document.addEventListener("DOMContentLoaded", function () {
@@ -48,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
   //console.log(allButtons); // Returns 17 buttons as an array. 
 
   for (let button of allButtons) {
-    console.log(button); // Returns individually each button (including the submit button) 
+    //console.log(button); // Returns individually each button (including the submit button) 
     button.addEventListener("click", function () { //when a button is clicked, the code that is inside this function will run.
       if (this.getAttribute("id") === "submit") {
         alert("you clicked submit");
@@ -69,9 +68,11 @@ function flippTheCards(cardNumber) {
 
   if (flippedCards === 1) { //Only for the first card
     firstCard = document.getElementById(cardNumber);
-    firstCard.innerHTML = "first card flipped: TEXT BEING SHOWN?";
+    //firstCard.innerHTML = "first card flipped: TEXT BEING SHOWN?"; // YES!!!! Also, .textContent and .innerHTML are rendering the same placeholder in the HTML
+    firstCard.innerHTML = emojis[cardNumber];
 
   }
+
 
 }
 
