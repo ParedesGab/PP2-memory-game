@@ -66,16 +66,29 @@ function flippTheCards(cardNumber) {
   console.log(flippedCards); //allows you to see the increase in the console!
   // Note, "return" is not needed because you do not want the function to provide a value but rather to perform an action (i.e., of increasing the amount of flipped cards)
 
-  if (flippedCards === 1) { //Only for the first card
+  if (flippedCards === 1) { //Only for the first card  
     firstCard = document.getElementById(cardNumber);
-    //firstCard.innerHTML = "first card flipped: TEXT BEING SHOWN?"; // YES!!!! Also, .textContent and .innerHTML are rendering the same placeholder in the HTML
     firstCard.innerHTML = emojis[cardNumber];
+    //firstCard.innerHTML = "first card flipped: TEXT BEING SHOWN?"; // YES!!!! Also, .textContent and .innerHTML are rendering the same placeholder in the HTML
 
+    //No matter how many times you click on the first card the flippedCards number should stay in 1
+    firstCard.disabled = true;
+  } else if (flippedCards === 2) { //Only for the second card  
+    secondCard = document.getElementById(cardNumber);
+    secondCard.innerHTML = emojis[cardNumber];
+    //firstCard.innerHTML = "first card flipped: TEXT BEING SHOWN?"; // YES!!!! Also, .textContent and .innerHTML are rendering the same placeholder in the HTML
+
+    //No matter how many times you click on the first card the flippedCards number should stay in 1
+    secondCard.disabled = true;
   }
-
-
 }
 
+/** Function to check if the card flipped is the first one*/
+function revealCard() {
+  card = document.getElementById(cardNumber);
+  card.innerHTML = emojis[cardNumber];
+  card.disabled = true;
+}
 
 /** Function to check if there is a match */
 function checkMatch() {
