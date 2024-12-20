@@ -4,6 +4,9 @@ let emojis = ["😊", "😊", "😂", "😂", "❤️", "❤️", "😁", "😁"
 
 let flippedCards = 0; // this variable will increase by 1 every time an user clicks a button
 
+let firstCard = null;
+let secondCard = null;
+let revealedCard = null;
 let firstResult = null;
 let secondResult = null;
 
@@ -60,13 +63,17 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 })
 
-/** Function that increases the amount of flipped cards by 1 every time an user clicks a button (code to be executed when user clicks a button)*/
+/** Main function to handle card flipping logic (code to be executed when user clicks a button)*/
 function flippTheCards(cardNumber) {
   flippedCards++;
   console.log(flippedCards); //allows you to see the increase in the console!  // Note, "return" is not needed because you do not want the function to provide a value but rather to perform an action (i.e., of increasing the amount of flipped cards)
 
   if (flippedCards === 1) { //Only for the first card  
-    firstResult = revealCard(cardNumber);
+    revealedCard = revealCard(cardNumber);
+    firstCard = revealedCard[0];
+    firstResult = revealedCard[1];
+
+    console.log(firstCard);
     console.log(firstResult);
     /*firstCard = document.getElementById(cardNumber);
     firstResult = emojis[cardNumber];
@@ -77,7 +84,11 @@ function flippTheCards(cardNumber) {
   } else if (flippedCards === 2) {
 
     //Only for the second card  
-    secondResult = revealCard(cardNumber);
+    revealedCard = revealCard(cardNumber);
+    secondCard = revealedCard[0];
+    secondResult = revealedCard[1];
+
+    console.log(secondCard);
     console.log(secondResult);
     /*secondCard = document.getElementById(cardNumber);
     secondResult = emojis[cardNumber];
@@ -101,17 +112,16 @@ function flippTheCards(cardNumber) {
 }
 
 
-
 /** Function that will flip a card and reveal its content*/
 function revealCard(cardNumber) {
   let card = document.getElementById(cardNumber);
   let result = emojis[cardNumber];
   card.innerHTML = result;
   card.disabled = true;
-  return {
+  return [
     card,
     result
-  };
+  ];
 }
 
 /** Function to check if there is not a match 
