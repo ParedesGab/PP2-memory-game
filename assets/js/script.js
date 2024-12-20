@@ -68,7 +68,8 @@ function flippTheCards(cardNumber) {
   flippedCards++;
   console.log(flippedCards); //allows you to see the increase in the console!  // Note, "return" is not needed because you do not want the function to provide a value but rather to perform an action (i.e., of increasing the amount of flipped cards)
 
-  if (flippedCards === 1) { //Only for the first card  
+  // Handle the first card
+  if (flippedCards === 1) {
     revealedCard = revealCard(cardNumber);
     firstCard = revealedCard[0];
     firstResult = revealedCard[1];
@@ -81,9 +82,9 @@ function flippTheCards(cardNumber) {
 
     firstCard.disabled = true; //No matter how many times you click on the first card the flippedCards number should stay in 1*/
 
+    // Handle the second  card
   } else if (flippedCards === 2) {
 
-    //Only for the second card  
     revealedCard = revealCard(cardNumber);
     secondCard = revealedCard[0];
     secondResult = revealedCard[1];
@@ -104,9 +105,9 @@ function flippTheCards(cardNumber) {
       /*HERE should go the code to increase the SCORE*/
 
     } else { //  cover the results after a certain amount of time (setTimeout)
-      alert("not a match");
-      //console.log(result);
-      //setTimeout(checkMatch(cardNumber), 2000);
+      //alert("not a match");
+      //checkNoMatch(firstCard, secondCard);
+      checkNoMatch(firstCard, secondCard)
     }
   }
 }
@@ -124,17 +125,20 @@ function revealCard(cardNumber) {
   ];
 }
 
-/** Function to check if there is not a match 
-function checkMatch(cardNumber) {
-  card = document.getElementById(cardNumber);
-  card.innerHTML = ' ';
-  card.disabled = false;
-  flippedCards = 0;
-}*/
+/** Function to reset cards if they do not match after 1.2s.
+ * Note that if the checkNoMatch function is inside the setTimeout method, this function will first be evaluated and then the return value will be
+ * passed to the setTimeout method. Thus, I was passing empty values ("").
+ * Therefore, I inserted the setTimeout method as part of the function, and call it directly in line 110.
+ */
 
-/** Function to check if there is no match */
-function checkNoMatch() {
-
+function checkNoMatch(firstCard, secondCard) {
+  setTimeout(function () {
+    firstCard.innerHTML = "";
+    secondCard.innerHTML = "";
+    firstCard.disabled = false;
+    secondCard.disabled = false;
+    flippedCards = 0;
+  }, 1200)
 }
 
 /** Function to decrease the chances left */
