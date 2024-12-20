@@ -114,9 +114,14 @@ function flippTheCards(cardNumber) {
 
 /** Function that will flip a card and reveal its content. It will return an array*/
 function revealCard(cardNumber) {
+  //get the card by Id
   let card = document.getElementById(cardNumber);
+
+  //Store the inner content in the variable "result"
   let result = emojis[cardNumber];
   card.innerHTML = result;
+
+  //Once it was clicked, it cannot be clicked again
   card.disabled = true;
   return [
     card,
@@ -124,13 +129,18 @@ function revealCard(cardNumber) {
   ];
 }
 
-/** Function to reset unmatched cards.*/
+/** Function to reset unmatched cards*/
 function checkNoMatch() {
+  //empty the cards
   firstCard.innerHTML = "";
   secondCard.innerHTML = "";
+
+  //unable the cards so they can again be clicked
   firstCard.disabled = false;
   secondCard.disabled = false;
-  flippedCards = 0; // Reset the flipped cards count
+
+  // Reset the flipped cards coun
+  flippedCards = 0;
 }
 
 /** Function to decrease the chances left */
