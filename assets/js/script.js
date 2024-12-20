@@ -6,6 +6,8 @@ let flippedCards = 0; // this variable will increase by 1 every time an user cli
 
 let firstCard = null;
 let secondCard = null;
+let firstResult = null;
+let secondResult = null;
 
 /**Function that generates negative and positive random numbers between -0.5 and 0.5 */
 function randomValues(a, b) {
@@ -67,32 +69,43 @@ function flippTheCards(cardNumber) {
   // Note, "return" is not needed because you do not want the function to provide a value but rather to perform an action (i.e., of increasing the amount of flipped cards)
 
   if (flippedCards === 1) { //Only for the first card  
-    firstCard = revealCard(cardNumber);
-    //firstCard = document.getElementById(cardNumber);
-    //firstCard.innerHTML = emojis[cardNumber];
-    //firstCard.innerHTML = "first card flipped: TEXT BEING SHOWN?"; // YES!!!! Also, .textContent and .innerHTML are rendering the same placeholder in the HTML
+    firstResult = revealCard(cardNumber);
+    console.log(firstResult);
+    /*firstCard = document.getElementById(cardNumber);
+    firstResult = emojis[cardNumber];
+    firstCard.innerHTML = firstResult;
 
-    //No matter how many times you click on the first card the flippedCards number should stay in 1
-    //firstCard.disabled = true;
-  } else if (flippedCards === 2) { //Only for the second card  
-    secondCard = revealCard(cardNumber);
-    //secondCard = document.getElementById(cardNumber);
-    //secondCard.innerHTML = emojis[cardNumber];
-    //firstCard.innerHTML = "first card flipped: TEXT BEING SHOWN?"; // YES!!!! Also, .textContent and .innerHTML are rendering the same placeholder in the HTML
+    firstCard.disabled = true; //No matter how many times you click on the first card the flippedCards number should stay in 1*/
 
-    //No matter how many times you click on the first card the flippedCards number should stay in 1
-    //secondCard.disabled = true;
+  } else if (flippedCards === 2) {
+
+    //Only for the second card  
+    secondResult = revealCard(cardNumber);
+    console.log(secondResult);
+    /**secondCard = document.getElementById(cardNumber);
+    secondResult = emojis[cardNumber];
+    secondCard.innerHTML = secondResult;
+
+    secondCard.disabled = true;
+
+    /*HERE should go the code to decrease the number of CHANCES*/
+
+    if (firstResult === secondResult) {
+      flippedCards = 0;
+    }
   }
+
+
 }
 
 /** Function that will show which card was flipped and will disabled it*/
 function revealCard(cardNumber) {
   card = document.getElementById(cardNumber);
-  card.innerHTML = emojis[cardNumber];
+  result = emojis[cardNumber];
+  card.innerHTML = result;
   card.disabled = true;
+  return result;
 }
-
-
 
 /** Function to check if there is a match */
 function checkMatch() {
