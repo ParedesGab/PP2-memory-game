@@ -4,8 +4,6 @@ let emojis = ["😊", "😊", "😂", "😂", "❤️", "❤️", "😁", "😁"
 
 let flippedCards = 0; // this variable will increase by 1 every time an user clicks a button
 
-let firstCard = null;
-let secondCard = null;
 let firstResult = null;
 let secondResult = null;
 
@@ -65,8 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
 /** Function that increases the amount of flipped cards by 1 every time an user clicks a button (code to be executed when user clicks a button)*/
 function flippTheCards(cardNumber) {
   flippedCards++;
-  console.log(flippedCards); //allows you to see the increase in the console!
-  // Note, "return" is not needed because you do not want the function to provide a value but rather to perform an action (i.e., of increasing the amount of flipped cards)
+  console.log(flippedCards); //allows you to see the increase in the console!  // Note, "return" is not needed because you do not want the function to provide a value but rather to perform an action (i.e., of increasing the amount of flipped cards)
 
   if (flippedCards === 1) { //Only for the first card  
     firstResult = revealCard(cardNumber);
@@ -82,35 +79,48 @@ function flippTheCards(cardNumber) {
     //Only for the second card  
     secondResult = revealCard(cardNumber);
     console.log(secondResult);
-    /**secondCard = document.getElementById(cardNumber);
+    /*secondCard = document.getElementById(cardNumber);
     secondResult = emojis[cardNumber];
     secondCard.innerHTML = secondResult;
 
-    secondCard.disabled = true;
+    secondCard.disabled = true;*/
 
     /*HERE should go the code to decrease the number of CHANCES*/
 
     if (firstResult === secondResult) {
-      flippedCards = 0;
+      flippedCards = 0; //reset the count of the amount of flipped Cards to 0
+
+      /*HERE should go the code to increase the SCORE*/
+
+    } else { //  cover the results after a certain amount of time (setTimeout)
+      alert("not a match");
+      //console.log(result);
+      //setTimeout(checkMatch(cardNumber), 2000);
     }
   }
-
-
 }
 
-/** Function that will show which card was flipped and will disabled it*/
+
+
+/** Function that will flip a card and reveal its content*/
 function revealCard(cardNumber) {
-  card = document.getElementById(cardNumber);
-  result = emojis[cardNumber];
+  let card = document.getElementById(cardNumber);
+  let result = emojis[cardNumber];
   card.innerHTML = result;
   card.disabled = true;
-  return result;
+  return {
+    card,
+    result
+  };
 }
 
-/** Function to check if there is a match */
-function checkMatch() {
-
-}
+/** Function to check if there is not a match 
+function checkMatch(cardNumber) {
+  card = document.getElementById(cardNumber);
+  card.innerHTML = ' ';
+  card.disabled = false;
+  flippedCards = 0;
+}*/
 
 /** Function to check if there is no match */
 function checkNoMatch() {
