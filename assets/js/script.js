@@ -99,21 +99,20 @@ function flippTheCards(cardNumber) {
 
     /*HERE should go the code to decrease the number of CHANCES*/
 
+    //After the user clicked on the 2nd card, check if there is a match or not
     if (firstResult === secondResult) {
-      flippedCards = 0; //reset the count of the amount of flipped Cards to 0
+      flippedCards = 0; // Reset the flipped cards count
 
       /*HERE should go the code to increase the SCORE*/
 
     } else { //  cover the results after a certain amount of time (setTimeout)
       //alert("not a match");
-      //checkNoMatch(firstCard, secondCard);
-      checkNoMatch(firstCard, secondCard)
+      setTimeout(checkNoMatch, 1200); //call the entire function and reset unmatched cards after 1.2s.*/
     }
   }
 }
 
-
-/** Function that will flip a card and reveal its content*/
+/** Function that will flip a card and reveal its content. It will return an array*/
 function revealCard(cardNumber) {
   let card = document.getElementById(cardNumber);
   let result = emojis[cardNumber];
@@ -125,20 +124,13 @@ function revealCard(cardNumber) {
   ];
 }
 
-/** Function to reset cards if they do not match after 1.2s.
- * Note that if the checkNoMatch function is inside the setTimeout method, this function will first be evaluated and then the return value will be
- * passed to the setTimeout method. Thus, I was passing empty values ("").
- * Therefore, I inserted the setTimeout method as part of the function, and call it directly in line 110.
- */
-
-function checkNoMatch(firstCard, secondCard) {
-  setTimeout(function () {
-    firstCard.innerHTML = "";
-    secondCard.innerHTML = "";
-    firstCard.disabled = false;
-    secondCard.disabled = false;
-    flippedCards = 0;
-  }, 1200)
+/** Function to reset unmatched cards.*/
+function checkNoMatch() {
+  firstCard.innerHTML = "";
+  secondCard.innerHTML = "";
+  firstCard.disabled = false;
+  secondCard.disabled = false;
+  flippedCards = 0; // Reset the flipped cards count
 }
 
 /** Function to decrease the chances left */
