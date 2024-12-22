@@ -164,10 +164,15 @@ function incrementScore() {
   let oldScore = parseInt(document.getElementById("score").innerText);
   //document.getElementById("score").innerText = ++oldScore;
   document.getElementById("score").innerText = oldScore += 100;
+  if (oldScore === 800) {
+    alert("Congratulations You AI Wizard!");
+  }
 }
 
 /** Function to restart the game */
-function restartGame() {}
+function restartGame() {
+  location.reload();
+}
 
 
 
