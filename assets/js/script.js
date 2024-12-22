@@ -173,7 +173,8 @@ function incrementScore() {
   //document.getElementById("score").innerText = ++oldScore;
   document.getElementById("score").innerText = oldScore += 100;
   if (oldScore === 800) {
-    alert("Congratulations AI Wizard!!!👌🤖");
+    document.getElementById("score").innerText = `🎉 800! 🎉`
+    //alert("Congratulations AI Wizard!!!👌🤖");
   }
 }
 
