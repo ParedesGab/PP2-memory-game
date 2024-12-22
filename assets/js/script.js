@@ -53,7 +53,8 @@ document.addEventListener("DOMContentLoaded", function () {
     //console.log(button); // Returns individually each button (including the submit button) 
     button.addEventListener("click", function () { //when a button is clicked, the code that is inside this function will run.
       if (this.getAttribute("id") === "submit") {
-        alert("you clicked submit");
+        //alert("you clicked submit");
+        location.reload();
       } else {
         let cardNumber = this.getAttribute("id");
         //alert(`You clicked ${cardNumber}`);
@@ -171,7 +172,7 @@ function incrementScore() {
 
 /** Function to restart the game */
 function restartGame() {
-  location.reload();
+
 }
 
 
