@@ -97,7 +97,7 @@ function flippTheCards(cardNumber) {
 
     secondCard.disabled = true;*/
 
-    /*HERE should go the code to decrease the number of CHANCES*/
+    decreaseChances();
 
     //After the user clicked on the 2nd card, check if there is a match or not
     if (firstResult === secondResult) {
@@ -146,11 +146,17 @@ function checkNoMatch() {
 /** Function to decrease the chances left */
 function decreaseChances() {
   let oldChance = parseInt(document.getElementById("chances").innerText);
-  //document.getElementById("chances").innerText = `Chances: ${++oldChance}`;
+  document.getElementById("chances").innerText = --oldChance; // Starts with 50
   //document.getElementById("chances").innerText = `Chances: ${oldChance++}`;
-
+  //document.getElementById("chances").innerHTML = `Chances: ${++oldChance}`;
+  //document.getElementById("chances").innerHTML = `Chances: ${oldChance++}`;
+  if (oldChance === 0) {
+    alert("🤖🤖🤖: Sorry, Game over!");
+    checkNoMatch();
+    throw "Game over: Aborting!";
+  }
 }
-decreaseChances();
+
 
 /** Function to increment the score every time there is a match */
 function incrementScore() {}
