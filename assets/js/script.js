@@ -152,8 +152,8 @@ function decreaseChances() {
   //document.getElementById("chances").innerHTML = `Chances: ${oldChance++}`;
   if (oldChance === 0) {
     alert("🤖🤖🤖: Sorry, Game over!");
+    location.reload();
     throw `Game over: Aborting!`;
-    //checkNoMatch();
   }
 }
 
