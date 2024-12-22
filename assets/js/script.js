@@ -97,13 +97,15 @@ function flippTheCards(cardNumber) {
 
     secondCard.disabled = true;*/
 
+    //Decrease number of chances
     decreaseChances();
 
     //After the user clicked on the 2nd card, check if there is a match or not
     if (firstResult === secondResult) {
       flippedCards = 0; // Reset the flipped cards count
 
-      /*HERE should go the code to increase the SCORE*/
+      //Increment the score
+      incrementScore();
 
     } else { //  cover the results after a certain amount of time (setTimeout)
       //alert("not a match");
@@ -158,7 +160,11 @@ function decreaseChances() {
 }
 
 /** Function to increment the score every time there is a match */
-function incrementScore() {}
+function incrementScore() {
+  let oldScore = parseInt(document.getElementById("score").innerText);
+  //document.getElementById("score").innerText = ++oldScore;
+  document.getElementById("score").innerText = oldScore += 100;
+}
 
 /** Function to restart the game */
 function restartGame() {}
