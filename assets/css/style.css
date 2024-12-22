@@ -97,8 +97,7 @@ h2 {
   display: flex;
 }
 
-#chances,
-#score,
+.scores,
 .btn--restart {
   border: 3px solid #ffffff;
   margin: 25px;

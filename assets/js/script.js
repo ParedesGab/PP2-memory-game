@@ -12,7 +12,7 @@ let secondResult = null;
 
 /**Function that generates negative and positive random numbers between -0.5 and 0.5 */
 function randomValues(a, b) {
-  let randomNumber = Math.random() - 0.5; //create random number between -0.5 and 0.5
+  let randomNumber = Math.random() - 0.5;
   return randomNumber;
 }
 //console.log(randomValues()); // positive random numbers between -0.5 and 0.5
@@ -145,8 +145,12 @@ function checkNoMatch() {
 
 /** Function to decrease the chances left */
 function decreaseChances() {
+  let oldChance = parseInt(document.getElementById("chances").innerText);
+  //document.getElementById("chances").innerText = `Chances: ${++oldChance}`;
+  //document.getElementById("chances").innerText = `Chances: ${oldChance++}`;
 
 }
+decreaseChances();
 
 /** Function to increment the score every time there is a match */
 function incrementScore() {}
