@@ -37,6 +37,8 @@ for (let i = 0; i < emojis.length; i++) {
   let idValue = String(i); //Convert i to a string
   buttonCard.id = idValue; // Return the id: "0", "1"... "15"
 
+  // ADD ARIA-LABEL to button cards!
+
   let buttonContainer = document.getElementById("container-cards");
   buttonContainer.appendChild(buttonCard);
   //console.log(buttonCard);
@@ -107,10 +109,12 @@ function flippTheCards(cardNumber) {
 
       //Increment the score
       incrementScore();
+      //decreaseChances();
 
     } else { //  cover the results after a certain amount of time (setTimeout)
       //alert("not a match");
-      setTimeout(checkNoMatch, 1200); //call the entire function and reset unmatched cards after 1.2s.*/
+
+      setTimeout(checkNoMatch, 1000); //call the entire function and reset unmatched cards after 1.2s.*/
     }
   }
 }
@@ -154,9 +158,12 @@ function decreaseChances() {
   //document.getElementById("chances").innerHTML = --oldChance;
   //document.getElementById("chances").innerHTML = `Chances: ${oldChance++}`;
   if (oldChance === 0) {
-    alert("🤖🤖🤖: Sorry, Game over!");
-    location.reload();
-    throw `Game over: Aborting!`;
+    blockCards();
+    throw `GAME OVER! Aborting!`;
+    //alert("🤖🤖🤖: Sorry, Game over!");
+
+    //location.reload();
+    //throw `Game over: Aborting!`;
   }
 }
 
@@ -166,54 +173,15 @@ function incrementScore() {
   //document.getElementById("score").innerText = ++oldScore;
   document.getElementById("score").innerText = oldScore += 100;
   if (oldScore === 800) {
-    alert("Congratulations You AI Wizard!");
+    alert("Congratulations AI Wizard!!!👌🤖");
   }
 }
 
-/** Function to restart the game */
-function restartGame() {
-
+/** Function to block all cards at the end of the game */
+function blockCards() {
+  for (let j = 0; j <= 15; j++) {
+    let blockedCard = document.getElementById(j);
+    blockedCard.innerHTML = emojis[j];
+    blockedCard.disabled = true;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Notes
-// Code to be executed when the DOM finishes loading
-/**document.addEventListener("DOMContentLoaded", function () {
-let buttons = document.getElementsByTagName("button");
-console.log(buttons); //Returns 17 buttons (i.e., memory card and the reset button)
-console.log(buttons.length); // output: 17
-
-for (let button of buttons) {
-  console.log(button); // e.g., <button data-id="0" class="btn">A</button> / <button data-id="submit" class="btn--restart">Restart Game</button>/ ... etc.
-}
-
-//Another way to write it
-console.log("----------------------------------");
-for (i = 0; i < buttons.length; i++) {
-  let button = buttons[i];
-  console.log(button);
-}
-})*/
