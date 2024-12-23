@@ -1,9 +1,8 @@
 // Global variables (include them in functions later)
-let emojis = ["😊", "😊", "😂", "😂", "❤️", "❤️", "😁", "😁", "😘", "😘", "😎", "😎", "🤩", "🤩", "😶‍🌫️", "😶‍🌫️"];
-//console.log(emojis.length); // output:16
+//let emojis = ["😊", "😊", "😂", "😂", "❤️", "❤️", "😁", "😁", "😘", "😘", "😎", "😎", "🤩", "🤩", "😶‍🌫️", "😶‍🌫️"];
+let emojis = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, ];
 
 let flippedCards = 0; // this variable will increase by 1 every time an user clicks a button
-
 let firstCard = null;
 let secondCard = null;
 let revealedCard = null;
@@ -13,9 +12,8 @@ let secondResult = null;
 /**Function that generates negative and positive random numbers between -0.5 and 0.5 */
 function randomValues(a, b) {
   let randomNumber = Math.random() - 0.5;
-  return randomNumber;
+  return randomNumber; // random numbers between -0.5 and 0.5
 }
-//console.log(randomValues()); // positive random numbers between -0.5 and 0.5
 
 /** Function that sorts an array randomly by comparing two elements of the array (a and b)
  * Together with randomValues, they check which comes first, if a or b.*/
@@ -24,8 +22,7 @@ function sortEmojis(emojis) {
   return sortedEmojis;
 }
 
-//console.log(sortEmojis) //this is the entire function as it is
-emojis = sortEmojis(emojis)
+emojis = sortEmojis(emojis);
 console.log(emojis); // this is the randomly sorted array
 console.log("----");
 
@@ -68,17 +65,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 /** Main function to handle card flipping logic (code to be executed when user clicks a button)*/
 function flippTheCards(cardNumber) {
-  flippedCards++;
-  console.log(flippedCards); //allows you to see the increase in the console!  // Note, "return" is not needed because you do not want the function to provide a value but rather to perform an action (i.e., of increasing the amount of flipped cards)
+  //flippedCards++;
+  //console.log(flippedCards); //allows you to see the increase in the console!  // Note, "return" is not needed because you do not want the function to provide a value but rather to perform an action (i.e., of increasing the amount of flipped cards)
 
   // Handle the first card
-  if (flippedCards === 1) {
+  if (flippedCards === 0) {
     revealedCard = revealCard(cardNumber);
     firstCard = revealedCard[0];
     firstResult = revealedCard[1];
-
     console.log(firstCard);
     console.log(firstResult);
+    flippedCards++;
+    console.log(flippedCards);
+
     /*firstCard = document.getElementById(cardNumber);
     firstResult = emojis[cardNumber];
     firstCard.innerHTML = firstResult;
@@ -86,14 +85,16 @@ function flippTheCards(cardNumber) {
     firstCard.disabled = true; //No matter how many times you click on the first card the flippedCards number should stay in 1*/
 
     // Handle the second  card
-  } else if (flippedCards === 2) {
+  } else if (flippedCards === 1) {
 
     revealedCard = revealCard(cardNumber);
     secondCard = revealedCard[0];
     secondResult = revealedCard[1];
-
     console.log(secondCard);
     console.log(secondResult);
+    flippedCards++;
+    console.log(flippedCards);
+
     /*secondCard = document.getElementById(cardNumber);
     secondResult = emojis[cardNumber];
     secondCard.innerHTML = secondResult;
@@ -126,13 +127,13 @@ function revealCard(cardNumber) {
 
   //Store the inner content in the variable "result"
   let result = emojis[cardNumber];
-  card.innerHTML = result;
-
+  //card.innerHTML = result;
+  card.innerHTML = `<img src="assets/images/${result}.png" alt ="crystal">`;
   //Once it was clicked, it cannot be clicked again
   card.disabled = true;
   return [
-    card,
-    result
+    card, // e.g., <button class="btn" id="1"></button>
+    result // 🤩  
   ];
 }
 
@@ -182,7 +183,8 @@ function incrementScore() {
 function blockCards() {
   for (let j = 0; j <= 15; j++) {
     let blockedCard = document.getElementById(j);
-    blockedCard.innerHTML = emojis[j];
+    let result2 = emojis[j];
+    blockedCard.innerHTML = `<img src ="assets/images/${result2}.png" alt="">`;
     blockedCard.disabled = true;
   }
 }
