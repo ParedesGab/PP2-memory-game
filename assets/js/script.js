@@ -59,9 +59,9 @@ document.addEventListener("DOMContentLoaded", function () {
         //alert(`You clicked ${cardNumber}`);
         flippTheCards(cardNumber);
       }
-    })
+    });
   }
-})
+});
 
 /** Main function to handle card flipping logic (code to be executed when user clicks a button)*/
 function flippTheCards(cardNumber) {
@@ -174,7 +174,7 @@ function incrementScore() {
   //document.getElementById("score").innerText = ++oldScore;
   document.getElementById("score").innerText = oldScore += 100;
   if (oldScore === 800) {
-    document.getElementById("score").innerText = `🎉 800! 🎉`
+    document.getElementById("score").innerText = `🎉 800! 🎉`;
     //alert("Congratulations AI Wizard!!!👌🤖");
   }
 }
