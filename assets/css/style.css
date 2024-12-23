@@ -78,7 +78,7 @@ h2 {
   height: 131px;
   box-shadow: 0 2px 20px 3px #f9f9fa;
   font-size: 50px;
-  background: url("../images/card-background1.webp") no-repeat center center/cover;
+  /*background: url("../images/card-background1.webp") no-repeat center center/cover;*/
 }
 
 /* Section3: Control Area */
