@@ -111,10 +111,14 @@ function generateHtmlCards() {
   const sortedCardData = randomizeCardDeck();
 
   for (item = 0; item <= sortedCardData.length; item++) {
+    //Create the elements
     const memoryCard = document.createElement("div");
     const cardFront = document.createElement("img");
     const cardBack = document.createElement("div");
+    //Add clases to them
     memoryCard.classList.add("card");
+    cardFront.classList.add("face");
+    cardBack.classList.add("back");
 
     const gameContainer = document.getElementById("game-container");
 
@@ -130,9 +134,6 @@ generateHtmlCards();
 
 
 /**cardData.forEach((item) => {
-  const card = document.createElement("div");
-  const face = document.createElement("img");
-  const back = document.createElement("div");
 
   //Add classes to the created elements
   card.classList = "card";

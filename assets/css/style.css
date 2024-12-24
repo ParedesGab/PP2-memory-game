@@ -63,29 +63,13 @@ h2 {
   letter-spacing: 0.1rem;
 }*/
 
-/* Section2: Memory Game 
-.container #container-cards {
-  margin: 60px 0px 30px auto;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(4, 131px);
-  gap: 20px;
-}*/
+/* Memory Game */
 
-/*#container-cards .card {
-  cursor: pointer;
-  width: 131px;
-  height: 131px;
-  box-shadow: 0 2px 20px 3px #f9f9fa;
-  font-size: 50px;
-  /*background: url("../images/card-background1.webp") no-repeat center center/cover;
-}*/
-
-#testContainer {
+#game-container {
   display: grid;
   grid-template-columns: repeat(4, 8rem);
   grid-template-rows: repeat(4, 8rem);
-  grid-gap: 2rem;
+  gap: 2rem;
   perspective: 800px;
 }
 
@@ -93,8 +77,8 @@ h2 {
   position: relative;
   transform-style: preserve-3d;
   transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px;
-
+  box-shadow: 0 2px 20px 3px #f9f9fa;
+  cursor: pointer;
 }
 
 .face,
