@@ -14,25 +14,67 @@
 <body>
   <!-- Main content -->
   <main>
-    <!-- Section1: Heading -->
-    <section class="heading">
-      <h1>Deep Match </h1>
-      <h2>The AI Memory Game!</h2>
+    <section class="container">
+      <div>
+        <h1>Deep Match </h1>
+        <h2>The AI Memory Game!</h2>
+      </div>
+
+      <!-- Home Menu -->
+      <div id="home-menu">
+        <button onclick="newGame()">New Game</button>
+        <button onclick="gameIndications()">Game indications</button>
+      </div>
+
+      <!-- New Game -->
+      <div class="game hidden" id="game-container">
+        <!-- Game Board -->
+        <div id="game-board">
+          <!-- Card added through JS -->
+        </div>
+      </div>
+
+      <!-- Game indications 
+
+      <div id="game-indications class="hidden">
+          <div>
+            <p>The game consists of 16 cards featuring 8 unique pairs of pictures.</p>
+            <p>At the start, all the cards are placed face down.</p>
+            <p>On each turn, you select and flip over two cards of your choice.</p>
+            <p>If the pictures on the cards match, they remain face up. If not, they are flipped back face down.</p>
+            <p>The game continues until all the pairs have been matched.</p>
+          </div>
+        <button class="secondary-button" onclick="showMainMenu()"><i class="fa-solid fa-left-long"></i></button>
+      </div-->
+
+      <!-- Game Result -->
+      <!--div id="game-result" class="hidden">
+        <h3>Well Done!</h3>
+        <p>You finished the game</p>
+        <p>with <span id="final-moves"></span> moves</p>
+        <button onclick="showMainMenu()">Main Menu</button>
+      </div>
+      </div-->
+
     </section>
 
-    <!-- Section2: Memory Game -->
-    <section class="container">
 
-      <!-- Memory cards -->
-      <div id="container-cards">
-        <!-- Button Cards generated with JS -->
+
+    <!--h3> Lives: <span class="playerLivesCount"><span></h3>
+    <section id="testContainer"></section-->
+
+
+    <!--section class="container">
+      Memory cards -->
+    <!--div id="container-cards">
+        Button Cards generated with JS
       </div>
     </section>
 
-    <!-- Section3: Control Area -->
+     Section3: Control Area
     <section class="controls">
 
-      <!--Score area -->
+      Score area
       <div class="score-area">
         <p class="scores">Chances:
           <span id="chances">50</span>
@@ -42,25 +84,25 @@
         </p>
       </div>
 
-      <!--Restart button -->
+      Restart button 
       <div>
         <button id="submit" class="btn--restart">Restart Game</button>
       </div>
-    </section>
+    </section>-->
 
   </main>
 
-  <!-- Footer -->
+  <!-- Footer 
   <footer id=footer>
     <div>
       <p>Developer <i class="fas fa-angle-double-right"></i> <i class="fas fa-angle-double-right"></i>
         Gabriela F. Paredes
     </div>
-  </footer>
+  </footer-->
 
   <!-- Javascript link-->
-  <script src="assets/js/script.js"></script>
-  <!--<script src="assets/js/script2.js"></script>-->
+  <!--<script src="assets/js/script.js"></script>-->
+  <script src="assets/js/script2.js"></script>
 </body>
 
 </html>
