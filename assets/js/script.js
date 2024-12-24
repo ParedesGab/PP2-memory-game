@@ -107,16 +107,27 @@ console.log(randomizeCardDeck()); //outputs and array
 /** 
  * Create 16 cards within the game-container section
  */
-for (item = 0; item <= 15; item++) {
-  const memoryCard = document.createElement("div");
-  const cardFront = document.createElement("img");
-  const cardBack = document.createElement("div");
-  memoryCard.classList.add("card");
+function generateHtmlCards() {
+  const sortedCardData = randomizeCardDeck();
 
-  const gameContainer = document.getElementById("game-container");
-  gameContainer.appendChild(memoryCard);
-  console.log(memoryCard);
-};
+  for (item = 0; item <= sortedCardData.length; item++) {
+    const memoryCard = document.createElement("div");
+    const cardFront = document.createElement("img");
+    const cardBack = document.createElement("div");
+    memoryCard.classList.add("card");
+
+    const gameContainer = document.getElementById("game-container");
+
+    gameContainer.appendChild(memoryCard);
+    memoryCard.appendChild(cardFront);
+    memoryCard.appendChild(cardBack);
+
+    console.log(memoryCard);
+  };
+}
+
+generateHtmlCards();
+
 
 /**cardData.forEach((item) => {
   const card = document.createElement("div");
