@@ -1,3 +1,5 @@
+const gameContainer = document.getElementById("game-container");
+
 /**
  * Generate the array containing the card images as objects
  */
@@ -98,69 +100,40 @@ function randomValues() {
  */
 function randomizeCardDeck() {
   const cardsArray = cardDeckArray();
-  const sortedCardData = cardsArray.sort(randomValues); //withot () calls out the entire function
-  return sortedCardData;
+  const sortedCardArray = cardsArray.sort(randomValues); //withot () calls out the entire function
+  return sortedCardArray;
 }
 
 console.log(randomizeCardDeck()); //outputs and array
 
 /** 
  * Create 16 cards within the game-container section
- */
-function generateHtmlCards() {
-  const sortedCardData = randomizeCardDeck();
+ * */
 
-  for (item = 0; item <= sortedCardData.length; item++) {
-    //Create the elements
-    const memoryCard = document.createElement("div");
-    const cardFront = document.createElement("img");
-    const cardBack = document.createElement("div");
-    //Add clases to them
-    memoryCard.classList.add("card");
-    cardFront.classList.add("face");
-    cardBack.classList.add("back");
+const sortedCardArray = randomizeCardDeck();
+sortedCardArray.forEach((item, index) => {
+  //Create the elements
+  const memoryCard = document.createElement("div");
+  const cardFront = document.createElement("img");
+  const cardBack = document.createElement("div");
 
-    const gameContainer = document.getElementById("game-container");
+  //Add clases to them
+  memoryCard.classList.add("card");
+  //cardFront.classList.add("face");
+  cardFront.classList = "face";
+  cardBack.classList.add("back");
 
-    gameContainer.appendChild(memoryCard);
-    memoryCard.appendChild(cardFront);
-    memoryCard.appendChild(cardBack);
+  gameContainer.appendChild(memoryCard);
+  memoryCard.appendChild(cardFront);
+  memoryCard.appendChild(cardBack);
 
-    console.log(memoryCard);
-  };
-}
+  //Add image value to the face
+  cardFront.src = item.imgSrc;
 
-generateHtmlCards();
+  // Set id and data-id attributes
+  const idValue = String(index); // Convert index to a string
+  memoryCard.id = idValue; // Example: "0", "1", ..., "15"
+  memoryCard.setAttribute("data-id", idValue);
 
-
-/**cardData.forEach((item) => {
-
-  //Add classes to the created elements
-  card.classList = "card";
-  face.classList = "face";
-  back.classList = "back";
-
-  //Add image info to the cards
-  face.src = item.imgSrc;
-
-  //Add attributes to the created elements
-  card.setAttribute("name", item.name);
-
-  //Add attributes to the created elements
-  face.setAttribute("alt", item.alt);
-
-  //console.log(item); //Each array object consoled separately
-
-  //Append the cards to the section 
-  section.appendChild(card);
-  card.appendChild(face);
-  card.appendChild(back);
-
-  //Add event listener
-  card.addEventListener("click", (e) => {
-    card.classList.toggle("toggleCard"); //animation
-
-    //Every time we toggle the card, we check the card
-    checkCards(e);
-  });
-});*/
+  console.log(memoryCard);
+});

@@ -121,28 +121,28 @@ const cardGenerator = () => {
   //Generate the HTML 16 times
   cardData.forEach((item) => {
     const card = document.createElement("div");
-    const face = document.createElement("img");
+    const frontCard = document.createElement("img");
     const back = document.createElement("div");
 
     //Add classes to the created elements
     card.classList = "card";
-    face.classList = "face";
+    frontCard.classList = "face";
     back.classList = "back";
 
     //Add image info to the cards
-    face.src = item.imgSrc;
+    frontCard.src = item.imgSrc;
 
     //Add attributes to the created elements
     card.setAttribute("name", item.name);
 
     //Add attributes to the created elements
-    face.setAttribute("alt", item.alt);
+    frontCard.setAttribute("alt", item.alt);
 
     //console.log(item); //Each array object consoled separately
 
     //Append the cards to the section 
     section.appendChild(card);
-    card.appendChild(face);
+    card.appendChild(frontCard);
     card.appendChild(back);
 
     //Add event listener
