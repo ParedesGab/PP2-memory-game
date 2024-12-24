@@ -109,7 +109,7 @@ const randomize = () => {
   const cardData = getData();
   cardData.sort(() => Math.random() - 0.5);
   return cardData;
-  //console.log(cardData);
+  console.log(cardData);
 };
 
 randomize();

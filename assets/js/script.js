@@ -1,190 +1,102 @@
-// Global variables (include them in functions later)
-//let emojis = ["😊", "😊", "😂", "😂", "❤️", "❤️", "😁", "😁", "😘", "😘", "😎", "😎", "🤩", "🤩", "😶‍🌫️", "😶‍🌫️"];
-let emojis = [1, 1, 2, 2, 3, 3, 4, 4, 5, 5, 6, 6, 7, 7, 8, 8, ];
+const getData = () => [{
+    imgSrc: "assets/images/dice.png",
+    name: "dice",
+    alt: "dice"
+  },
+  {
+    imgSrc: "assets/images/dice.png",
+    name: "dice",
+    alt: "dice"
+  },
+  {
+    imgSrc: "assets/images/witch.png",
+    name: "witch",
+    alt: "witch"
+  },
+  {
+    imgSrc: "assets/images/witch.png",
+    name: "witch",
+    alt: "witch"
+  },
+  {
+    imgSrc: "assets/images/crystal.png",
+    name: "crystal",
+    alt: "crystal"
+  },
+  {
+    imgSrc: "assets/images/crystal.png",
+    name: "crystal",
+    alt: "crystal"
+  },
+  {
+    imgSrc: "assets/images/woman.png",
+    name: "woman",
+    alt: "woman"
+  },
+  {
+    imgSrc: "assets/images/woman.png",
+    name: "woman",
+    alt: "woman"
+  },
+  {
+    imgSrc: "assets/images/house.png",
+    name: "house",
+    alt: "house"
+  },
+  {
+    imgSrc: "assets/images/house.png",
+    name: "house",
+    alt: "house"
+  },
+  {
+    imgSrc: "assets/images/ball.png",
+    name: "ball",
+    alt: "crystal-ball"
+  },
+  {
+    imgSrc: "assets/images/ball.png",
+    name: "ball",
+    alt: "crystal-ball"
+  },
+  {
+    imgSrc: "assets/images/moon.png",
+    name: "moon",
+    alt: "moon"
+  },
+  {
+    imgSrc: "assets/images/moon.png",
+    name: "moon",
+    alt: "moon"
+  },
+  {
+    imgSrc: "assets/images/unicorn.png",
+    name: "unicorn",
+    alt: "unicorn"
+  },
+  {
+    imgSrc: "assets/images/unicorn.png",
+    name: "unicorn",
+    alt: "unicorn"
+  },
+];
+const data = getData();
+console.log(data);
 
-let flippedCards = 0; // this variable will increase by 1 every time an user clicks a button
-let firstCard = null;
-let secondCard = null;
-let revealedCard = null;
-let firstResult = null;
-let secondResult = null;
-
-/**Function that generates negative and positive random numbers between -0.5 and 0.5 */
-function randomValues(a, b) {
-  let randomNumber = Math.random() - 0.5;
+/**
+ * Function that generates negative and positive random numbers between -0.5 and 0.5
+ */
+function randomValues() {
+  const randomNumber = Math.random() - 0.5;
   return randomNumber; // random numbers between -0.5 and 0.5
 }
 
-/** Function that sorts an array randomly by comparing two elements of the array (a and b)
- * Together with randomValues, they check which comes first, if a or b.*/
-function sortEmojis(emojis) {
-  let sortedEmojis = emojis.sort(randomValues); //withot () calls out the entire function
-  return sortedEmojis;
+/** 
+ * Function that sorts the array randomly
+ */
+function randomize() {
+  const cardData = getData();
+  let sortedCardData = cardData.sort(randomValues); //withot () calls out the entire function
+  return sortedCardData;
 }
 
-emojis = sortEmojis(emojis);
-console.log(emojis); // this is the randomly sorted array
-console.log("----");
-
-/** Create 16 button cards with class name "btn" and id string values from 0 to 15 */
-for (let i = 0; i < emojis.length; i++) {
-  let buttonCard = document.createElement("button");
-  buttonCard.classList.add("btn");
-
-  let idValue = String(i); //Convert i to a string
-  buttonCard.id = idValue; // Return the id: "0", "1"... "15"
-
-  // ADD ARIA-LABEL to button cards!
-
-  let buttonContainer = document.getElementById("container-cards");
-  buttonContainer.appendChild(buttonCard);
-  //console.log(buttonCard);
-}
-
-// Code to be executed when the DOM finishes loading
-document.addEventListener("DOMContentLoaded", function () {
-
-  //Get all buttons for them to be clicked
-  let allButtons = document.getElementsByTagName("button");
-  //console.log(allButtons); // Returns 17 buttons as an array. 
-
-  for (let button of allButtons) {
-    //console.log(button); // Returns individually each button (including the submit button) 
-    button.addEventListener("click", function () { //when a button is clicked, the code that is inside this function will run.
-      if (this.getAttribute("id") === "submit") {
-        //alert("you clicked submit");
-        location.reload();
-      } else {
-        let cardNumber = this.getAttribute("id");
-        //alert(`You clicked ${cardNumber}`);
-        flippTheCards(cardNumber);
-      }
-    });
-  }
-});
-
-/** Main function to handle card flipping logic (code to be executed when user clicks a button)*/
-function flippTheCards(cardNumber) {
-  //flippedCards++;
-  //console.log(flippedCards); //allows you to see the increase in the console!  // Note, "return" is not needed because you do not want the function to provide a value but rather to perform an action (i.e., of increasing the amount of flipped cards)
-
-  // Handle the first card
-  if (flippedCards === 0) {
-    revealedCard = revealCard(cardNumber);
-    firstCard = revealedCard[0];
-    firstResult = revealedCard[1];
-    console.log(firstCard);
-    console.log(firstResult);
-    flippedCards++;
-    console.log(flippedCards);
-
-    /*firstCard = document.getElementById(cardNumber);
-    firstResult = emojis[cardNumber];
-    firstCard.innerHTML = firstResult;
-
-    firstCard.disabled = true; //No matter how many times you click on the first card the flippedCards number should stay in 1*/
-
-    // Handle the second  card
-  } else if (flippedCards === 1) {
-
-    revealedCard = revealCard(cardNumber);
-    secondCard = revealedCard[0];
-    secondResult = revealedCard[1];
-    console.log(secondCard);
-    console.log(secondResult);
-    flippedCards++;
-    console.log(flippedCards);
-
-    /*secondCard = document.getElementById(cardNumber);
-    secondResult = emojis[cardNumber];
-    secondCard.innerHTML = secondResult;
-
-    secondCard.disabled = true;*/
-
-    //Decrease number of chances
-    decreaseChances();
-
-    //After the user clicked on the 2nd card, check if there is a match or not
-    if (firstResult === secondResult) {
-      flippedCards = 0; // Reset the flipped cards count
-
-      //Increment the score
-      incrementScore();
-      //decreaseChances();
-
-    } else { //  cover the results after a certain amount of time (setTimeout)
-      //alert("not a match");
-
-      setTimeout(checkNoMatch, 1000); //call the entire function and reset unmatched cards after 1.2s.*/
-    }
-  }
-}
-
-/** Function that will flip a card and reveal its content. It will return an array*/
-function revealCard(cardNumber) {
-  //get the card by Id
-  let card = document.getElementById(cardNumber);
-
-  //Store the inner content in the variable "result"
-  let result = emojis[cardNumber];
-  //card.innerHTML = result;
-  card.innerHTML = `<img src="assets/images/${result}.png" alt ="crystal">`;
-  //Once it was clicked, it cannot be clicked again
-  card.disabled = true;
-  return [
-    card, // e.g., <button class="btn" id="1"></button>
-    result // 🤩  
-  ];
-}
-
-/** Function to reset unmatched cards*/
-function checkNoMatch() {
-  //empty the cards
-  firstCard.innerHTML = "";
-  secondCard.innerHTML = "";
-
-  //unable the cards so they can again be clicked
-  firstCard.disabled = false;
-  secondCard.disabled = false;
-
-  // Reset the flipped cards coun
-  flippedCards = 0;
-}
-
-/** Function to decrease the chances left */
-function decreaseChances() {
-  let oldChance = parseInt(document.getElementById("chances").innerText);
-  document.getElementById("chances").innerText = --oldChance; // Starts with 50
-  //document.getElementById("chances").innerText = `Chances: ${oldChance++}`;
-  //document.getElementById("chances").innerHTML = --oldChance;
-  //document.getElementById("chances").innerHTML = `Chances: ${oldChance++}`;
-  if (oldChance === 0) {
-    blockCards();
-    throw `GAME OVER! Aborting!`;
-    //alert("🤖🤖🤖: Sorry, Game over!");
-
-    //location.reload();
-    //throw `Game over: Aborting!`;
-  }
-}
-
-/** Function to increment the score every time there is a match */
-function incrementScore() {
-  let oldScore = parseInt(document.getElementById("score").innerText);
-  //document.getElementById("score").innerText = ++oldScore;
-  document.getElementById("score").innerText = oldScore += 100;
-  if (oldScore === 800) {
-    document.getElementById("score").innerText = `🎉 800! 🎉`;
-    //alert("Congratulations AI Wizard!!!👌🤖");
-  }
-}
-
-/** Function to block all cards at the end of the game */
-function blockCards() {
-  for (let j = 0; j <= 15; j++) {
-    let blockedCard = document.getElementById(j);
-    let result2 = emojis[j];
-    blockedCard.innerHTML = `<img src ="assets/images/${result2}.png" alt="">`;
-    blockedCard.disabled = true;
-  }
-}
+console.log(randomize());
