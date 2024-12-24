@@ -18,7 +18,7 @@ const playerLivesCount = document.querySelector("span");
 const playerLives = 6;
 
 //Link text
-playerLivesCount.textContent = playerLives;
+//playerLivesCount.textContent = playerLives;
 
 //Generate the array containing the card images as objects
 const getData = () => [{
@@ -109,7 +109,6 @@ const randomize = () => {
   const cardData = getData();
   cardData.sort(() => Math.random() - 0.5);
   return cardData;
-  console.log(cardData);
 };
 
 randomize();
