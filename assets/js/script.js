@@ -120,23 +120,30 @@ console.log(shuffledCardDeck); //outputs a randomly sorted array
 /** 
  * Create 16 button cards with class name "btn" and id string values from 0 to 15 
  */
-function createButtonCards() {
+function createMemoryCards() {
   for (let i = 0; i < shuffledCardDeck.length; i++) {
-    const buttonCard = document.createElement("button");
-    buttonCard.classList.add("btn");
+    //Create a memory card
+    const memoryCard = document.createElement("button");
+    memoryCard.classList.add("btn");
 
+    //Assing them the attributes id and data-id
     const idValue = String(i); // Convert i to a string
-    buttonCard.id = idValue; // Assign the id: "0", "1", ..., "15"
+    memoryCard.id = idValue; // Assign the id: "0", "1", ..., "15"
+    memoryCard.setAttribute("data-id", idValue);
+
+    // // Set aria label attribute
+    const ariaIndex = i + 1;
+    memoryCard.setAttribute("aria-label", `memory card ${ariaIndex}`);
 
     const gameContainer = document.getElementById("game-container");
-    gameContainer.appendChild(buttonCard);
+    gameContainer.appendChild(memoryCard);
   };
 }
 
 // Code to be executed when the DOM finishes loading
 document.addEventListener("DOMContentLoaded", function () {
 
-  createButtonCards();
+  createMemoryCards();
   // Get all buttons for them to be clicked
   const allButtons = document.getElementsByTagName("button");
 
