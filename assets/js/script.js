@@ -1,6 +1,19 @@
 //Game container
 const gameContainer = document.getElementById("game-container");
 
+//Game variables 
+const flippedCards = 0;
+let firstCard = null;
+let secondCard = null;
+let revealedCard = null;
+let firstResult = null;
+let secondResult = null;
+
+/**let firstCardNumber = 0; // Number
+let firstCardSuit = ""; // String
+let deck = []; // Array
+let cardDetails = {}; // Object*/
+
 /**
  * Generates the array containing the card images as objects with alt and name attributes
  */
@@ -88,16 +101,18 @@ function cardDeckArray() {
   ];
 }
 
+const cardDeck = cardDeckArray(); //g -
+
 /**
- * Generates negative and positive random numbers between -0.5 and 0.5
+ * Function that generates random values between -0.5 and 0.5
  */
-function randomValues() {
+function randomValues(a, b) {
   const randomNumber = Math.random() - 0.5;
   return randomNumber; // random numbers between -0.5 and 0.5
 }
 
 /** 
- * Sorts the array randomly
+ * Function that sorts the card deck randomly
  */
 function randomizeCardDeck() {
   const cardsArray = cardDeckArray();
@@ -162,12 +177,87 @@ document.addEventListener("DOMContentLoaded", function () {
     memoryCard.addEventListener("click", function () { //when a button is clicked, the code that is inside this function will run.
       const cardId = this.getAttribute("id");
       if (cardId === "submit") {
+        const cardId = this.getAttribute("id");
         alert("you clicked submit");
         //location.reload(); // Reload the page if the "submit" card is clicked
       } else {
-        alert(`You clicked ${cardId}`);
-        //flippTheCards(cardId)
+        const cardId = this.getAttribute("id");
+        //alert(`You clicked ${cardId}`);
+        revealCard(cardId)
+        //flippTheCards(cardId);
       }
     });
   }
 });
+
+/** 
+ * Main function to handle card flipping logic (code to be executed when user clicks a button)
+ */
+function flippTheCards(cardId) {
+  //flippedCards++;
+  //console.log(flippedCards); //allows you to see the increase in the console!  // Note, "return" is not needed because you do not want the function to provide a value but rather to perform an action (i.e., of increasing the amount of flipped cards)
+
+  // Handle the first card
+  if (flippedCards === 0) {
+    const revealedCard1 = revealCard(cardId);
+    const firstCard = revealedCard1[0];
+    const firstResult = revealedCard1[1];
+
+    console.log(firstCard);
+    console.log(firstResult);
+    flippedCards++;
+    console.log(flippedCards);
+
+    // Handle the second  card
+  } else if (flippedCards === 1) {
+
+    const revealedCard2 = revealCard(cardId);
+    const secondCard = revealedCard2[0];
+    const secondResult = revealedCard2[1];
+
+    console.log(secondCard);
+    console.log(secondResult);
+    flippedCards++;
+    console.log(flippedCards);
+
+    //Decrease number of chances
+    decreaseChances();
+
+    //After the user clicked on the 2nd card, check if there is a match or not
+    if (firstResult === secondResult) {
+      flippedCards = 0; // Reset the flipped cards count
+
+      //Increment the score
+      incrementScore();
+      //decreaseChances();
+
+    } else { //  cover the results after a certain amount of time (setTimeout)
+      //alert("not a match");
+
+      setTimeout(checkNoMatch, 1000); //call the entire function and reset unmatched cards after 1.2s.
+    }
+  }
+}
+
+/** 
+ * Function that will flip a card and reveal its content, returning an array.
+ */
+function revealCard(cardId) {
+  const sortedCardArray = randomizeCardDeck();
+
+  //Get the card by Id
+  let card = document.getElementById(cardId);
+
+  //Store the inner content in the variable "result"
+  let result = sortedCardArray[cardId];
+
+  //card.innerHTML = result;
+  //card.innerHTML = `<img src="${result.imgSrc}" alt="${result.alt}">`;
+
+  //Once it was clicked, it cannot be clicked again
+  card.disabled = true;
+  return [
+    card, // e.g., <button class="btn" id="1"></button>
+    result // 🤩  
+  ];
+}
