@@ -110,30 +110,62 @@ console.log(randomizeCardDeck()); //outputs and array
  * Create 16 cards within the game-container section
  * */
 
-const sortedCardArray = randomizeCardDeck();
-sortedCardArray.forEach((item, index) => {
-  //Create the elements
-  const memoryCard = document.createElement("div");
-  const cardFront = document.createElement("img");
-  const cardBack = document.createElement("div");
+function generateCards() {
+  const sortedCardArray = randomizeCardDeck();
 
-  //Add clases to them
-  memoryCard.classList.add("card");
-  //cardFront.classList.add("face");
-  cardFront.classList = "face";
-  cardBack.classList.add("back");
+  sortedCardArray.forEach((item, index) => {
+    //Create the elements
+    const memoryCard = document.createElement("div");
+    const cardFront = document.createElement("img");
+    const cardBack = document.createElement("div");
 
-  gameContainer.appendChild(memoryCard);
-  memoryCard.appendChild(cardFront);
-  memoryCard.appendChild(cardBack);
+    //Add clases to them
+    memoryCard.classList.add("card");
+    cardFront.classList = "face";
+    cardBack.classList.add("back");
 
-  //Add image value to the face
-  cardFront.src = item.imgSrc;
+    gameContainer.appendChild(memoryCard);
+    memoryCard.appendChild(cardFront);
+    memoryCard.appendChild(cardBack);
 
-  // Set id and data-id attributes
-  const idValue = String(index); // Convert index to a string
-  memoryCard.id = idValue; // Example: "0", "1", ..., "15"
-  memoryCard.setAttribute("data-id", idValue);
+    //Add image value to the face
+    cardFront.src = item.imgSrc;
 
-  console.log(memoryCard);
+    // Set id and data-id attributes
+    const idValue = String(index); // Convert index to a string
+    memoryCard.id = idValue; // Example: "0", "1", ..., "15"
+    memoryCard.setAttribute("data-id", idValue);
+    memoryCard.setAttribute("name", item.name);
+    cardFront.setAttribute("alt", item.alt);
+
+    console.log(memoryCard);
+  });
+
+}
+
+// Code to be executed when the DOM finishes loading
+document.addEventListener("DOMContentLoaded", function () {
+
+  generateCards();
+  //Get all memory cards for them to be clicked
+  const allMemoryCards = document.getElementsByClassName("card");
+
+  console.log(allMemoryCards); //Returns all cards an array. 
+  //Log to confirm the cards have been created
+  console.log(`Total memory cards found: ${allMemoryCards.length}`);
+
+  for (const memoryCard of allMemoryCards) {
+    //console.log(memoryCard); // Returns individually each card
+
+    memoryCard.addEventListener("click", function () { //when a button is clicked, the code that is inside this function will run.
+      const cardId = this.getAttribute("id");
+      if (cardId === "submit") {
+        alert("you clicked submit");
+        //location.reload(); // Reload the page if the "submit" card is clicked
+      } else {
+        alert(`You clicked ${cardId}`);
+        //flippTheCards(cardId)
+      }
+    });
+  }
 });
