@@ -91,11 +91,11 @@ function cardDeckArray() {
 // Game variables 
 const cardDeck = cardDeckArray(); // Call the function to get the array of card objects
 let flippedCards = 0; // This variable will increase by 1 every time a user clicks a card
-let firstCard = null;
-let secondCard = null;
+let firstCard;
+let secondCard;
 let revealedCard = null;
-let firstResult = null;
-let secondResult = null;
+let firstResult = {};
+let secondResult = {};
 
 /** 
  * Function that generates random values between -0.5 and 0.5 
@@ -145,40 +145,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
   createMemoryCards();
   // Get all buttons for them to be clicked
-  const allButtons = document.getElementsByTagName("button");
+  const allMemoryCards = document.getElementsByTagName("button");
 
-  for (const button of allButtons) {
-    button.addEventListener("click", function () {
-      if (this.getAttribute("id") === "submit") {
+  for (const memoryCard of allMemoryCards) {
+    memoryCard.addEventListener("click", function () {
+      const cardIdNumber = this.getAttribute("id")
+      if (cardIdNumber === "submit") {
         location.reload();
       } else {
-        const cardNumber = this.getAttribute("id");
-        flippTheCards(cardNumber);
+        //const cardIdNumber = this.getAttribute("id");
+        handleCardFlip(cardIdNumber);
       }
     });
   }
 });
 
-
-/** Main function to handle card flipping logic */
-function flippTheCards(cardNumber) {
+/** 
+ * Main function to handle card flipping logic 
+ */
+function handleCardFlip(cardIdNumber) {
   // Handle the first card
   if (flippedCards === 0) {
-    revealedCard = revealCard(cardNumber);
+    revealedCard = revealCard(cardIdNumber);
     firstCard = revealedCard[0];
     firstResult = revealedCard[1];
     console.log(firstCard);
     console.log(firstResult);
+
     flippedCards++;
     console.log(flippedCards);
 
     // Handle the second card
   } else if (flippedCards === 1) {
-    revealedCard = revealCard(cardNumber);
+    revealedCard = revealCard(cardIdNumber);
     secondCard = revealedCard[0];
     secondResult = revealedCard[1];
     console.log(secondCard);
     console.log(secondResult);
+
     flippedCards++;
     console.log(flippedCards);
 
@@ -192,24 +196,27 @@ function flippTheCards(cardNumber) {
   }
 }
 
-/** Function to flip a card and reveal its content */
-function revealCard(cardNumber) {
-  // Get the card by ID
-  const card = document.getElementById(cardNumber);
+/** 
+ * Function to reveal the content of a memory card and prevent it
+ * to be further clicked
+ */
+function revealCard(cardIdNumber) {
+  // Get a memory card by its ID
+  const memoryCardByID = document.getElementById(cardIdNumber);
 
-  // Get the card details from the deck (imgSrc, name, alt)
-  const cardDetails = shuffledCardDeck[cardNumber];
+  // Add to a memory card properties of the randomly sorted card deck array 
+  const cardObjectDetails = shuffledCardDeck[cardIdNumber];
+  memoryCardByID.innerHTML = `<img src="${cardObjectDetails.imgSrc}" alt="${cardObjectDetails.alt}">`;
 
-  // Set the inner HTML of the card to display the image
-  card.innerHTML = `<img src="${cardDetails.imgSrc}" alt="${cardDetails.alt}">`;
+  // Disable the card after it is clicked so it cannot be clicked again
+  memoryCardByID.disabled = true;
 
-  // Disable the card after it is clicked
-  card.disabled = true;
-
-  return [card, cardDetails]; // Return the card and its details
+  return [memoryCardByID, cardObjectDetails]; // Return the button card and an object of the array
 }
 
-/** Function to reset unmatched cards */
+/** 
+ * Function to reset unmatched cards
+ */
 function checkNoMatch() {
   firstCard.innerHTML = "";
   secondCard.innerHTML = "";
