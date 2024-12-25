@@ -1,7 +1,8 @@
+//Game container
 const gameContainer = document.getElementById("game-container");
 
 /**
- * Generate the array containing the card images as objects
+ * Generates the array containing the card images as objects with alt and name attributes
  */
 function cardDeckArray() {
   return [{
@@ -88,7 +89,7 @@ function cardDeckArray() {
 }
 
 /**
- * Function that generates negative and positive random numbers between -0.5 and 0.5
+ * Generates negative and positive random numbers between -0.5 and 0.5
  */
 function randomValues() {
   const randomNumber = Math.random() - 0.5;
@@ -96,7 +97,7 @@ function randomValues() {
 }
 
 /** 
- * Function that sorts the array randomly
+ * Sorts the array randomly
  */
 function randomizeCardDeck() {
   const cardsArray = cardDeckArray();
@@ -108,7 +109,7 @@ console.log(randomizeCardDeck()); //outputs and array
 
 /** 
  * Create 16 cards within the game-container section
- * */
+ */
 
 function generateCards() {
   const sortedCardArray = randomizeCardDeck();
@@ -124,6 +125,7 @@ function generateCards() {
     cardFront.classList = "face";
     cardBack.classList.add("back");
 
+    //Append the elements
     gameContainer.appendChild(memoryCard);
     memoryCard.appendChild(cardFront);
     memoryCard.appendChild(cardBack);
@@ -150,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
   //Get all memory cards for them to be clicked
   const allMemoryCards = document.getElementsByClassName("card");
 
-  console.log(allMemoryCards); //Returns all cards an array. 
+  //console.log(allMemoryCards); //Returns all cards an array. 
   //Log to confirm the cards have been created
   console.log(`Total memory cards found: ${allMemoryCards.length}`);
 
