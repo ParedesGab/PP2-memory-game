@@ -240,15 +240,17 @@ function checkNoMatch() {
  * Function to track the number of movements made by the user decreaseChances
  */
 function incrementMovements() {
-  let userMovements = parseInt(document.getElementById("movements").innerText);
-  document.getElementById("movements").innerText = ++userMovements; // Starts with 0
+  const currentMovement = parseInt(document.getElementById("movements").innerText); // Starts with 0
+  const updatedUserMovements = currentMovement + 1; //Add one movement every time the user clicks
+  document.getElementById("movements").innerText = ` ${updatedUserMovements}`;
 }
 
-/** Function to increment the score every time there is a match */
+/** 
+ * Function to increment the score every time there is a match 
+ */
 function incrementScore() {
   let oldScore = parseInt(document.getElementById("score").innerText);
-  //document.getElementById("score").innerText = ++oldScore;
-  document.getElementById("score").innerText = oldScore += 100;
+  document.getElementById("score").innerText = ` ${oldScore += 100} `;
   if (oldScore === 800) {
     document.getElementById("score").innerText = `🎉 800! 🎉`;
     //alert("Congratulations AI Wizard!!!👌🤖");
