@@ -276,53 +276,29 @@ function endTheGame() {
   const finalMovements = parseInt(document.getElementById("movements").innerText);
   document.getElementById("total-movements").innerText = finalMovements;
 
-  //Set the menu screen to the game result
-  changeMenu(MENU.CONGRATULATIONS);
-
   // Show final board for 2 seconds, then display the game result
   setTimeout(function () {
-    show("main-container");
     hide("game-container");
+    hide("controls");
+    show("main-container");
+    show("game-done-congratulations");
+
   }, 2000);
 }
 
-function changeMenu(menuId) {
-  // Find all menu elements
-  let menuElements = document.getElementById("main-container").children;
-  for (let element of menuElements) {
-    if (element.id === "game-name") {
-      // Always display the game name
-      continue;
-    } else if (element.id === menuId) {
-      // Show selected menu screen
-      element.classList.remove("hidden");
-    } else {
-      // Hide other screens
-      element.classList.add("hidden");
-    }
-  }
-}
-
-/** Show an html element by id */
+/** 
+ * Show an HTML element by removing its class "hidden" 
+ */
 function show(id) {
   document.getElementById(id).classList.remove("hidden");
 }
 
-/** Hide an html by id */
+/** 
+ * Hide an HTML element by adding the class "hidden"
+ */
 function hide(id) {
   document.getElementById(id).classList.add("hidden");
 }
-
-/** Show main menu screen */
-function showMainMenu() {
-  changeMenu(MENU.MAIN);
-}
-
-/** Show the how to play screen */
-function showHowToPlay() {
-  changeMenu(MENU.HOWTOPLAY);
-}
-
 
 /** Function to block all cards at the end of the game 
 function blockCards() {

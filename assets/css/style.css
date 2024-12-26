@@ -114,7 +114,7 @@ button:hover {
 
 /* Section3: Control Area */
 
-.controls {
+#controls {
   display: flex;
   background-color: rgb(225, 225, 225, 0.65);
   box-shadow: 0 1px 10px 3px #f9f9fa;
