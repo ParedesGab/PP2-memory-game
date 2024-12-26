@@ -15,39 +15,51 @@
   <!-- Main content -->
   <main>
     <section class="container">
+      <!-- Heading -->
       <div>
         <h1>Deep Match </h1>
         <h2>The AI Memory Game!</h2>
       </div>
 
       <!-- Home Menu -->
-      <!--section id="home-menu">
+      <div id="home-menu" class="hidden">
         <button onclick="newGame()">New Game</button>
         <button onclick="gameIndications()">Game indications</button>
-      </section-->
+      </div>
 
-      <!-- Memory Game -->
-      <section class="game" id="game-container">
-        <!-- Cards added through JS -->
-      </section>
+      <!-- Game Result -->
+      <div id="game-result" class="hidden">
+        <h3>Well Done!</h3>
+        <p>You finished the game</p>
+        <p>in <span id="final-time"></span> seconds</p>
+        <p>with <span id="final-moves"></span> moves</p>
+        <button onclick="selectTheme()">Play Again</button>
+        <button onclick="showMainMenu()">Main Menu</button>
+      </div>
+    </section>
 
-      <!-- Control Area -->
-      <section class="controls">
+    <!-- Memory Game -->
+    <section class="game" id="game-container">
+      <!-- Cards added through JS -->
+    </section>
 
-        <div class="score-area">
-          <p class="scores">Movements:<span id="movements"> 0</span>
-          </p>
-          <p class="scores">Score:<span id="score"> 0</span>
-          </p>
-        </div>
+    <!-- Control Area -->
+    <section class="controls">
 
-        <!-- Restart button -->
-        <div>
-          <button class="card btn--restart" id="submit">Restart Game</button>
-        </div>
-      </section>
+      <div class="score-area">
+        <p class="scores">Movements:<span id="movements"> 0</span>
+        </p>
+        <p class="scores">Score:<span id="score"> 0</span>
+        </p>
+      </div>
 
-      <!-- Game indications 
+      <!-- Restart button -->
+      <div>
+        <button class="card btn--restart" id="submit">Restart Game</button>
+      </div>
+    </section>
+
+    <!-- Game indications 
 
       <div id="game-indications class="hidden">
           <div>
@@ -60,8 +72,8 @@
         <button class="secondary-button" onclick="showMainMenu()"><i class="fa-solid fa-left-long"></i></button>
       </div-->
 
-      <!-- Game Result -->
-      <!--div id="game-result" class="hidden">
+    <!-- Game Result -->
+    <!--div id="game-result" class="hidden">
         <h3>Well Done!</h3>
         <p>You finished the game</p>
         <p>with <span id="final-moves"></span> moves</p>

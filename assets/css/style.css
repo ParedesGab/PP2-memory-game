@@ -20,6 +20,10 @@
   --highlight-color-light: #9984e2;
 }
 
+.hidden {
+  display: none !important;
+}
+
 /* Global styles */
 body {
   min-height: 100vh;

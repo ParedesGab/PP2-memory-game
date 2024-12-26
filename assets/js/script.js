@@ -1,6 +1,15 @@
 // Game container
 const gameContainer = document.getElementById("game-container");
 
+// Ids of the menu elements
+const MENU = {
+  MAIN: "menu-buttons",
+  THEME: "theme-buttons",
+  HIGHSCORE: "high-score-menu",
+  RESULT: "game-result",
+  HOWTOPLAY: "how-to-play"
+};
+
 /**
  * Generates the array containing the card images as objects with alt and name attributes
  */
@@ -255,10 +264,12 @@ function incrementScore() {
   document.getElementById("score").innerText = ` ${updatedUserScore}`;
   if (updatedUserScore === 800) {
     document.getElementById("score").innerText = `🎉 800! 🎉`;
+
+    //Function you have WON
   }
 }
 
-/** Function to block all cards at the end of the game */
+/** Function to block all cards at the end of the game 
 function blockCards() {
   for (let j = 0; j <= 15; j++) {
     let blockedCard = document.getElementById(j);
@@ -266,4 +277,12 @@ function blockCards() {
     blockedCard.innerHTML = `<img src ="assets/images/${result2}.png" alt="">`;
     blockedCard.disabled = true;
   }
+}*/
+
+/** 
+ * Function to show the congratulations message and score summary
+ */
+
+function congratulationsGameCompleted() {
+
 }
