@@ -91,9 +91,9 @@ function cardDeckArray() {
 // Game variables 
 const cardDeck = cardDeckArray(); // Call the function to get the array of card objects
 let flippedCards = 0; // This variable will increase by 1 every time a user clicks a card
-let firstCard;
-let secondCard;
-let revealedCard = null;
+let firstCard; //html element: <button ...></button>
+let secondCard; //html element: <button ...></button>
+let revealedCard; //html element: <button ...></button>
 let firstResult = {};
 let secondResult = {};
 
@@ -169,10 +169,12 @@ function handleCardFlip(cardIdNumber) {
     revealedCard = revealCard(cardIdNumber);
     firstCard = revealedCard[0];
     firstResult = revealedCard[1];
-    console.log(firstCard);
-    console.log(firstResult);
+
+    console.log(firstCard); // <button ...></button>
+    console.log(firstResult); // {object of the array}
 
     flippedCards++;
+
     console.log(flippedCards);
 
     // Handle the second card
@@ -180,13 +182,15 @@ function handleCardFlip(cardIdNumber) {
     revealedCard = revealCard(cardIdNumber);
     secondCard = revealedCard[0];
     secondResult = revealedCard[1];
+
     console.log(secondCard);
     console.log(secondResult);
 
     flippedCards++;
+
     console.log(flippedCards);
 
-    // Check if the cards match
+    // Check if the cards match based on the property name
     if (firstResult.name === secondResult.name) {
       flippedCards = 0; // Reset the flipped cards count
       incrementScore();
@@ -197,8 +201,8 @@ function handleCardFlip(cardIdNumber) {
 }
 
 /** 
- * Function to reveal the content of a memory card and prevent it
- * to be further clicked
+ * Function to reveal the content of a memory card 
+ * and prevent it to be further clicked
  */
 function revealCard(cardIdNumber) {
   // Get a memory card by its ID
@@ -227,12 +231,6 @@ function checkNoMatch() {
 
   // Reset the flipped cards count
   flippedCards = 0;
-}
-
-/** Increment score (this function should be implemented separately) */
-function incrementScore() {
-  // Increment the score by 1 or handle score updating logic here
-  console.log("Score incremented!");
 }
 
 /** Function to decrease the chances left */
