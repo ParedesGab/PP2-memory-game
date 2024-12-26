@@ -264,56 +264,38 @@ function incrementScore() {
     document.getElementById("score").innerText = `🎉 800! 🎉`;
 
     //If score is 800 (all cards are matched) --> end the game
-    endTheGame();
+    gameFinishedCongratulations();
   }
 }
 
 /** 
  * Congratulates the user after finishing the game and displays the number of movements.
  */
-function endTheGame() {
+function gameFinishedCongratulations() {
 
   const finalMovements = parseInt(document.getElementById("movements").innerText);
   document.getElementById("total-movements").innerText = finalMovements;
 
   // Show final board for 2 seconds, then display the game result
   setTimeout(function () {
-    hide("game-container");
-    hide("controls");
-    show("main-container");
-    show("game-done-congratulations");
+    hideHtmlElement("game-container");
+    hideHtmlElement("controls");
+    showHtmlElement("main-container");
+    showHtmlElement("game-done-congratulations");
 
-  }, 2000);
+  }, 1500);
 }
 
 /** 
- * Show an HTML element by removing its class "hidden" 
+ * Displays an HTML element by removing the"hidden" class from it
  */
-function show(id) {
+function showHtmlElement(id) {
   document.getElementById(id).classList.remove("hidden");
 }
 
 /** 
- * Hide an HTML element by adding the class "hidden"
+ * Hides an HTML element by adding the "hidden" to it
  */
-function hide(id) {
+function hideHtmlElement(id) {
   document.getElementById(id).classList.add("hidden");
-}
-
-/** Function to block all cards at the end of the game 
-function blockCards() {
-  for (let j = 0; j <= 15; j++) {
-    let blockedCard = document.getElementById(j);
-    let result2 = emojis[j];
-    blockedCard.innerHTML = `<img src ="assets/images/${result2}.png" alt="">`;
-    blockedCard.disabled = true;
-  }
-}*/
-
-/** 
- * Function to show the congratulations message and score summary
- */
-
-function congratulationsGameCompleted() {
-
 }
