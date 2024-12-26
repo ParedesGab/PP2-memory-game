@@ -1,11 +1,11 @@
 // Game container
 const gameContainer = document.getElementById("game-container");
 
-// Ids of the menu elements
+// Ids of the Home elements
 const MENU = {
   MAIN: "home-menu",
-  HOWTOPLAY: "game-indications",
-  RESULT: "game-result",
+  INDICATIONS: "game-indications",
+  CONGRATULATIONS: "game-done-congratulations",
 };
 
 /**
@@ -263,9 +263,66 @@ function incrementScore() {
   if (updatedUserScore === 800) {
     document.getElementById("score").innerText = `🎉 800! 🎉`;
 
-    //Function you have WON
+    //If score is 800 (all cards are matched) --> end the game
+    endTheGame();
   }
 }
+
+/** 
+ * Congratulates the user after finishing the game and displays the number of movements.
+ */
+function endTheGame() {
+
+  const finalMovements = parseInt(document.getElementById("movements").innerText);
+  document.getElementById("total-movements").innerText = finalMovements;
+
+  //Set the menu screen to the game result
+  changeMenu(MENU.CONGRATULATIONS);
+
+  // Show final board for 2 seconds, then display the game result
+  setTimeout(function () {
+    show("main-container");
+    hide("game-container");
+  }, 2000);
+}
+
+function changeMenu(menuId) {
+  // Find all menu elements
+  let menuElements = document.getElementById("main-container").children;
+  for (let element of menuElements) {
+    if (element.id === "game-name") {
+      // Always display the game name
+      continue;
+    } else if (element.id === menuId) {
+      // Show selected menu screen
+      element.classList.remove("hidden");
+    } else {
+      // Hide other screens
+      element.classList.add("hidden");
+    }
+  }
+}
+
+/** Show an html element by id */
+function show(id) {
+  document.getElementById(id).classList.remove("hidden");
+}
+
+/** Hide an html by id */
+function hide(id) {
+  document.getElementById(id).classList.add("hidden");
+}
+
+/** Show main menu screen */
+function showMainMenu() {
+  changeMenu(MENU.MAIN);
+}
+
+/** Show the how to play screen */
+function showHowToPlay() {
+  changeMenu(MENU.HOWTOPLAY);
+}
+
 
 /** Function to block all cards at the end of the game 
 function blockCards() {

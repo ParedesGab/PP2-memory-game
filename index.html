@@ -14,10 +14,18 @@
 <body>
   <!-- Main content -->
   <main>
-    <!-- Main page -->
-    <section class="container">
-      <!-- Game Heading -->
-      <div>
+
+    <!-- Game heading  -->
+    <!--section>
+      <h1></h1>
+      <h2></h2>
+    </section-->
+
+    <!-- Game Home Menu -->
+
+    <!-- Game heading  -->
+    <section id="main-container">
+      <div id="game-name">
         <h1>Deep Match </h1>
         <h2>The AI Memory Game!</h2>
       </div>
@@ -40,19 +48,19 @@
         <button class="secondary-button" onclick="showMainMenu()"><i class="fa-solid fa-left-long"></i></button>
       </div>
 
-      <!-- Game Result -->
-      <div id="game-result" class="hidden">
+      <!-- Game Finished - Congratulations message -->
+      <div id="game-done-congratulations" class="hidden">
         <h3>🎉Score 800! 🎉</h3>
-        <h4>Congratulations AI Wizard!</h4>
+        <h4>Congratulations You, AI Wizard!</h4>
         <p>You finished the game</p>
-        <p>with <span id="total-moves"></span> moves</p>
+        <p>with <span id="total-movements"></span> moves</p>
 
         <button onclick="newGame()">New Game!</button>
         <button onclick="showMainMenu()">Home Menu</button>
       </div>
     </section>
 
-    <!-- Memory Game page -->
+    <!-- Memory Game -->
     <section class="game" id="game-container">
       <!-- Cards added through JS -->
     </section>
@@ -74,48 +82,10 @@
     </section>
 
     </section>
-
-
-
-    <!--section class="container">
-      Memory cards -->
-    <!--div id="container-cards">
-        Button Cards generated with JS
-      </div>
-    </section>
-
-     Section3: Control Area
-    <section class="controls">
-
-      Score area
-      <div class="score-area">
-        <p class="scores">Chances:
-          <span id="chances">50</span>
-        </p>
-        <p class="scores">Score:
-          <span id="score"> 0</span>
-        </p>
-      </div>
-
-      Restart button 
-      <div>
-        <button id="submit" class="btn--restart">Restart Game</button>
-      </div>
-    </section>-->
-
   </main>
-
-  <!-- Footer 
-  <footer id=footer>
-    <div>
-      <p>Developer <i class="fas fa-angle-double-right"></i> <i class="fas fa-angle-double-right"></i>
-        Gabriela F. Paredes
-    </div>
-  </footer-->
 
   <!-- Javascript link-->
   <script src="assets/js/script.js"></script>
-  <!--script src="assets/js/script2.js"></script-->
 
 </body>
 
