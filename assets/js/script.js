@@ -193,9 +193,12 @@ function handleCardFlip(cardIdNumber) {
     // Check if the cards match based on the property name
     if (firstResult.name === secondResult.name) {
       flippedCards = 0; // Reset the flipped cards count
+      incrementMovements();
       incrementScore();
+      movements()
     } else {
       setTimeout(checkNoMatch, 1000); // Reset unmatched cards after 1 second
+      incrementMovements();
     }
   }
 }
@@ -233,21 +236,12 @@ function checkNoMatch() {
   flippedCards = 0;
 }
 
-/** Function to decrease the chances left */
-function decreaseChances() {
-  let oldChance = parseInt(document.getElementById("chances").innerText);
-  document.getElementById("chances").innerText = --oldChance; // Starts with 50
-  //document.getElementById("chances").innerText = `Chances: ${oldChance++}`;
-  //document.getElementById("chances").innerHTML = --oldChance;
-  //document.getElementById("chances").innerHTML = `Chances: ${oldChance++}`;
-  if (oldChance === 0) {
-    blockCards();
-    throw `GAME OVER! Aborting!`;
-    //alert("🤖🤖🤖: Sorry, Game over!");
-
-    //location.reload();
-    //throw `Game over: Aborting!`;
-  }
+/** 
+ * Function to track the number of movements made by the user decreaseChances
+ */
+function incrementMovements() {
+  let userMovements = parseInt(document.getElementById("movements").innerText);
+  document.getElementById("movements").innerText = ++userMovements; // Starts with 0
 }
 
 /** Function to increment the score every time there is a match */
