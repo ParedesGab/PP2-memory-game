@@ -15,7 +15,7 @@
   <!-- Main content -->
   <main>
     <section class="container">
-      <!-- Heading -->
+      <!-- Game Heading -->
       <div>
         <h1>Deep Match </h1>
         <h2>The AI Memory Game!</h2>
@@ -27,14 +27,27 @@
         <button onclick="gameIndications()">Game indications</button>
       </div>
 
+      <!-- Game indications -->
+      <div id="game-indications" class="hidden">
+        <div>
+          <p>The AI memory game consists of 16 cards featuring 8 unique pairs of pictures.</p>
+          <p>At the start, all the cards are placed face down.</p>
+          <p>On each turn, you select and flip over two cards of your choice.</p>
+          <p>If the pictures on the cards match, they remain face up. If not, they are flipped back face down.</p>
+          <p>The game continues until all the pairs have been matched.</p>
+        </div>
+        <button class="secondary-button" onclick="showMainMenu()"><i class="fa-solid fa-left-long"></i></button>
+      </div>
+
       <!-- Game Result -->
       <div id="game-result" class="hidden">
-        <h3>Well Done!</h3>
+        <h3>🎉Score 800! 🎉</h3>
+        <h4>Congratulations AI Wizard!</h4>
         <p>You finished the game</p>
-        <p>in <span id="final-time"></span> seconds</p>
-        <p>with <span id="final-moves"></span> moves</p>
-        <button onclick="selectTheme()">Play Again</button>
-        <button onclick="showMainMenu()">Main Menu</button>
+        <p>with <span id="total-moves"></span> moves</p>
+
+        <button onclick="newGame()">New Game!</button>
+        <button onclick="showMainMenu()">Home Menu</button>
       </div>
     </section>
 
@@ -58,28 +71,6 @@
         <button class="card btn--restart" id="submit">Restart Game</button>
       </div>
     </section>
-
-    <!-- Game indications 
-
-      <div id="game-indications class="hidden">
-          <div>
-            <p>The game consists of 16 cards featuring 8 unique pairs of pictures.</p>
-            <p>At the start, all the cards are placed face down.</p>
-            <p>On each turn, you select and flip over two cards of your choice.</p>
-            <p>If the pictures on the cards match, they remain face up. If not, they are flipped back face down.</p>
-            <p>The game continues until all the pairs have been matched.</p>
-          </div>
-        <button class="secondary-button" onclick="showMainMenu()"><i class="fa-solid fa-left-long"></i></button>
-      </div-->
-
-    <!-- Game Result -->
-    <!--div id="game-result" class="hidden">
-        <h3>Well Done!</h3>
-        <p>You finished the game</p>
-        <p>with <span id="final-moves"></span> moves</p>
-        <button onclick="showMainMenu()">Main Menu</button>
-      </div>
-      </div-->
 
     </section>
 

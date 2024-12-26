@@ -3,11 +3,9 @@ const gameContainer = document.getElementById("game-container");
 
 // Ids of the menu elements
 const MENU = {
-  MAIN: "menu-buttons",
-  THEME: "theme-buttons",
-  HIGHSCORE: "high-score-menu",
+  MAIN: "home-menu",
+  HOWTOPLAY: "game-indications",
   RESULT: "game-result",
-  HOWTOPLAY: "how-to-play"
 };
 
 /**
