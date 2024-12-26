@@ -85,6 +85,14 @@ button {
   cursor: pointer;
 }
 
+/*button:hover {
+  background: linear-gradient(45deg, #8a2be2, #1e3a8a);
+}*/
+button:hover {
+  transform: rotate(6deg);
+  transition: transform 0.3s ease;
+}
+
 .face,
 .back {
   width: 100%;
