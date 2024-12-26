@@ -195,7 +195,6 @@ function handleCardFlip(cardIdNumber) {
       flippedCards = 0; // Reset the flipped cards count
       incrementMovements();
       incrementScore();
-      movements()
     } else {
       setTimeout(checkNoMatch, 1000); // Reset unmatched cards after 1 second
       incrementMovements();
@@ -222,7 +221,7 @@ function revealCard(cardIdNumber) {
 }
 
 /** 
- * Function to reset unmatched cards
+ * Function to target the unmatched cards
  */
 function checkNoMatch() {
   firstCard.innerHTML = "";
@@ -242,6 +241,7 @@ function checkNoMatch() {
 function incrementMovements() {
   const currentMovement = parseInt(document.getElementById("movements").innerText); // Starts with 0
   const updatedUserMovements = currentMovement + 1; //Add one movement every time the user clicks
+
   document.getElementById("movements").innerText = ` ${updatedUserMovements}`;
 }
 
@@ -249,11 +249,12 @@ function incrementMovements() {
  * Function to increment the score every time there is a match 
  */
 function incrementScore() {
-  let oldScore = parseInt(document.getElementById("score").innerText);
-  document.getElementById("score").innerText = ` ${oldScore += 100} `;
-  if (oldScore === 800) {
+  const currentScore = parseInt(document.getElementById("score").innerText);
+  const updatedUserScore = currentScore + 100; //Add 100 points every time the user has a match
+
+  document.getElementById("score").innerText = ` ${updatedUserScore}`;
+  if (updatedUserScore === 800) {
     document.getElementById("score").innerText = `🎉 800! 🎉`;
-    //alert("Congratulations AI Wizard!!!👌🤖");
   }
 }
 
