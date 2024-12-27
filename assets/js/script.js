@@ -11,11 +11,11 @@ const MENU = {
 // Game variables 
 const cardDeck = cardDeckArray(); // Call the function to get the array of card objects
 let flippedCards = 0; // This variable will increase by 1 every time a user clicks a card
-let firstCard; //html element: <button ...></button>
-let secondCard; //html element: <button ...></button>
-let revealedCard; //html element: <button ...></button>
-let firstResult = {};
-let secondResult = {};
+let firstButtonCard; //html element: <button ...></button>
+let secondButtonCard; //html element: <button ...></button>
+let revealedCard;
+let firstsImageRevealed = {};
+let secondImageRevealed = {};
 
 /**
  * Generates the array containing the card images as objects with alt and name attributes
@@ -157,11 +157,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   for (let memoryCard of allMemoryCards) {
     memoryCard.addEventListener("click", function () {
-      const cardIdNumber = this.getAttribute("id")
+      let cardIdNumber = this.getAttribute("id")
       if (cardIdNumber === "submit") {
-        location.reload();
+        //ocation.reload();
       } else {
-        //const cardIdNumber = this.getAttribute("id");
         handleCardFlip(cardIdNumber);
       }
     });
@@ -172,34 +171,34 @@ document.addEventListener("DOMContentLoaded", function () {
  * Main function to handle card flipping logic 
  */
 function handleCardFlip(cardIdNumber) {
+
+  //const revealedCard = revealCard(cardIdNumber);
+  // const firstButtonCard; 
+  // const secondButtonCard;
+
   // Handle the first card
   if (flippedCards === 0) {
     revealedCard = revealCard(cardIdNumber);
-    firstCard = revealedCard[0];
-    firstResult = revealedCard[1];
 
-    console.log(firstCard); // <button ...></button>
-    console.log(firstResult); // {object of the array}
+    firstButtonCard = revealedCard[0];
+    firstsImageRevealed = revealedCard[1];
+
+    console.log(firstButtonCard); // <button ...></button>
+    console.log(firstsImageRevealed); // {object of the array}
 
     flippedCards++;
-
-    console.log(flippedCards);
 
     // Handle the second card
   } else if (flippedCards === 1) {
     revealedCard = revealCard(cardIdNumber);
-    secondCard = revealedCard[0];
-    secondResult = revealedCard[1];
 
-    console.log(secondCard);
-    console.log(secondResult);
+    secondButtonCard = revealedCard[0];
+    secondImageRevealed = revealedCard[1];
 
     flippedCards++;
 
-    console.log(flippedCards);
-
     // Check if the cards match based on the property name
-    if (firstResult.name === secondResult.name) {
+    if (firstsImageRevealed.name === secondImageRevealed.name) {
       flippedCards = 0; // Reset the flipped cards count
       incrementMovements();
       incrementScore();
@@ -211,40 +210,42 @@ function handleCardFlip(cardIdNumber) {
 }
 
 /** 
- * Function to reveal the content of a memory card 
+ * Function to reveal the image of a memory card 
  * and prevent it to be further clicked
  */
 function revealCard(cardIdNumber) {
   // Get a memory card by its ID
   const memoryCardByID = document.getElementById(cardIdNumber);
 
-  // Add to a memory card properties of the randomly sorted card deck array 
+  // Add the properties of the randomly shuffled card deck array to a memory card.
   const cardObjectDetails = shuffledCardDeck[cardIdNumber];
   memoryCardByID.innerHTML = `<img src="${cardObjectDetails.imgSrc}" alt="${cardObjectDetails.alt}">`;
 
-  // Disable the card after it is clicked so it cannot be clicked again
+  // Disable the clicked card  so it cannot be clicked again
   memoryCardByID.disabled = true;
 
-  return [memoryCardByID, cardObjectDetails]; // Return the button card and an object of the array
+  return [memoryCardByID, cardObjectDetails]; // Return the <button ...></button> card and an object of the carDeck array, respectively.
 }
 
 /** 
- * Function to target the unmatched cards
+ * Resets unmatched cards.
+ * This function clears the content of two unmatched cards, re-enables them 
+ * for interaction, and resets the flipped cards count to allow further gameplay.
  */
 function checkNoMatch() {
-  firstCard.innerHTML = "";
-  secondCard.innerHTML = "";
+  firstButtonCard.innerHTML = "";
+  secondButtonCard.innerHTML = "";
 
-  // Enable the cards so they can be clicked again
-  firstCard.disabled = false;
-  secondCard.disabled = false;
+  // Enable the cards so they can be clicked again.
+  firstButtonCard.disabled = false;
+  secondButtonCard.disabled = false;
 
   // Reset the flipped cards count
   flippedCards = 0;
 }
 
 /** 
- * Function to track the number of movements made by the user decreaseChances
+ * Function to track the number of movements made by the user
  */
 function incrementMovements() {
   const currentMovement = parseInt(document.getElementById("movements").innerText); // Starts with 0
@@ -265,13 +266,13 @@ function incrementScore() {
     document.getElementById("score").innerText = `🎉 800! 🎉`;
 
     //If score is 800 (all cards are matched), end the game
-    gameFinishedCongratulations();
+    //gameFinishedCongratulations();
   }
 }
 
 /** 
  * Congratulates the user after finishing the game and displays the number of movements.
- */
+
 function gameFinishedCongratulations() {
 
   const finalMovements = parseInt(document.getElementById("movements").innerText);
@@ -287,9 +288,9 @@ function gameFinishedCongratulations() {
     showHtmlElement("game-done-congratulations");
 
   }, 1300);
-}
+}*/
 
-/** */
+/**
 function changeMenu(menuId) {
   // Get all game elements
   let homeMenuElements = document.getElementById("main-container").children;
@@ -307,26 +308,27 @@ function changeMenu(menuId) {
       element.classList.add("hidden");
     }
   }
-}
+}*/
 
 /** 
  * Displays an HTML element by removing the"hidden" class from it
- */
+
 function showHtmlElement(id) {
   document.getElementById(id).classList.remove("hidden");
 }
 
 /** 
  * Hides an HTML element by adding the "hidden" class to it
- */
+
 function hideHtmlElement(id) {
   document.getElementById(id).classList.add("hidden");
 }
 
 /**
  * Function that onclick takes you to the Home Page
- */
+
 
 function showMainMenu() {
   changeMenu(MENU.MAIN);
 }
+   */
