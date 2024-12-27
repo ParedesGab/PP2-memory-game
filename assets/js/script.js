@@ -139,10 +139,10 @@ function createMemoryCards() {
     memoryCard.setAttribute("data-id", idValue);
 
     // // Set aria label attribute
-    const ariaIndex = i + 1;
-    memoryCard.setAttribute("aria-label", `memory card ${ariaIndex}`);
+    const ariaLabelIndex = i + 1;
+    memoryCard.setAttribute("aria-label", `memory card ${ariaLabelIndex}`);
 
-    const gameContainer = document.getElementById("game-board");
+    //Append the buttons to game board
     gameContainer.appendChild(memoryCard);
   };
 }
@@ -151,10 +151,11 @@ function createMemoryCards() {
 document.addEventListener("DOMContentLoaded", function () {
 
   createMemoryCards();
-  // Get all buttons for them to be clicked
-  const allMemoryCards = document.getElementsByTagName("button");
 
-  for (const memoryCard of allMemoryCards) {
+  // Get all buttons with the class "btn", for them to be clicked
+  const allMemoryCards = document.getElementsByClassName("btn");
+
+  for (let memoryCard of allMemoryCards) {
     memoryCard.addEventListener("click", function () {
       const cardIdNumber = this.getAttribute("id")
       if (cardIdNumber === "submit") {
