@@ -1,12 +1,21 @@
 // Game container
-const gameContainer = document.getElementById("game-container");
+const gameContainer = document.getElementById("game-board");
 
 // Ids of the Home elements
 const MENU = {
-  MAIN: "home-menu",
+  MAIN: "home-menu-buttons",
   INDICATIONS: "game-indications",
   CONGRATULATIONS: "game-done-congratulations",
 };
+
+// Game variables 
+const cardDeck = cardDeckArray(); // Call the function to get the array of card objects
+let flippedCards = 0; // This variable will increase by 1 every time a user clicks a card
+let firstCard; //html element: <button ...></button>
+let secondCard; //html element: <button ...></button>
+let revealedCard; //html element: <button ...></button>
+let firstResult = {};
+let secondResult = {};
 
 /**
  * Generates the array containing the card images as objects with alt and name attributes
@@ -95,15 +104,6 @@ function cardDeckArray() {
   ];
 }
 
-// Game variables 
-const cardDeck = cardDeckArray(); // Call the function to get the array of card objects
-let flippedCards = 0; // This variable will increase by 1 every time a user clicks a card
-let firstCard; //html element: <button ...></button>
-let secondCard; //html element: <button ...></button>
-let revealedCard; //html element: <button ...></button>
-let firstResult = {};
-let secondResult = {};
-
 /** 
  * Function that generates random values between -0.5 and 0.5 
  */
@@ -142,7 +142,7 @@ function createMemoryCards() {
     const ariaIndex = i + 1;
     memoryCard.setAttribute("aria-label", `memory card ${ariaIndex}`);
 
-    const gameContainer = document.getElementById("game-container");
+    const gameContainer = document.getElementById("game-board");
     gameContainer.appendChild(memoryCard);
   };
 }
@@ -263,7 +263,7 @@ function incrementScore() {
   if (updatedUserScore === 800) {
     document.getElementById("score").innerText = `🎉 800! 🎉`;
 
-    //If score is 800 (all cards are matched) --> end the game
+    //If score is 800 (all cards are matched), end the game
     gameFinishedCongratulations();
   }
 }
@@ -276,14 +276,36 @@ function gameFinishedCongratulations() {
   const finalMovements = parseInt(document.getElementById("movements").innerText);
   document.getElementById("total-movements").innerText = finalMovements;
 
+  changeMenu(MENU.CONGRATULATIONS);
+
   // Show final board for 2 seconds, then display the game result
   setTimeout(function () {
-    hideHtmlElement("game-container");
+    hideHtmlElement("game-board");
     hideHtmlElement("controls");
     showHtmlElement("main-container");
     showHtmlElement("game-done-congratulations");
 
-  }, 1500);
+  }, 1300);
+}
+
+/** */
+function changeMenu(menuId) {
+  // Get all game elements
+  let homeMenuElements = document.getElementById("main-container").children;
+  //console.log(homeMenuElements); //IDs: game-name, home-menu-buttons, game-indications, game-done-congratulations
+
+  for (let element of homeMenuElements) {
+    if (element.id === "game-name") {
+      // Always display the game name
+      continue;
+    } else if (element.id === menuId) {
+      // Show selected menu screen
+      element.classList.remove("hidden");
+    } else {
+      // Hide other screens
+      element.classList.add("hidden");
+    }
+  }
 }
 
 /** 
@@ -294,8 +316,16 @@ function showHtmlElement(id) {
 }
 
 /** 
- * Hides an HTML element by adding the "hidden" to it
+ * Hides an HTML element by adding the "hidden" class to it
  */
 function hideHtmlElement(id) {
   document.getElementById(id).classList.add("hidden");
+}
+
+/**
+ * Function that onclick takes you to the Home Page
+ */
+
+function showMainMenu() {
+  changeMenu(MENU.MAIN);
 }

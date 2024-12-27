@@ -16,9 +16,9 @@
   <main>
 
     <!-- Game heading  -->
-    <!--section>
-      <h1></h1>
-      <h2></h2>
+    <!--section id="game-name">
+      <h1>Deep Match</h1>
+      <h2>The AI Memory Game!</h2>
     </section-->
 
     <!-- Game Home Menu -->
@@ -26,12 +26,12 @@
     <!-- Game heading  -->
     <section id="main-container">
       <div id="game-name">
-        <h1>Deep Match </h1>
+        <h1>Deep Match</h1>
         <h2>The AI Memory Game!</h2>
       </div>
 
       <!-- Home Menu -->
-      <div id="home-menu" class="hidden">
+      <div id="home-menu-buttons">
         <button onclick="newGame()">New Game</button>
         <button onclick="gameIndications()">Game indications</button>
       </div>
@@ -55,30 +55,33 @@
         <p>You finished the game</p>
         <p>with <span id="total-movements"></span> moves</p>
 
-        <button onclick="newGame()">New Game!</button>
+        <!--button onclick="newGame()">New Game!</button-->
         <button onclick="showMainMenu()">Home Menu</button>
       </div>
     </section>
 
     <!-- Memory Game -->
-    <section class="game" id="game-container">
-      <!-- Cards added through JS -->
-    </section>
+    <section id="memory-game-container" class="hidden">
 
-    <!-- Control Area -->
-    <section id="controls">
-      <div class="score-area">
-        <p class="scores">Movements:<span id="movements"> 0</span>
-        </p>
-        <p class="scores">Score:<span id="score"> 0</span>
-        </p>
+      <!-- Game Board -->
+      <div class="game" id="game-board">
+        <!-- Cards added through JS -->
       </div>
 
-      <!-- Restart button -->
-      <div>
-        <button class="card btn--restart" id="submit">Restart Game</button>
+      <!-- Control Area -->
+      <div id="controls">
+        <div class="score-area">
+          <p class="scores">Movements:<span id="movements"> 0</span>
+          </p>
+          <p class="scores">Score:<span id="score"> 0</span>
+          </p>
+        </div>
+
+        <!-- Restart button -->
+        <div>
+          <button class="card btn--restart" id="submit">Restart Game</button>
+        </div>
       </div>
-    </section>
 
     </section>
   </main>
