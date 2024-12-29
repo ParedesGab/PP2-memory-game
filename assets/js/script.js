@@ -335,12 +335,18 @@ function initialGame() {
 }
 
 /**
- * Function that onclick takes you to the Home Page
+ * Code to be executed when the DOM finishes loading.
+ * Contains the function that onclick takes you to the Home Page
  */
-function showMainMenu() {
-  document.getElementById("home-menu-buttons").classList.remove("hidden");
-  document.getElementById("game-done-congratulations").classList.add("hidden");
-}
+document.addEventListener("DOMContentLoaded", function () {
+  function showMainMenu() {
+    document.getElementById("home-menu-buttons").classList.remove("hidden");
+    document.getElementById("game-done-congratulations").classList.add("hidden");
+  }
+
+  const returnToHomeMenu = document.getElementById("return-home-menu");
+  returnToHomeMenu.addEventListener("click", showMainMenu);
+});
 
 
 
