@@ -104,10 +104,13 @@ button:hover {
   color: var(--secondary-color);
 }
 
-/* Memory Game */
+/*  Memory Game */
 
 #memory-game-container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 #game-board {
@@ -115,8 +118,6 @@ button:hover {
   grid-template-columns: repeat(4, 8rem);
   grid-template-rows: repeat(4, 8rem);
   gap: 1rem;
-  perspective: 800px;
-
 }
 
 /* Section3: Control Area */
@@ -126,9 +127,9 @@ button:hover {
   flex-direction: column;
   background-color: rgb(225, 225, 225, 0.65);
   box-shadow: 0 1px 10px 3px #f9f9fa;
-  width: max-content;
+  height: 400px;
   color: var(--primary-color);
-  margin-top: 25px;
+  margin-left: 80px;
   align-items: center;
   justify-content: center;
   text-align: center;
