@@ -1,13 +1,6 @@
 // Game container
 const gameContainer = document.getElementById("game-board");
 
-// Ids of the Home elements
-const MENU = {
-  MAIN: "home-menu-buttons",
-  INDICATIONS: "game-indications",
-  CONGRATULATIONS: "game-done-congratulations",
-};
-
 // Game variables 
 let flippedCards = 0; // This variable will increase by 1 every time a user clicks a card
 let firstButtonCard; //html element: <button ...></button>
@@ -15,6 +8,7 @@ let secondButtonCard; //html element: <button ...></button>
 let revealedCard;
 let firstsImageRevealed = {};
 let secondImageRevealed = {};
+let shuffledCardDeck = []
 
 /**
  * Generates the array containing the card images as objects with alt and name attributes
@@ -120,8 +114,8 @@ function randomizeCardDeck() {
   return shuffledCardDeck;
 }
 
-const shuffledCardDeck = randomizeCardDeck(); //Derives from function randomizeCardDeck()
-console.log(shuffledCardDeck); //outputs a randomly sorted array
+//const shuffledCardDeck = randomizeCardDeck(); //Derives from function randomizeCardDeck()
+//console.log(shuffledCardDeck); //outputs a randomly sorted array
 
 /** 
  * Create 16 button cards with class name "btn" and id string values from 0 to 15 
@@ -142,13 +136,15 @@ function createMemoryCards() {
     const ariaLabelIndex = i + 1;
     memoryCard.setAttribute("aria-label", `memory card ${ariaLabelIndex}`);
 
-    // 1 - Attach the click event listener
+    // Attach the click event listener
     memoryCard.addEventListener("click", function () {
-      handleCardFlip(i); // Handle card flipping when clicked
+      handleCardFlip(i); // Flip the clicked card
     });
 
     //Append the buttons to game board
     gameContainer.appendChild(memoryCard);
+
+    document.getElementById("controls").classList.remove("hidden");
   };
 }
 
