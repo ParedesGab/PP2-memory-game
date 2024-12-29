@@ -29,7 +29,7 @@ body {
   min-height: 100vh;
   font-family: var(--primary-font);
   /*border: 2px solid #e8108a;*/
-  /*background: url("../images/background-universe-compressed.webp") no-repeat center center/cover;*/
+  background: url("../images/universe.webp") no-repeat center center/cover;
   /*overflow: hidden;*/
   /*color: white;*/
   display: flex;
@@ -48,8 +48,8 @@ main {
   align-items: center;
 }*/
 
-/* Section1: Heading
-.heading {
+/*Section1: Heading */
+#game-name {
   background-color: rgb(225, 225, 225, 0.8);
   padding: 10px;
   color: var(--primary-color);
@@ -65,7 +65,7 @@ h1 {
 h2 {
   font-size: 1.9rem;
   letter-spacing: 0.1rem;
-}*/
+}
 
 /* Memory Game */
 
