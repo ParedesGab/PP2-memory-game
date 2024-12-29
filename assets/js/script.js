@@ -332,6 +332,8 @@ function initialGame() {
   document.getElementById("home-menu-buttons").classList.add("hide");
   document.getElementById("game-board").classList.remove("hide");
   document.getElementById("game-indications").classList.add("hide");
+  document.getElementById("game-name").classList.add("smaller-name");
+
 }
 
 /** 
