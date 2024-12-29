@@ -34,7 +34,7 @@ function cardDeckArray() {
       name: "witch",
       alt: "witch"
     },
-    /**{
+    {
       imgSrc: "assets/images/crystal.png",
       name: "crystal",
       alt: "crystal"
@@ -93,7 +93,7 @@ function cardDeckArray() {
       imgSrc: "assets/images/unicorn.png",
       name: "unicorn",
       alt: "unicorn"
-    },*/
+    },
   ];
 }
 
