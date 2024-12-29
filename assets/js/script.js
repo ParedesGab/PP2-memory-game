@@ -44,7 +44,7 @@ function cardDeckArray() {
       name: "crystal",
       alt: "crystal"
     },
-    {
+    /**{
       imgSrc: "assets/images/woman.png",
       name: "woman",
       alt: "woman"
@@ -93,7 +93,7 @@ function cardDeckArray() {
       imgSrc: "assets/images/unicorn.png",
       name: "unicorn",
       alt: "unicorn"
-    },
+    },*/
   ];
 }
 
@@ -243,7 +243,7 @@ function incrementScore() {
   const updatedUserScore = currentScore + 100; //Add 100 points every time the user has a match
 
   document.getElementById("score").innerText = ` ${updatedUserScore}`;
-  if (updatedUserScore === 800) {
+  if (updatedUserScore === 300) {
     document.getElementById("score").innerText = `🎉 800! 🎉`;
 
     //If score is 800 (all cards are matched), end the game
