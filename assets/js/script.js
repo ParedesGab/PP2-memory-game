@@ -144,7 +144,7 @@ function createMemoryCards() {
     //Append the buttons to game board
     gameContainer.appendChild(memoryCard);
 
-    document.getElementById("controls").classList.remove("hidden");
+    document.getElementById("controls").classList.remove("hide");
   };
 }
 
@@ -271,17 +271,17 @@ function gameFinishedCongratulations() {
 }
 
 /** 
- * Hides an HTML element by adding the "hidden" class to it
+ * Hides an HTML element by adding the "hide" class to it
  */
 function hideHtmlElement(id) {
-  document.getElementById(id).classList.add("hidden");
+  document.getElementById(id).classList.add("hide");
 }
 
 /** 
- * Displays an HTML element by removing the"hidden" class from it
+ * Displays an HTML element by removing the"hide" class from it
  */
 function showHtmlElement(id) {
-  document.getElementById(id).classList.remove("hidden");
+  document.getElementById(id).classList.remove("hide");
 }
 
 /** 
@@ -316,9 +316,9 @@ function resetGame() {
  */
 function newGame() {
   // Hide the congratulations message
-  document.getElementById("game-done-congratulations").classList.add("hidden");
-  document.getElementById("game-board").classList.remove("hidden");
-  document.getElementById("controls").classList.remove("hidden");
+  document.getElementById("game-done-congratulations").classList.add("hide");
+  document.getElementById("game-board").classList.remove("hide");
+  document.getElementById("controls").classList.remove("hide");
 
   //alert("hello");
 
@@ -328,17 +328,17 @@ function newGame() {
 
 function initialGame() {
   resetGame();
-  document.getElementById("memory-game-container").classList.remove("hidden");
-  document.getElementById("home-menu-buttons").classList.add("hidden");
-  document.getElementById("game-board").classList.remove("hidden");
-  document.getElementById("game-indications").classList.add("hidden");
+  document.getElementById("memory-game-container").classList.remove("hide");
+  document.getElementById("home-menu-buttons").classList.add("hide");
+  document.getElementById("game-board").classList.remove("hide");
+  document.getElementById("game-indications").classList.add("hide");
 }
 
 /** 
  * Function that onclick takes you to the Game indications
  */
 function gameIndications() {
-  document.getElementById("game-indications").classList.remove("hidden");
+  document.getElementById("game-indications").classList.remove("hide");
 }
 
 /**
@@ -347,8 +347,8 @@ function gameIndications() {
  */
 document.addEventListener("DOMContentLoaded", function () {
   function showMainMenu() {
-    document.getElementById("home-menu-buttons").classList.remove("hidden");
-    document.getElementById("game-done-congratulations").classList.add("hidden");
+    document.getElementById("home-menu-buttons").classList.remove("hide");
+    document.getElementById("game-done-congratulations").classList.add("hide");
   }
 
   const returnToHomeMenu = document.getElementById("return-home-menu");

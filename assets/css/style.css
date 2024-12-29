@@ -18,7 +18,7 @@
   --highlight-color-light: #9984e2;
 }
 
-.hidden {
+.hide {
   display: none !important;
 }
 
@@ -28,7 +28,7 @@ body {
   font-family: var(--primary-font);
   /*border: 2px solid #e8108a;*/
   background: url("../images/universe.webp") no-repeat center center/cover;
-  /*overflow: hidden;*/
+  /*overflow: hide;*/
   /*color: white;*/
   display: flex;
   flex-direction: column;
@@ -103,7 +103,7 @@ button:hover {
 
 .back {
   background: aqua;
-  backface-visibility: hidden;
+  backface-visibility: hide;
 }
 
 .toggleCard {
