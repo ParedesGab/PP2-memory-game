@@ -236,7 +236,7 @@ function incrementMovements() {
 }
 
 /** 
- * Function to increment the score every time there is a match 
+ * Increment the score every time there is a match 
  */
 function incrementScore() {
   const currentScore = parseInt(document.getElementById("score").innerText);
@@ -260,7 +260,7 @@ function gameFinishedCongratulations() {
   const finalMovements = parseInt(document.getElementById("movements").innerText);
   document.getElementById("total-movements").innerText = finalMovements;
 
-  // Show final board for 2 seconds, then display the game result
+  // Show final board for 1,3 s, then display the game result
   setTimeout(function () {
     hideHtmlElement("game-board");
     hideHtmlElement("controls");
@@ -288,8 +288,13 @@ function hideHtmlElement(id) {
  * Function that onclick takes you to the Home Page
  */
 function showMainMenu() {
-  changeMenu(MENU.MAIN);
+  document.getElementById("home-menu-buttons").classList.remove("hidden");
+  document.getElementById("game-done-congratulations").classList.add("hidden");
 }
+
+
+
+
 
 /** Code to be executed when the DOM finishes loading
 document.addEventListener("DOMContentLoaded", function () {
