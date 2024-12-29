@@ -326,6 +326,14 @@ function newGame() {
   resetGame();
 }
 
+function initialGame() {
+  resetGame();
+  document.getElementById("memory-game-container").classList.remove("hidden");
+  document.getElementById("home-menu-buttons").classList.add("hidden");
+  document.getElementById("game-board").classList.remove("hidden");
+  document.getElementById("game-indications").classList.add("hidden");
+}
+
 /**
  * Function that onclick takes you to the Home Page
  */
