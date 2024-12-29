@@ -32,12 +32,13 @@
 
       <!-- Home Menu -->
       <div id="home-menu-buttons">
-        <button onclick="newGame()">New Game</button>
-        <button onclick="gameIndications()">Game indications</button>
+        <button onclick="initialGame()">Initial Game</button>
+        <!--button onclick="gameIndications()">Game indications</button-->
+        <button id="game-indications-button">Game indications</button>
       </div>
 
       <!-- Game indications -->
-      <div id="game-indications" class="hidden">
+      <div onclick="gameIndications()" class="hidden" id="game-indications">
         <div>
           <p>The AI memory game consists of 16 cards featuring 8 unique pairs of pictures.</p>
           <p>At the start, all the cards are placed face down.</p>
@@ -55,13 +56,15 @@
         <p>You finished the game</p>
         <p>with <span id="total-movements"></span> moves</p>
 
-        <!--button onclick="newGame()">New Game!</button-->
-        <button onclick="showMainMenu()">Home Menu</button>
+        <button onclick="newGame()">New Game After Winning</button>
+        <!--button onclick="showMainMenu()">Home Menu</button-->
+        <button id="return-home-menu">Home Menu</button>
       </div>
     </section>
 
     <!-- Memory Game -->
-    <section id="memory-game-container" class="hidden">
+    <section id="memory-game-container">
+      <!--class="hidden"-->
 
       <!-- Game Board -->
       <div class="game" id="game-board">
@@ -69,7 +72,7 @@
       </div>
 
       <!-- Control Area -->
-      <div id="controls">
+      <div id="controls" class="hidden">
         <div class="score-area">
           <p class="scores">Movements:<span id="movements"> 0</span>
           </p>
@@ -79,7 +82,7 @@
 
         <!-- Restart button -->
         <div>
-          <button class="card btn btn--restart" id="submit">Restart Game</button>
+          <button class="card btn btn--restart" id="submit" onclick="newGame() ">Restart Game</button>
         </div>
       </div>
 

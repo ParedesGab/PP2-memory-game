@@ -9,7 +9,6 @@ const MENU = {
 };
 
 // Game variables 
-const cardDeck = cardDeckArray(); // Call the function to get the array of card objects
 let flippedCards = 0; // This variable will increase by 1 every time a user clicks a card
 let firstButtonCard; //html element: <button ...></button>
 let secondButtonCard; //html element: <button ...></button>
@@ -128,6 +127,7 @@ console.log(shuffledCardDeck); //outputs a randomly sorted array
  * Create 16 button cards with class name "btn" and id string values from 0 to 15 
  */
 function createMemoryCards() {
+  //const shuffledCardDeck = randomizeCardDeck();
   for (let i = 0; i < shuffledCardDeck.length; i++) {
     //Create a memory card
     const memoryCard = document.createElement("button");
@@ -141,6 +141,11 @@ function createMemoryCards() {
     // // Set aria label attribute
     const ariaLabelIndex = i + 1;
     memoryCard.setAttribute("aria-label", `memory card ${ariaLabelIndex}`);
+
+    // 1 - Attach the click event listener
+    memoryCard.addEventListener("click", function () {
+      handleCardFlip(i); // Handle card flipping when clicked
+    });
 
     //Append the buttons to game board
     gameContainer.appendChild(memoryCard);
@@ -266,12 +271,13 @@ function incrementScore() {
     document.getElementById("score").innerText = `🎉 800! 🎉`;
 
     //If score is 800 (all cards are matched), end the game
-    //gameFinishedCongratulations();
+    gameFinishedCongratulations();
   }
 }
 
 /** 
  * Congratulates the user after finishing the game and displays the number of movements.
+ */
 
 function gameFinishedCongratulations() {
 
@@ -288,9 +294,9 @@ function gameFinishedCongratulations() {
     showHtmlElement("game-done-congratulations");
 
   }, 1300);
-}*/
+}
 
-/**
+/***/
 function changeMenu(menuId) {
   // Get all game elements
   let homeMenuElements = document.getElementById("main-container").children;
@@ -308,27 +314,25 @@ function changeMenu(menuId) {
       element.classList.add("hidden");
     }
   }
-}*/
+}
 
 /** 
  * Displays an HTML element by removing the"hidden" class from it
-
+ */
 function showHtmlElement(id) {
   document.getElementById(id).classList.remove("hidden");
 }
 
 /** 
  * Hides an HTML element by adding the "hidden" class to it
-
+ */
 function hideHtmlElement(id) {
   document.getElementById(id).classList.add("hidden");
 }
 
 /**
  * Function that onclick takes you to the Home Page
-
-
+ */
 function showMainMenu() {
   changeMenu(MENU.MAIN);
 }
-   */
