@@ -333,7 +333,6 @@ function initialGame() {
   document.getElementById("game-board").classList.remove("hide");
   document.getElementById("game-indications").classList.add("hide");
   document.getElementById("game-name").classList.add("smaller-name");
-
 }
 
 /** 
@@ -341,6 +340,25 @@ function initialGame() {
  */
 function gameIndications() {
   document.getElementById("game-indications").classList.remove("hide");
+  document.getElementById("home-menu-buttons").classList.add("hide");
+  document.getElementById("game-name").classList.add("smaller-name");
+}
+
+/**
+ * ReturnHome from the Memory card page
+ */
+function returnHome() {
+  document.getElementById("home-menu-buttons").classList.remove("hide");
+  document.getElementById("memory-game-container").classList.add("hide");
+}
+
+
+/** Onclick takes you to the home page */
+function showMainMenu() {
+  document.getElementById("home-menu-buttons").classList.remove("hide");
+  document.getElementById("game-done-congratulations").classList.add("hide");
+  document.getElementById("game-indications").classList.add("hide");
+  document.getElementById("memory-game-container").classList.add("hide");
 }
 
 /**
@@ -348,35 +366,5 @@ function gameIndications() {
  * Contains the function that onclick takes you to the Home Page
  */
 document.addEventListener("DOMContentLoaded", function () {
-  function showMainMenu() {
-    document.getElementById("home-menu-buttons").classList.remove("hide");
-    document.getElementById("game-done-congratulations").classList.add("hide");
-  }
-
-  const returnToHomeMenu = document.getElementById("return-home-menu");
-  returnToHomeMenu.addEventListener("click", showMainMenu);
+  showMainMenu();
 });
-
-
-
-
-
-/** Code to be executed when the DOM finishes loading
-document.addEventListener("DOMContentLoaded", function () {
-
-  createMemoryCards();
-
-  // Get all buttons with the class "btn", for them to be clicked
-  const allMemoryCards = document.getElementsByClassName("btn");
-
-  for (let memoryCard of allMemoryCards) {
-    memoryCard.addEventListener("click", function () {
-      let cardIdNumber = this.getAttribute("id")
-      if (cardIdNumber === "submit") {
-        //ocation.reload();
-      } else {
-        handleCardFlip(cardIdNumber);
-      }
-    });
-  }
-});*/

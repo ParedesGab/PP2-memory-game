@@ -30,14 +30,26 @@
 
       <!-- Game indications -->
       <div class="hide" id="game-indications">
-        <div>
-          <p>The AI memory game consists of 16 cards featuring 8 unique pairs of pictures.</p>
-          <p>At the start, all the cards are placed face down.</p>
-          <p>On each turn, you select and flip over two cards of your choice.</p>
-          <p>If the pictures on the cards match, they remain face up. If not, they are flipped back face down.</p>
-          <p>The game continues until all the pairs have been matched.</p>
+        <div id="game-indications-subcontainer">
+          <div>
+            <p>The AI memory game consists of 16 cards featuring 8 unique pairs of pictures.At the start, all the cards
+              are placed face down.</p>
+            <p>On each turn, you select and flip over two cards of your choice. If the pictures on the cards match, they
+              remain face up. If not, they are flipped back face down.</p>
+            <p>The game continues until all the pairs have been matched.</p>
+          </div>
+          <div id="img-legend">
+            <img src="./assets/images/ball.png">
+            <img src="./assets/images/ball.png">
+            <img src="./assets/images/ball.png">
+            <img src="./assets/images/ball.png">
+            <img src="./assets/images/ball.png">
+            <img src="./assets/images/ball.png">
+            <img src="./assets/images/ball.png">
+            <img src="./assets/images/ball.png">
+          </div>
         </div>
-        <button class="secondary-button" onclick="showMainMenu()"><i class="fa-solid fa-left-long"></i></button>
+        <button onclick="showMainMenu()">Home Menu</i></button>
       </div>
 
       <!-- Game Finished - Congratulations message -->
@@ -47,9 +59,9 @@
         <p>You finished the game</p>
         <p>with <span id="total-movements"></span> moves</p>
 
+        <button onclick="showMainMenu()">Home Menu</i></button>
         <button onclick="newGame()">New Game After Winning</button>
-        <!--button onclick="showMainMenu()">Home Menu</button-->
-        <button id="return-home-menu">Home Menu</button>
+
       </div>
     </section>
 
@@ -70,12 +82,11 @@
           </p>
         </div>
 
-        <!-- Restart button -->
+        <!-- Restart and Home Menu buttons -->
         <div>
-          <button class="card btn btn--restart" id="submit" onclick="newGame() ">Restart Game</button>
+          <button class="btn--restart" id="submit" onclick="newGame() ">Restart Game</button>
         </div>
       </div>
-
     </section>
   </main>
 
