@@ -148,26 +148,6 @@ function createMemoryCards() {
   };
 }
 
-// Code to be executed when the DOM finishes loading
-document.addEventListener("DOMContentLoaded", function () {
-
-  createMemoryCards();
-
-  // Get all buttons with the class "btn", for them to be clicked
-  const allMemoryCards = document.getElementsByClassName("btn");
-
-  for (let memoryCard of allMemoryCards) {
-    memoryCard.addEventListener("click", function () {
-      let cardIdNumber = this.getAttribute("id")
-      if (cardIdNumber === "submit") {
-        //ocation.reload();
-      } else {
-        handleCardFlip(cardIdNumber);
-      }
-    });
-  }
-});
-
 /** 
  * Main function to handle card flipping logic 
  */
@@ -280,8 +260,6 @@ function gameFinishedCongratulations() {
   const finalMovements = parseInt(document.getElementById("movements").innerText);
   document.getElementById("total-movements").innerText = finalMovements;
 
-  changeMenu(MENU.CONGRATULATIONS);
-
   // Show final board for 2 seconds, then display the game result
   setTimeout(function () {
     hideHtmlElement("game-board");
@@ -290,26 +268,6 @@ function gameFinishedCongratulations() {
     showHtmlElement("game-done-congratulations");
 
   }, 1300);
-}
-
-/***/
-function changeMenu(menuId) {
-  // Get all game elements
-  let homeMenuElements = document.getElementById("main-container").children;
-  //console.log(homeMenuElements); //IDs: game-name, home-menu-buttons, game-indications, game-done-congratulations
-
-  for (let element of homeMenuElements) {
-    if (element.id === "game-name") {
-      // Always display the game name
-      continue;
-    } else if (element.id === menuId) {
-      // Show selected menu screen
-      element.classList.remove("hidden");
-    } else {
-      // Hide other screens
-      element.classList.add("hidden");
-    }
-  }
 }
 
 /** 
@@ -332,3 +290,23 @@ function hideHtmlElement(id) {
 function showMainMenu() {
   changeMenu(MENU.MAIN);
 }
+
+/** Code to be executed when the DOM finishes loading
+document.addEventListener("DOMContentLoaded", function () {
+
+  createMemoryCards();
+
+  // Get all buttons with the class "btn", for them to be clicked
+  const allMemoryCards = document.getElementsByClassName("btn");
+
+  for (let memoryCard of allMemoryCards) {
+    memoryCard.addEventListener("click", function () {
+      let cardIdNumber = this.getAttribute("id")
+      if (cardIdNumber === "submit") {
+        //ocation.reload();
+      } else {
+        handleCardFlip(cardIdNumber);
+      }
+    });
+  }
+});*/
