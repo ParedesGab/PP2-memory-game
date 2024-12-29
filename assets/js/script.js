@@ -334,6 +334,13 @@ function initialGame() {
   document.getElementById("game-indications").classList.add("hidden");
 }
 
+/** 
+ * Function that onclick takes you to the Game indications
+ */
+function gameIndications() {
+  document.getElementById("game-indications").classList.remove("hidden");
+}
+
 /**
  * Code to be executed when the DOM finishes loading.
  * Contains the function that onclick takes you to the Home Page
