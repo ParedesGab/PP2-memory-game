@@ -34,7 +34,7 @@ function cardDeckArray() {
       name: "witch",
       alt: "witch"
     },
-    {
+    /**{
       imgSrc: "assets/images/crystal.png",
       name: "crystal",
       alt: "crystal"
@@ -93,7 +93,7 @@ function cardDeckArray() {
       imgSrc: "assets/images/unicorn.png",
       name: "unicorn",
       alt: "unicorn"
-    },
+    },*/
   ];
 }
 
@@ -243,7 +243,7 @@ function incrementScore() {
   const updatedUserScore = currentScore + 100; //Add 100 points every time the user has a match
 
   document.getElementById("score").innerText = ` ${updatedUserScore}`;
-  if (updatedUserScore === 300) {
+  if (updatedUserScore === 200) {
     document.getElementById("score").innerText = `🎉 800! 🎉`;
 
     //If score is 800 (all cards are matched), end the game
