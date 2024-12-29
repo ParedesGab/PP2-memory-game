@@ -37,42 +37,35 @@ body {
   display: none !important;
 }
 
-main {
-  flex: 1 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/** main-container */
+/* Main container */
+main,
 #main-container {
+  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-
-
 /* Game heading */
 #game-name {
-  margin-bottom: 80px;
+  margin: 100px 0px;
   color: var(--primary-color);
   background-color: rgb(225, 225, 225, 0.8);
   box-shadow: 0 2px 20px 12px #58585f;
   border-radius: 5px;
   padding: 20px;
-  width: 420px;
+  width: 300px;
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
 }
 
 h2 {
-  font-size: 1.7rem;
+  font-size: 1rem;
   letter-spacing: 0.2rem;
 }
 
@@ -87,7 +80,6 @@ h2 {
   display: flex;
   flex-direction: column;
   box-shadow: 0 2px 20px 3px #f9f9fa;
-  margin: 30px;
   align-items: center;
 }
 
@@ -96,14 +88,14 @@ h2 {
 #game-done-congratulations>button {
   font: var(--secondary-font);
   color: var(--primary-color);
-  font-size: 2.2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   border-radius: 12px;
   box-shadow: 0 2px 20px 4px #f9f9fa;
-  margin: 30px;
+  margin: 20px;
   padding: 15px;
   cursor: pointer;
-  width: 300px;
+  width: 180px;
 }
 
 #game-indications>button,
@@ -220,6 +212,34 @@ i {
 
 /* Media Query: Tablets and Up */
 @media screen and (min-width:768px) {
+
+
+  /* Game heading
+#game-name {
+  margin-bottom: 80px;
+  color: var(--primary-color);
+  background-color: rgb(225, 225, 225, 0.8);
+  box-shadow: 0 2px 20px 12px #58585f;
+  border-radius: 5px;
+  padding: 20px;
+  width: 420px;
+}
+
+h1 {
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+h2 {
+  font-size: 1.7rem;
+  letter-spacing: 0.2rem;
+}
+
+.smaller-name {
+  margin: 0px !important;
+  margin-bottom: 40px !important;
+}*/
 
   /*  Memory Game */
 
