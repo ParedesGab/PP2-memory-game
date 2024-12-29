@@ -271,6 +271,13 @@ function gameFinishedCongratulations() {
 }
 
 /** 
+ * Hides an HTML element by adding the "hidden" class to it
+ */
+function hideHtmlElement(id) {
+  document.getElementById(id).classList.add("hidden");
+}
+
+/** 
  * Displays an HTML element by removing the"hidden" class from it
  */
 function showHtmlElement(id) {
@@ -278,10 +285,45 @@ function showHtmlElement(id) {
 }
 
 /** 
- * Hides an HTML element by adding the "hidden" class to it
+ * Function to reset the game
  */
-function hideHtmlElement(id) {
-  document.getElementById(id).classList.add("hidden");
+function resetGame() {
+  // Reset game variables
+  flippedCards = 0;
+  firstButtonCard;
+  secondButtonCard;
+  firstsImageRevealed = {};
+  secondImageRevealed = {};
+
+  // Clear game board
+  gameContainer.innerHTML = '';
+
+  // Reset score and movements
+  document.getElementById("score").innerText = '0';
+  document.getElementById("movements").innerText = '0';
+
+  // Create a new deck and shuffle
+  cardDeck = cardDeckArray();
+  shuffledCardDeck = randomizeCardDeck();
+
+  // Create the cards again
+  createMemoryCards();
+  //alert("reset");
+}
+
+/** 
+ * Start a new game when the "New Game" button is clicked
+ */
+function newGame() {
+  // Hide the congratulations message
+  document.getElementById("game-done-congratulations").classList.add("hidden");
+  document.getElementById("game-board").classList.remove("hidden");
+  document.getElementById("controls").classList.remove("hidden");
+
+  //alert("hello");
+
+  // Call the resetGame function
+  resetGame();
 }
 
 /**
