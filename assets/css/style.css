@@ -35,7 +35,6 @@ body {
   display: none !important;
 }
 
-/* Main content */
 main {
   flex: 1 0 auto;
   display: flex;
@@ -45,8 +44,7 @@ main {
 
 /* Game heading */
 #game-name {
-  margin-top: 10rem;
-  margin-bottom: 4rem;
+  margin: 4rem;
   color: var(--primary-color);
   background-color: rgb(225, 225, 225, 0.8);
   box-shadow: 0 2px 20px 12px #58585f;
@@ -70,9 +68,10 @@ h2 {
   display: flex;
   flex-direction: column;
   box-shadow: 0 2px 20px 3px #f9f9fa;
+  margin: 30px;
 }
 
-button {
+#home-menu-buttons>button {
   font: var(--secondary-font);
   color: var(--primary-color);
   font-size: 2.2rem;
@@ -99,10 +98,14 @@ button:hover {
 
 /* Memory Game */
 
+#memory-game-container {
+  display: flex;
+}
+
 #game-board {
   display: grid;
-  grid-template-columns: repeat(4, 8rem);
-  grid-template-rows: repeat(4, 8rem);
+  grid-template-columns: repeat(4, 7rem);
+  grid-template-rows: repeat(4, 7rem);
   gap: 2rem;
   perspective: 800px;
 
@@ -131,6 +134,7 @@ button:hover {
 
 #controls {
   display: flex;
+  flex-direction: column;
   background-color: rgb(225, 225, 225, 0.65);
   box-shadow: 0 1px 10px 3px #f9f9fa;
   width: max-content;
@@ -139,10 +143,6 @@ button:hover {
   align-items: center;
   justify-content: center;
   text-align: center;
-}
-
-.score-area {
-  display: flex;
 }
 
 .scores,
