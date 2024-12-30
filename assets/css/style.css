@@ -489,15 +489,19 @@ h3 {
 
   /* GAME FINISHED - CONGRATULATIONS */
   #game-done-congratulations {
-    width: 500px;
-    align-items: center;
+    margin: 50px;
+    width: 900px;
+  }
+
+  #congrats-message {
+    margin: 50px;
   }
 
   h3 {
-    font-size: 2rem;
+    font-size: 5rem;
   }
 
   #game-done-congratulations p {
-    font-size: 1.4rem;
+    font-size: 3rem;
   }
 }
