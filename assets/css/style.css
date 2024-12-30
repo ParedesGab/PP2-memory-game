@@ -218,6 +218,27 @@ img {
 #game-done-congratulations {
   display: flex;
   flex-direction: column;
+  width: 300px;
+  align-items: center;
+}
+
+#congrats-message {
+  background-color: rgb(255 87 0 / 76%);
+  width: 85%;
+  margin: 15px;
+  padding: 20px;
+}
+
+h3 {
+  font-size: 1.9rem;
+}
+
+#game-done-congratulations p {
+  font-size: 1.2rem;
+}
+
+#total-movements {
+  font-weight: bold;
 }
 
 /* RETURN TO HOME */
