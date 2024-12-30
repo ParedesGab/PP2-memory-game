@@ -1,7 +1,7 @@
 // Game container
 const gameContainer = document.getElementById("game-board");
 
-// Game variables 
+// Game variables that are reassigned later in the code
 let flippedCards = 0; // This variable will increase by 1 every time a user clicks a card
 let firstButtonCard; //html element: <button ...></button>
 let secondButtonCard; //html element: <button ...></button>
@@ -100,7 +100,7 @@ function cardDeckArray() {
 /** 
  * Function that generates random values between -0.5 and 0.5 
  */
-function randomValues(a, b) {
+function randomValues() {
   const randomNumber = Math.random() - 0.5;
   return randomNumber; // Random numbers between -0.5 and 0.5
 }
@@ -114,14 +114,10 @@ function randomizeCardDeck() {
   return shuffledCardDeck;
 }
 
-//const shuffledCardDeck = randomizeCardDeck(); //Derives from function randomizeCardDeck()
-//console.log(shuffledCardDeck); //outputs a randomly sorted array
-
 /** 
  * Create 16 button cards with class name "btn" and id string values from 0 to 15 
  */
 function createMemoryCards() {
-  //const shuffledCardDeck = randomizeCardDeck();
   for (let i = 0; i < shuffledCardDeck.length; i++) {
     //Create a memory card
     const memoryCard = document.createElement("button");
@@ -152,10 +148,6 @@ function createMemoryCards() {
  * Main function to handle card flipping logic 
  */
 function handleCardFlip(cardIdNumber) {
-
-  //const revealedCard = revealCard(cardIdNumber);
-  // const firstButtonCard; 
-  // const secondButtonCard;
 
   // Handle the first card
   if (flippedCards === 0) {
@@ -243,10 +235,10 @@ function incrementScore() {
   const updatedUserScore = currentScore + 100; //Add 100 points every time the user has a match
 
   document.getElementById("score").innerText = ` ${updatedUserScore}`;
-  if (updatedUserScore === 200) {
+  if (updatedUserScore === 800) {
     document.getElementById("score").innerText = `🎉 800! 🎉`;
 
-    //If score is 800 (all cards are matched), end the game
+    //If score is 800 (all cards are matched) -> end the game
     gameFinishedCongratulations();
   }
 }
@@ -285,7 +277,7 @@ function showHtmlElement(id) {
 }
 
 /** 
- * Function to reset the game
+ * Resets the game
  */
 function resetGame() {
   // Reset game variables
@@ -308,19 +300,16 @@ function resetGame() {
 
   // Create the cards again
   createMemoryCards();
-  //alert("reset");
 }
 
 /** 
- * Start a new game when the "New Game" button is clicked
+ * Starts a new game when the Play again! button is clicked
  */
 function newGame() {
   // Hide the congratulations message
   document.getElementById("game-done-congratulations").classList.add("hide");
   document.getElementById("game-board").classList.remove("hide");
   document.getElementById("controls").classList.remove("hide");
-
-  //alert("hello");
 
   // Call the resetGame function
   resetGame();
