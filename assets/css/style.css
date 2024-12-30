@@ -38,7 +38,6 @@ body {
 
 /* MAIN  */
 main {
-  flex: 1 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,7 +49,7 @@ main {
 
 /* GAME HEADER */
 #game-name {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 50px;
   color: var(--primary-color);
   background-color: rgb(225, 225, 225, 0.8);
@@ -73,8 +72,8 @@ h2 {
 }
 
 .smaller-name {
-  /*margin-top: 20px !important;
-  margin-bottom: 00px !important;*/
+  margin-top: 20px !important;
+  margin-bottom: 0px !important;
   padding: 3px !important;
   background-color: #e29484;
 }
@@ -164,16 +163,17 @@ figure {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #16dc65;
+  width: 100%;
+  margin-top: 30px;
 }
 
 #game-board {
   display: grid;
-  grid-template-columns: repeat(4, 4rem);
-  grid-template-rows: repeat(4, 4rem);
+  grid-template-columns: repeat(4, 4.2rem);
+  grid-template-rows: repeat(4, 4.2rem);
   gap: 0.5rem;
-  /*margin-bottom: 30px;*/
-  background-color: #dc1697;
+  margin-bottom: 30px;
+  justify-content: center;
 }
 
 /* Control Area */
@@ -183,17 +183,16 @@ figure {
   background-color: rgb(225, 225, 225, 0.65);
   box-shadow: 0 1px 10px 3px #f9f9fa;
   color: var(--primary-color);
-  background-color: #16d9dc;
 }
 
 .scores,
 .btn--restart {
   border: 3px solid #ffffff;
   border-radius: 50% 20% / 10% 40%;
-  /*margin: 18px 22px;*/
+  margin: 18px 22px;
   background-color: var(--primary-color);
   color: white;
-  /*padding: 10px;*/
+  padding: 10px;
   text-transform: uppercase;
   font-size: 1rem;
   width: 190px;
@@ -204,7 +203,7 @@ figure {
   border: 3px solid var(--primary-color);
   border-radius: 50% 20% / 10% 40%;
   cursor: pointer;
-  /*margin-top: 0px;*/
+  margin: 0px 22px;
 }
 
 .btn--restart:focus {
