@@ -8,7 +8,7 @@ let secondButtonCard; //html element: <button ...></button>
 let revealedCard;
 let firstsImageRevealed = {};
 let secondImageRevealed = {};
-let shuffledCardDeck = []
+let shuffledCardDeck = [];
 
 /**
  * Generates the array containing the card images as objects with alt and name attributes
@@ -141,7 +141,7 @@ function createMemoryCards() {
     gameContainer.appendChild(memoryCard);
 
     document.getElementById("controls").classList.remove("hide");
-  };
+  }
 }
 
 /** 
@@ -155,9 +155,6 @@ function handleCardFlip(cardIdNumber) {
 
     firstButtonCard = revealedCard[0];
     firstsImageRevealed = revealedCard[1];
-
-    console.log(firstButtonCard); // <button ...></button>
-    console.log(firstsImageRevealed); // {object of the array}
 
     flippedCards++;
 
@@ -295,7 +292,7 @@ function resetGame() {
   document.getElementById("movements").innerText = '0';
 
   // Create a new deck and shuffle
-  cardDeck = cardDeckArray();
+  let cardDeck = cardDeckArray();
   shuffledCardDeck = randomizeCardDeck();
 
   // Create the cards again
