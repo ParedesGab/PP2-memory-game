@@ -34,7 +34,7 @@ function cardDeckArray() {
       name: "witch",
       alt: "witch"
     },
-    {
+    /**{
       imgSrc: "assets/images/crystal.png",
       name: "crystal",
       alt: "crystal"
@@ -93,7 +93,7 @@ function cardDeckArray() {
       imgSrc: "assets/images/unicorn.png",
       name: "unicorn",
       alt: "unicorn"
-    },
+    },*/
   ];
 }
 
@@ -235,7 +235,7 @@ function incrementScore() {
   const updatedUserScore = currentScore + 100; //Add 100 points every time the user has a match
 
   document.getElementById("score").innerText = ` ${updatedUserScore}`;
-  if (updatedUserScore === 800) {
+  if (updatedUserScore === 200) {
     document.getElementById("score").innerText = `🎉 800! 🎉`;
 
     //If score is 800 (all cards are matched) -> end the game
@@ -309,7 +309,8 @@ function newGame() {
   // Hide the congratulations message
   document.getElementById("game-done-congratulations").classList.add("hide");
   document.getElementById("game-board").classList.remove("hide");
-  document.getElementById("controls").classList.remove("hide");
+  //document.getElementById("controls").classList.remove("hide");
+  document.getElementById("memory-game-container").classList.remove("hide");
 
   // Call the resetGame function
   resetGame();
@@ -318,8 +319,8 @@ function newGame() {
 function initialGame() {
   resetGame();
   document.getElementById("memory-game-container").classList.remove("hide");
+  document.getElementById("game-board").classList.remove("hide"); //If the user has already played
   document.getElementById("home-menu-buttons").classList.add("hide");
-  document.getElementById("game-board").classList.remove("hide");
   document.getElementById("game-indications").classList.add("hide");
   document.getElementById("game-name").classList.add("smaller-name");
 }
@@ -347,7 +348,6 @@ function showMainMenu() {
   document.getElementById("home-menu-buttons").classList.remove("hide");
   document.getElementById("game-done-congratulations").classList.add("hide");
   document.getElementById("game-indications").classList.add("hide");
-  //document.getElementById("memory-game-container").classList.add("hide");
 }
 
 /**
@@ -355,5 +355,6 @@ function showMainMenu() {
  * Contains the function that onclick takes you to the Home Page
  */
 document.addEventListener("DOMContentLoaded", function () {
+  //initialGame();
   showMainMenu();
 });
