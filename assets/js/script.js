@@ -172,6 +172,7 @@ function handleCardFlip(cardIdNumber) {
       flippedCards = 0; // Reset the flipped cards count
       incrementMovements();
       incrementScore();
+
     } else {
       setTimeout(checkNoMatch, 1000); // Reset unmatched cards after 1 second
       incrementMovements();
@@ -193,8 +194,9 @@ function revealCard(cardIdNumber) {
 
   // Disable the clicked card  so it cannot be clicked again
   memoryCardByID.disabled = true;
+  memoryCardByID.classList.add('no-hover');
 
-  return [memoryCardByID, cardObjectDetails]; // Return the <button ...></button> card and an object of the carDeck array, respectively.
+  return [memoryCardByID, cardObjectDetails]; // Return the <button ...></button> card, and an object of the carDeck array, respectively.
 }
 
 /** 
@@ -209,6 +211,10 @@ function checkNoMatch() {
   // Enable the cards so they can be clicked again.
   firstButtonCard.disabled = false;
   secondButtonCard.disabled = false;
+
+  firstButtonCard.classList.remove('no-hover');
+  secondButtonCard.classList.remove('no-hover');
+
 
   // Reset the flipped cards count
   flippedCards = 0;

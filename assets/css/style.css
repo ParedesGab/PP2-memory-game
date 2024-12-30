@@ -115,6 +115,10 @@ button:hover {
   color: var(--secondary-color);
 }
 
+.no-hover:hover {
+  background: initial;
+}
+
 /* GAME INDICATIONS*/
 #game-indications {
   display: flex;
@@ -203,7 +207,7 @@ figure {
   border: 3px solid var(--primary-color);
   border-radius: 50% 20% / 10% 40%;
   cursor: pointer;
-  margin: 0px 22px;
+  margin-top: 0px;
 }
 
 .btn--restart:focus {
