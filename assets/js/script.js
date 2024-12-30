@@ -252,17 +252,20 @@ function incrementScore() {
 
 function gameFinishedCongratulations() {
 
+  //Remove game heading smaller-name class
+  document.getElementById("game-name").classList.remove("smaller-name");
+
   const finalMovements = parseInt(document.getElementById("movements").innerText);
   document.getElementById("total-movements").innerText = finalMovements;
 
-  // Show final board for 1,3 s, then display the game result
+  // Show final board for 3s, then display the game result
   setTimeout(function () {
     hideHtmlElement("game-board");
     hideHtmlElement("controls");
     showHtmlElement("main-container");
     showHtmlElement("game-done-congratulations");
 
-  }, 1300);
+  }, 3000);
 }
 
 /** 

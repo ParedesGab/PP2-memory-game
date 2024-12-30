@@ -72,10 +72,9 @@ h2 {
 }
 
 .smaller-name {
-  margin-top: 20px !important;
+  margin-top: 15px !important;
   margin-bottom: 0px !important;
   padding: 3px !important;
-  background-color: #e29484;
 }
 
 /* HOME MENU */
@@ -105,7 +104,7 @@ h2 {
 #game-done-congratulations>button {
   font-size: 1.5em;
   width: 200px;
-  background-color: #832e0a;
+  margin: 10px;
 }
 
 button:hover {
@@ -226,17 +225,19 @@ img {
   flex-direction: column;
   width: 300px;
   align-items: center;
+  margin: 30px;
 }
 
 #congrats-message {
   background-color: rgb(255 87 0 / 80%);
   width: 89%;
-  /*margin: 15px;
-  padding: 20px;*/
+  margin: 15px;
+  padding: 20px;
 }
 
 h3 {
-  font-size: 1.9rem;
+  font-size: 2rem;
+  padding: 10px;
 }
 
 #game-done-congratulations p {
