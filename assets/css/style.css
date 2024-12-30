@@ -347,6 +347,12 @@ h3 {
 @media screen and (min-width:992px) {
 
   /* GAME HEADER */
+
+  /* GAME HEADER */
+  #game-name {
+    width: 520px;
+  }
+
   .smaller-name {
     margin-bottom: 40px !important;
   }
@@ -391,10 +397,12 @@ h3 {
   #game-done-congratulations {
     width: 700px;
     align-items: center;
+    margin-top: 0px;
+    margin-bottom: 40px;
   }
 
   h3 {
-    font-size: 3rem;
+    font-size: 2.7rem;
   }
 
   #game-done-congratulations p {
