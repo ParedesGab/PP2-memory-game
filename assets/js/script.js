@@ -347,7 +347,7 @@ function showMainMenu() {
   document.getElementById("home-menu-buttons").classList.remove("hide");
   document.getElementById("game-done-congratulations").classList.add("hide");
   document.getElementById("game-indications").classList.add("hide");
-  document.getElementById("memory-game-container").classList.add("hide");
+  //document.getElementById("memory-game-container").classList.add("hide");
 }
 
 /**
