@@ -238,7 +238,7 @@ function incrementScore() {
   const updatedUserScore = currentScore + 100; //Add 100 points every time the user has a match
 
   document.getElementById("score").innerText = ` ${updatedUserScore}`;
-  if (updatedUserScore === 200) {
+  if (updatedUserScore === 800) {
     document.getElementById("score").innerText = `🎉 800! 🎉`;
 
     //If score is 800 (all cards are matched) -> end the game
