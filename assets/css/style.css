@@ -83,6 +83,7 @@ h2 {
   align-items: center;
 }
 
+/* Game buttons */
 #home-menu-buttons>button,
 #game-indications>button,
 #game-done-congratulations>button {
@@ -112,7 +113,6 @@ button:hover {
 }
 
 /* GAME INDICATIONS*/
-
 #game-indications {
   display: flex;
   flex-direction: column;
@@ -140,7 +140,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   padding: 5px;
-  background-color: #b9c6e8;
+  background-color: #d4eaf1;
   box-shadow: 0 1px 10px 3px #f9f9fa;
 }
 
@@ -223,8 +223,8 @@ img {
 }
 
 #congrats-message {
-  background-color: rgb(255 87 0 / 76%);
-  width: 85%;
+  background-color: rgb(255 87 0 / 80%);
+  width: 89%;
   margin: 15px;
   padding: 20px;
 }
@@ -234,7 +234,7 @@ h3 {
 }
 
 #game-done-congratulations p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 #total-movements {
@@ -246,8 +246,6 @@ i {
   font-size: 2rem;
   color: var(--primary-color);
 }
-
-
 
 /* MEDIA QUERIES */
 
@@ -265,26 +263,18 @@ i {
     overflow: hidden;
   }
 
-  /* Game heading */
+  /* GAME HEADING */
   #game-name {
     margin-bottom: 80px;
-    color: var(--primary-color);
-    background-color: rgb(225, 225, 225, 0.8);
-    box-shadow: 0 2px 20px 12px #58585f;
-    border-radius: 5px;
-    padding: 20px;
     width: 420px;
   }
 
   h1 {
     font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
   }
 
   h2 {
     font-size: 1.7rem;
-    letter-spacing: 0.2rem;
   }
 
   .smaller-name {
@@ -292,35 +282,23 @@ i {
     margin-bottom: 40px !important;
   }
 
-
-  /* Game Home Menu */
+  /* HOME MENU */
   #home-menu-buttons {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 2px 20px 3px #f9f9fa;
     margin: 30px;
-    align-items: center;
   }
 
   #home-menu-buttons>button,
   #game-indications>button,
   #game-done-congratulations>button {
-    font: var(--secondary-font);
-    color: var(--primary-color);
     font-size: 2.2rem;
-    font-weight: bold;
-    border-radius: 12px;
-    box-shadow: 0 2px 20px 4px #f9f9fa;
     margin: 30px;
-    padding: 15px;
-    cursor: pointer;
     width: 300px;
   }
 
   #game-indications>button,
   #game-done-congratulations>button {
     font-size: 1.5em;
-    width: auto;
+    width: 200px;
   }
 
   button:hover {
@@ -420,76 +398,15 @@ i {
     font-size: 2rem;
     color: var(--primary-color);
   }
-
-
 }
 
 /* Media Query: Laptops and Up */
 @media screen and (min-width:992px) {
 
-  /* Game heading */
-  #game-name {
-    margin-bottom: 80px;
-    color: var(--primary-color);
-    background-color: rgb(225, 225, 225, 0.8);
-    box-shadow: 0 2px 20px 12px #58585f;
-    border-radius: 5px;
-    padding: 20px;
-    width: 420px;
-  }
-
-  h1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.3rem;
-  }
-
-  h2 {
-    font-size: 1.7rem;
-    letter-spacing: 0.2rem;
-  }
-
-  .smaller-name {
-    margin: 0px !important;
-    margin-bottom: 40px !important;
-  }
-
-
-  /* Game Home Menu */
-  #home-menu-buttons {
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 2px 20px 3px #f9f9fa;
-    margin: 30px;
-    align-items: center;
-  }
-
-  #home-menu-buttons>button,
+  /* HOME MENU */
   #game-indications>button,
   #game-done-congratulations>button {
-    font: var(--secondary-font);
-    color: var(--primary-color);
-    font-size: 2.2rem;
-    font-weight: bold;
-    border-radius: 12px;
-    box-shadow: 0 2px 20px 4px #f9f9fa;
-    margin: 30px;
-    padding: 15px;
-    cursor: pointer;
     width: 300px;
-  }
-
-  #game-indications>button,
-  #game-done-congratulations>button {
-    font-size: 1.5em;
-    width: auto;
-  }
-
-  button:hover {
-    transform: rotate(6deg);
-    transition: transform 0.3s ease;
-    background: linear-gradient(45deg, #7943af, #3455af);
-    color: var(--secondary-color);
   }
 
   /* Game indications */
