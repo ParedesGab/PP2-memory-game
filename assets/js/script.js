@@ -258,14 +258,14 @@ function gameFinishedCongratulations() {
   const finalMovements = parseInt(document.getElementById("movements").innerText);
   document.getElementById("total-movements").innerText = finalMovements;
 
-  // Show final board for 5s, then display the game result
+  // Show final board for 4s, then display the game result
   setTimeout(function () {
     hideHtmlElement("game-board");
     hideHtmlElement("controls");
     showHtmlElement("main-container");
     showHtmlElement("game-done-congratulations");
 
-  }, 5000);
+  }, 4000);
 }
 
 /** 

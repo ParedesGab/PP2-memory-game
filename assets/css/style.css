@@ -347,8 +347,6 @@ h3 {
 @media screen and (min-width:992px) {
 
   /* GAME HEADER */
-
-  /* GAME HEADER */
   #game-name {
     width: 520px;
   }
@@ -410,8 +408,8 @@ h3 {
   }
 }
 
-/* Media Query: Extraordinary section in more than 1800px */
-@media screen and (min-width:1800px) {
+/* Media Query: Extraordinary section in more than 1200px */
+@media screen and (min-width:1200px) {
 
   /* GAME HEADER */
   #game-name {
@@ -419,16 +417,16 @@ h3 {
   }
 
   h1 {
-    font-size: 9rem;
+    font-size: 8rem;
   }
 
   h2 {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
   }
 
   .smaller-name {
-    /*margin: 0px !important;*/
-    margin-bottom: 40px !important;
+    margin-top: 100px !important;
+    margin-bottom: 50px !important;
   }
 
   /* HOME MENU */
@@ -486,20 +484,22 @@ h3 {
   #memory-game-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
   }
 
   #game-board {
     display: grid;
-    grid-template-columns: repeat(4, 16rem);
-    grid-template-rows: repeat(4, 16rem);
+    grid-template-columns: repeat(4, 10rem);
+    grid-template-rows: repeat(4, 10rem);
     gap: 1.2rem;
-    margin: 70px;
+    margin: 70px 0px;
   }
 
   /* Control Area */
   #controls {
     height: 620px;
-    margin: 20px;
+    margin-left: 50px;
   }
 
   .scores,
