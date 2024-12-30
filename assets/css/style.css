@@ -214,7 +214,7 @@ img {
   height: 100%;
 }
 
-/* Game Finished - Congratulations*/
+/* GAME FINISHED - CONGRATULATIONS */
 #game-done-congratulations {
   display: flex;
   flex-direction: column;
@@ -239,12 +239,6 @@ h3 {
 
 #total-movements {
   font-weight: bold;
-}
-
-/* RETURN TO HOME */
-i {
-  font-size: 2rem;
-  color: var(--primary-color);
 }
 
 /* MEDIA QUERIES */
@@ -291,7 +285,6 @@ i {
   #game-indications>button,
   #game-done-congratulations>button {
     font-size: 2.2rem;
-    margin: 30px;
     width: 300px;
   }
 
@@ -337,10 +330,18 @@ i {
     width: 200x;
   }
 
-  /* Return to home */
-  i {
+  /* GAME FINISHED - CONGRATULATIONS */
+  #game-done-congratulations {
+    width: 500px;
+    align-items: center;
+  }
+
+  h3 {
     font-size: 2rem;
-    color: var(--primary-color);
+  }
+
+  #game-done-congratulations p {
+    font-size: 1.4rem;
   }
 }
 
@@ -381,10 +382,122 @@ i {
     height: 400px;
     margin-left: 80px;
   }
+}
 
-  /* Return to home */
-  i {
+/* Media Query: Extraordinary section in more than 1800px */
+@media screen and (min-width:1800px) {
+
+  /* GAME HEADING */
+  #game-name {
+    width: 1000px;
+  }
+
+  h1 {
+    font-size: 9rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  .smaller-name {
+    /*margin: 0px !important;*/
+    margin-bottom: 40px !important;
+  }
+
+  /* HOME MENU */
+  #home-menu-buttons {
+    margin: 50px;
+    padding: 70px;
+  }
+
+  #home-menu-buttons>button,
+  #game-indications>button,
+  #game-done-congratulations>button {
+    font-size: 4rem;
+    width: 600px;
+    margin: 50px;
+  }
+
+  /* GAME INDICATIONS */
+  #game-indications {
+    margin: 50px;
+    max-width: 1500px;
+  }
+
+
+  #indications-text {
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+
+  #game-indications p {
+    font-size: 2.4rem;
+    line-height: 1.2;
+  }
+
+  #img-legend {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: #d4eaf1;
+    box-shadow: 0 1px 10px 3px #f9f9fa;
+    margin-bottom: 50px;
+  }
+
+  #game-indications img {
+    width: 80px;
+    height: 80px;
+    padding: 4px;
+  }
+
+  figure {
+    display: flex;
+    font-size: 2.4rem;
+  }
+
+  /*  MEMORY BOARD GAME */
+  #memory-game-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: repeat(4, 6rem);
+    gap: 1rem;
+    margin-left: 20px;
+  }
+
+  /* Control Area */
+  #controls {
+    height: 320px;
+    margin: 30px;
+  }
+
+  .scores,
+  .btn--restart {
+    font-size: 1.5rem;
+  }
+
+  .btn--restart {
+    margin-top: 40px;
+    padding: 15px;
+    width: 200x;
+  }
+
+  /* GAME FINISHED - CONGRATULATIONS */
+  #game-done-congratulations {
+    width: 500px;
+    align-items: center;
+  }
+
+  h3 {
     font-size: 2rem;
-    color: var(--primary-color);
+  }
+
+  #game-done-congratulations p {
+    font-size: 1.4rem;
   }
 }
