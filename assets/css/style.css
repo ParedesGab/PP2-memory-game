@@ -74,7 +74,7 @@ h2 {
 
 .smaller-name {
   margin-top: 20px !important;
-  margin-bottom: 20px !important;
+  margin-bottom: 00px !important;
   padding: 3px !important;
 }
 
@@ -162,9 +162,6 @@ figure {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-bottom: 8px;
 }
 
 #game-board {
