@@ -305,24 +305,17 @@ function resetGame() {
 /** 
  * Starts a new game when the Play again! button is clicked
  */
-function newGame() {
-  // Hide the congratulations message
-  document.getElementById("game-done-congratulations").classList.add("hide");
-  document.getElementById("game-board").classList.remove("hide");
-  //document.getElementById("controls").classList.remove("hide");
-  document.getElementById("memory-game-container").classList.remove("hide");
-
+function initialGame() {
   // Call the resetGame function
   resetGame();
-}
 
-function initialGame() {
-  resetGame();
   document.getElementById("memory-game-container").classList.remove("hide");
   document.getElementById("game-board").classList.remove("hide"); //If the user has already played
   document.getElementById("home-menu-buttons").classList.add("hide");
   document.getElementById("game-indications").classList.add("hide");
   document.getElementById("game-name").classList.add("smaller-name");
+
+  document.getElementById("game-done-congratulations").classList.add("hide");
 }
 
 /** 
