@@ -46,7 +46,7 @@ main,
   justify-content: center;
 }
 
-/* GAME HEADING */
+/* GAME HEADER */
 #game-name {
   margin: 100px 0px;
   color: var(--primary-color);
@@ -256,7 +256,7 @@ h3 {
     overflow: hidden;
   }
 
-  /* GAME HEADING */
+  /* GAME HEADER */
   #game-name {
     margin-bottom: 80px;
     width: 420px;
@@ -386,7 +386,7 @@ h3 {
 /* Media Query: Extraordinary section in more than 1800px */
 @media screen and (min-width:1800px) {
 
-  /* GAME HEADING */
+  /* GAME HEADER */
   #game-name {
     width: 1000px;
   }
