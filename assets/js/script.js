@@ -305,16 +305,20 @@ function resetGame() {
 /** 
  * Starts a new game when the Play again! button is clicked
  */
-function initialGame() {
+function playGame() {
   // Call the resetGame function
   resetGame();
 
+  //In case hidden, unhide the memory board game
   document.getElementById("memory-game-container").classList.remove("hide");
-  document.getElementById("game-board").classList.remove("hide"); //If the user has already played
-  document.getElementById("home-menu-buttons").classList.add("hide");
-  document.getElementById("game-indications").classList.add("hide");
+  document.getElementById("game-board").classList.remove("hide");
+
+  //Make game heading smaller
   document.getElementById("game-name").classList.add("smaller-name");
 
+  // Hide any other elements
+  document.getElementById("home-menu-buttons").classList.add("hide");
+  document.getElementById("game-indications").classList.add("hide");
   document.getElementById("game-done-congratulations").classList.add("hide");
 }
 
@@ -348,6 +352,6 @@ function showMainMenu() {
  * Contains the function that onclick takes you to the Home Page
  */
 document.addEventListener("DOMContentLoaded", function () {
-  //initialGame();
+  //playGame();
   showMainMenu();
 });

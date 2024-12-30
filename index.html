@@ -25,7 +25,7 @@
 
       <!--Home Menu buttons -->
       <div id="home-menu-buttons">
-        <button onclick="initialGame()" aria-label="Start the game">Play Game!</button>
+        <button onclick="playGame()" aria-label="Start the game">Play Game!</button>
         <button onclick="gameIndications()" aria-label="Game indications">Play Instructions</button>
       </div>
 
@@ -76,7 +76,7 @@
         </div>
 
         <button onclick="showMainMenu()">Home Menu</i></button>
-        <!--button onclick="newGame()" aria-label="Start a new game">Play again!</button-->
+        <!--button onclick="playGame()" aria-label="Start a new game">Play again!</button-->
       </div>
 
       <!-- Game Finished - Congratulations -->
@@ -87,8 +87,8 @@
           <p>with <span id="total-movements"></span> moves🎉</p>
         </div>
         <button onclick="showMainMenu()" aria-label="Show main menu">Home Menu</i></button>
-        <!-- original button onclick="newGame()" aria-label="Start a new game">Play Game!</button-->
-        <button onclick="initialGame()" aria-label="Start a new game">Play Game!</button>
+        <!-- original button onclick="playGame()" aria-label="Start a new game">Play Game!</button-->
+        <button onclick="playGame()" aria-label="Start a new game">Play Again!</button>
       </div>
     </section>
 
@@ -113,7 +113,7 @@
 
         <!-- Restart and Home Menu buttons -->
         <div>
-          <button class="btn--restart" id="submit" onclick="initialGame()" aria-label="Restart the game">
+          <button class="btn--restart" id="submit" onclick="playGame()" aria-label="Restart the game">
             Restart Game
           </button>
         </div>
