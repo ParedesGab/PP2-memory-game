@@ -1,4 +1,4 @@
-# COSMIC MATCH | Memory Game!
+# The Cosmic Match Memory Game
 
 (Developer: Gabriela Fabiola Paredes Rojas)
 
