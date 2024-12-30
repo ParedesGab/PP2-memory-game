@@ -46,36 +46,40 @@ main {
   justify-content: center;
   width: 100%;
   max-width: 1400px;
-  background-color: #ce4008;
+  background-color: #2208ce;
 }
 
 /* GAME HEADER */
 #game-name {
-  margin: 100px 0px;
+  /*margin: 100px 0px;*/
   color: var(--primary-color);
   background-color: rgb(225, 225, 225, 0.8);
   box-shadow: 0 2px 20px 12px #58585f;
   border-radius: 5px;
   padding: 10px;
   width: 300px;
+  background-color: #9984e2;
 }
 
 h1 {
   font-size: 3rem;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
+  background-color: #84e2c9;
 }
 
 h2 {
   margin: 10px;
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
+  background-color: #e2d484;
 }
 
 .smaller-name {
-  margin-top: 20px !important;
-  margin-bottom: 00px !important;
+  /*margin-top: 20px !important;
+  margin-bottom: 00px !important;*/
   padding: 3px !important;
+  background-color: #e29484;
 }
 
 /* HOME MENU */
@@ -83,7 +87,8 @@ h2 {
   display: flex;
   flex-direction: column;
   box-shadow: 0 2px 20px 3px #f9f9fa;
-  margin: 30px;
+  /*margin: 30px;*/
+  background-color: #831e0a;
 }
 
 /* Game buttons */
@@ -96,16 +101,18 @@ h2 {
   font-weight: bold;
   border-radius: 12px;
   box-shadow: 0 2px 20px 4px #f9f9fa;
-  margin: 20px;
+  /*margin: 20px;*/
   padding: 15px;
   cursor: pointer;
   width: 180px;
+  background-color: #7b830a;
 }
 
 #game-indications>button,
 #game-done-congratulations>button {
   font-size: 1.5em;
   width: 200px;
+  background-color: #832e0a;
 }
 
 button:hover {
@@ -125,13 +132,14 @@ button:hover {
   justify-content: space-between;
   text-align: justify;
   align-items: center;
+  background-color: #dc5116;
 }
 
 #indications-text {
   background-color: rgb(225, 225, 225);
   box-shadow: 0 1px 10px 3px #f9f9fa;
-  padding: 10px;
-  margin-bottom: 20px;
+  /*padding: 10px;
+  margin-bottom: 20px;*/
 }
 
 #game-indications p {
@@ -142,7 +150,7 @@ button:hover {
 #img-legend {
   display: flex;
   flex-direction: column;
-  padding: 5px;
+  /*padding: 5px;*/
   background-color: #d4eaf1;
   box-shadow: 0 1px 10px 3px #f9f9fa;
 }
@@ -150,7 +158,7 @@ button:hover {
 #game-indications img {
   width: 30px;
   height: 30px;
-  padding: 4px;
+  /*padding: 4px;*/
 }
 
 figure {
@@ -162,6 +170,7 @@ figure {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #16dc65;
 }
 
 #game-board {
@@ -169,7 +178,8 @@ figure {
   grid-template-columns: repeat(4, 4rem);
   grid-template-rows: repeat(4, 4rem);
   gap: 0.5rem;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
+  background-color: #dc1697;
 }
 
 /* Control Area */
@@ -179,16 +189,17 @@ figure {
   background-color: rgb(225, 225, 225, 0.65);
   box-shadow: 0 1px 10px 3px #f9f9fa;
   color: var(--primary-color);
+  background-color: #16d9dc;
 }
 
 .scores,
 .btn--restart {
   border: 3px solid #ffffff;
   border-radius: 50% 20% / 10% 40%;
-  margin: 18px 22px;
+  /*margin: 18px 22px;*/
   background-color: var(--primary-color);
   color: white;
-  padding: 10px;
+  /*padding: 10px;*/
   text-transform: uppercase;
   font-size: 1rem;
   width: 190px;
@@ -199,7 +210,7 @@ figure {
   border: 3px solid var(--primary-color);
   border-radius: 50% 20% / 10% 40%;
   cursor: pointer;
-  margin-top: 0px;
+  /*margin-top: 0px;*/
 }
 
 .btn--restart:focus {
@@ -223,8 +234,8 @@ img {
 #congrats-message {
   background-color: rgb(255 87 0 / 80%);
   width: 89%;
-  margin: 15px;
-  padding: 20px;
+  /*margin: 15px;
+  padding: 20px;*/
 }
 
 h3 {
