@@ -409,7 +409,7 @@ h3 {
 }
 
 /* Media Query: Extraordinary section in more than 1200px */
-@media screen and (min-width:1200px) {
+@media screen and (min-width:1800px) {
 
   /* GAME HEADER */
   #game-name {
