@@ -154,8 +154,7 @@ figure {
   display: flex;
 }
 
-/*  Memory Board Game */
-
+/*  MEMORY BOARD GAME */
 #memory-game-container {
   display: flex;
   flex-direction: column;
@@ -215,11 +214,19 @@ img {
   height: 100%;
 }
 
-/* Return to home */
+/* Game Finished - Congratulations*/
+#game-done-congratulations {
+  display: flex;
+  flex-direction: column;
+}
+
+/* RETURN TO HOME */
 i {
   font-size: 2rem;
   color: var(--primary-color);
 }
+
+
 
 /* MEDIA QUERIES */
 
