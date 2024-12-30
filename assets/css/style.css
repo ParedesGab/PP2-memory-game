@@ -386,6 +386,20 @@ h3 {
     margin-left: 80px;
     justify-content: center;
   }
+
+  /* GAME FINISHED - CONGRATULATIONS */
+  #game-done-congratulations {
+    width: 700px;
+    align-items: center;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+
+  #game-done-congratulations p {
+    font-size: 1.6rem;
+  }
 }
 
 /* Media Query: Extraordinary section in more than 1800px */
