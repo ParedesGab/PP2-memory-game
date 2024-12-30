@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- ADD FAVICON; META DESCRIPTION-->
   <!-- CSS link-->
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <title>EXCELsior | Memory Game!</title>
+  <title>DEEP MATCH | Memory Game!</title>
 </head>
 
 <body>
@@ -24,8 +25,8 @@
 
       <!--Home Menu buttons -->
       <div id="home-menu-buttons">
-        <button onclick="initialGame()">Play Game!</button>
-        <button onclick="gameIndications()">Play Instructions</button>
+        <button onclick="initialGame()" aria-label="Start the game">Play Game!</button>
+        <button onclick="gameIndications()" aria-label="Game indications">Play Instructions</button>
       </div>
 
       <!-- Game indications -->
@@ -84,8 +85,8 @@
           <p>🎉You finished the game</p>
           <p>with <span id="total-movements"></span> moves🎉</p>
         </div>
-        <button onclick="showMainMenu()">Home Menu</i></button>
-        <button onclick="newGame()">Play again!</button>
+        <button onclick="showMainMenu()" aria-label="Show main menu">Home Menu</i></button>
+        <button onclick="newGame()" aria-label="Start a new game">Play again!</button>
       </div>
     </section>
 
@@ -100,15 +101,19 @@
       <!-- Control Area -->
       <div id="controls" class="hide">
         <div class="score-area">
-          <p class="scores">Movements: <span id="movements"> 0</span>
+          <p class="scores">
+            Movements: <span id="movements"> 0</span>
           </p>
-          <p class="scores">Score: <span id="score"> 0</span>
+          <p class="scores">
+            Score: <span id="score"> 0</span>
           </p>
         </div>
 
         <!-- Restart and Home Menu buttons -->
         <div>
-          <button class="btn--restart" id="submit" onclick="newGame() ">Restart Game</button>
+          <button class="btn--restart" id="submit" onclick="newGame()" aria-label="Restart the game">
+            Restart Game
+          </button>
         </div>
       </div>
     </section>

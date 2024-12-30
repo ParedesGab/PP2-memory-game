@@ -30,7 +30,6 @@ body {
   justify-content: center;
   /*do not allow scrolling*/
   overflow: hidden;
-  background-color: red;
 }
 
 .hide {
