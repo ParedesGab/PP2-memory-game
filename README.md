@@ -51,25 +51,25 @@ Welcome to the Galaxy-Themed Memory Game! Immerse yourself in a cosmic adventure
 
 + **As a first-time user, I want to:**
 
+  + Quickly understand how the game works.
+  + Dive into the game without confusion.
+  + Have a smooth, enjoyable experience without delays or glitches.
   + Easily navigate the website and find the content interesting.
-  + Be surprised to discover that drastically different organisms in nature might depend on each other for survival.
-  + Find this, otherwise niche topic, entertaining and easy to understand. 
-  + Find useful information about this symbiosis, so I can compare it with my research system. 
-  + Visit the social media platforms to see what activity is going on around this topic.
+  + To be drawn into the game's theme by having an engaging and visually appealing experience.
+  + Know how many movements I am doing during and a summary after the game.
 
 + **As a returning user, I want to:**
 
-  + Discover the latest key findings or new research on the *Laxus*-Thiosymbion symbiosis. 
-  + Connect with scientists working on marine symbiosis, so they can share their insights in schools, museums, or to establish a scientific collaboration.
-  + See if other symbiotic systems are featured on the site.
+  + See if my cognitive skills have improved by comparing the movements I made in one game versus another.
+  + See a more dynamic galaxy-themed background to make the page more immersive.
+  + Check if new space card-theme designs are being featured.
 
 + **As the site ownser, I want:**
 
-  + Pass on my love for this system that was my workhorse for many years. 
-  + Highlight the key discoveries I made during my Ph.D. research (Paredes et al., 2021, 2022).
-  + Keep the website updated with the latest research on this symbiosis. 
-  + Know if the visitors found the content interesting and if it was easy to understand. 
-  + Know what other symbiosis-related content my users want to see. For example, testimonial from scientists, or the process of collecting the nematodes from sand, etc. 
+  + To keep the users engaged and the website updated with newer themes.
+  + Deliver a smooth, accessible experience.
+  + Relaxed, stress-free experience: Without a timer and the possibility of losing, players can enjoy the game at their own pace, exploring and improving their memory without feeling rushed or pressured.
+  + Positive reinforcement and engagement: The "no-loss" design encourages players to keep playing and improving, offering a rewarding, fun experience where they can focus on achieving personal milestones and celebrating small victories.
 
 ---
 ## Features 
