@@ -264,6 +264,9 @@ function gameFinishedCongratulations() {
     showHtmlElement("main-container");
     showHtmlElement("game-done-congratulations");
 
+    //Make game heading smaller
+    document.getElementById("game-name").classList.add("smaller-name");
+
   }, 4000);
 }
 

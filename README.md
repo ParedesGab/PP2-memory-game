@@ -96,7 +96,9 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 
 + The main page of the Galaxy Memory Game, consists of the game heading and the home menu buttons. 
 
-+ The intention was to have a simple yet impactful background that would immediately introduce the galactic theme of the Memory Game. 
++ The intention was to have a simple yet impactful background that would immediately introduce the galactic theme of the Memory Game.
+
++ Importantly, the same background is used across all pages. 
 
 + In addition, the fun universe background allows the title and buttons to stand out.
 
@@ -127,9 +129,17 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 
 ![Memory board game card deck open](documentation/website-screenshots/memory-game-open.png)
 
+It contains two subsections, from top to bottom:
+
+- With javascript, the class smaller-name was added to the header (i.e., game name), to make the whole page more visually organized. 
+
+**Subsection: Game Board**
+
 - This section presents the memory game itself: a relaxing and fun memory-matching game designed with a space-related theme.
 
 - Players are challenged to match 8 pairs of cards, with a total of 16 cards in the game.
+
+- The card deck array is created by Javascript within the Game Board section. 
 
  - The game offers a no-pressure environment where players never lose, ensuring a calm and enjoyable experience.
 
@@ -137,7 +147,9 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 
 ![Memory board game card deck closed](documentation/website-screenshots/memory-game-closed.png)
  
- - The memory board game page also contains a "Control Area" pannel displaying "Moves", "Score" and one button, the "Restart Game", placed on top of the other. 
+ - The memory board game page also contains a "Control Area" section displaying "Moves", "Score" and one button, the "Restart Game", placed on top of the other. 
+
+ - The Restart Game button has the same hover effects as the home menu buttons, and to encourage the user to restart the game as much as they want, the button was made to stand out in orange. 
 
  - At the beginning of the game:
     - The **Moves** are set to 0, and every time the user chooses two cards, the "moves" will increase by 1.
@@ -154,34 +166,22 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 ![memory board game mobiles](documentation/website-screenshots/memory-game-mobiles.png)
 
 ---
-### LAXUS page
+### Game Finished - Congratulations!
 
-- This page provides the user with more information about the nematode.
+![congratulations page](documentation/website-screenshots/congratulations-message.png)
 
-- It contains three sections, from top to bottom:
+- After 4s that user has matched all cards (score: 🎉 800! 🎉), the user is redirected to this page that congratulates them for their victory. 
 
-  - The **Hero Laxus section**: it uses the same style as the hero section from the home page but a different background image. This section is responsive, and its height increases as the device screen width increases. 
+- In addition, the congratulations message displays in bold the amount of moves the user made.
 
-  - The **Laxus introduction section**: it uses the same style as the love story section from the home page. This section is responsive.
+- This section contains two buttons:
+  - Home Menu: Directs you back to to the Home Menu page.
+  - Play again!: Starts a new game. 
 
-  - The **What Laxus gives to Thiosymbion section**: it is a research study conducted by the developer in 2022. A summary of the main findings of the article is presented, as well as a nutritional model of the interaction of *Laxus* with its bacteria. The study is also linked to the website and it opens in a new window. This section is responsive.  
+- The buttons use the same style as the home menu buttons. 
 
-    ![Laxus page](documentation/website-screenshots/laxus-page.png)
+- With javascript, the class smaller-name was added to the header (i.e., game name), to make the whole page more visually organized. 
 
----
-### THIOSYMBION page
-
-- This page provides the user with more information about the bacteria.
-
-- Intentionally, for consistency, it has the same style and responsiveness as the Laxus page. Thus, from top to bottom:
-
-  - The **Hero Thiosymbion section**: : it uses the same style and responsiveness as the hero section from the laxus page. The image caption has a link to a study that opens in a new window.  
-
-  - The **Thiosymbion introduction section**:: it uses the same style as the love story section, and the laxus introduction section from the home page and laxus page, respectively. This section is responsive.
-
-  - The **What Thiosymbion gives to Laxus section**: it is a research study conducted by the developer in 2021. A summary of the main findings of the article is presented, as well as a nutritional model of the interaction of Thiosymbion with the nematode. The study is also linked to the website and it opens in a new window. This section is responsive.  
-
-  ![Thiosymbion page](documentation/website-screenshots/thiosymbion-page.png)
 
 ---
 ## Features left to implement
