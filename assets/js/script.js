@@ -128,7 +128,7 @@ function createMemoryCards() {
     memoryCard.id = idValue; // Assign the id: "0", "1", ..., "15"
     memoryCard.setAttribute("data-id", idValue);
 
-    // // Set aria label attribute
+    // Set aria label attribute
     const ariaLabelIndex = i + 1;
     memoryCard.setAttribute("aria-label", `memory card ${ariaLabelIndex}`);
 
@@ -214,7 +214,6 @@ function checkNoMatch() {
 
   firstButtonCard.classList.remove('no-hover');
   secondButtonCard.classList.remove('no-hover');
-
 
   // Reset the flipped cards count
   flippedCards = 0;

@@ -4,7 +4,7 @@
 
 ![Responsive Mockup image](documentation/website-screenshots/responsive-mockup.png)
 
-Symbiosis is defined as "the living together of differently named organisms" (de Bary, 1879). This website provides information on an extraordinary symbiotic example, the one involving the marine free-living marine nematode *Laxus oneistus* and its inseparable bacterial partner, *Candidatus* Thiosymbion oneisti. 
+Welcome to the Galaxy-Themed Memory Game! Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of galaxy-inspired cards featuring celestial bodies and space explorers. Flip cards to reveal exciting images like aliens, astronauts, Earth, the Sun, and more! Challenge your memory as you journey through the stars.
 
 + The site can be accessed via this [link](https://paredesgab.github.io/PP2-memory-game/)
 
@@ -13,10 +13,11 @@ Symbiosis is defined as "the living together of differently named organisms" (de
 
 ### User Goals
 
-+ Find clear, fun and engaging information about this marine symbiosis.
-+ Understand or learn about the unique relationship between *Laxus* and Thiosymbion. 
-+ Explore the "cool factor" of symbiosis through this example.
-+ Leave with a new appreciation for the surprising, complex relationships that exist even in the smallest corners of the ocean.
++ Find a casual and fun activity to pass time or to relax.
++ Put their memory skills to test with an enjoyable memory game. 
++ Enhance memory, concentration, and problem-solving skills.
++ Find a simple, accessible game that doesn’t require downloads or setup.
++ Find a vibrant, eye-catching game that provides a tvisually engaging experience.
 
 ### Site Owner Goals
 
@@ -28,6 +29,12 @@ Symbiosis is defined as "the living together of differently named organisms" (de
 + In addition:
   + Spark interest in further scientific study of this fascinating symbiotic system. 
   + Generate public engagement to build a network of people excited about marine symbioses.
+
+  
++ The celestial imagery, such as the alien, astronaut, and planetary designs, fits well with the galaxy theme, creating a visually engaging experience.
+The use of vibrant colors is eye-catching and makes the game more appealing.
+
++ A user looking for a lighthearted way to relax after a busy day may enjoy the simplicity and satisfaction of matching pairs.
 
 ---
 ## User Experience
@@ -47,6 +54,7 @@ Symbiosis is defined as "the living together of differently named organisms" (de
 + Have relevant content that keeps the user engaged.
 + Easy and intuitive navigation, overall a smooth experience.
 + Mobile-friendly, but generally a responsive design that works well on all devices.
+++sers expect the game to work seamlessly on various devices, allowing them to enjoy it anytime, anywhere.
 
 ### User stories
 
