@@ -21,30 +21,21 @@ Welcome to the Galaxy-Themed Memory Game! Immerse yourself in a cosmic adventure
 
 ### Site Owner Goals
 
-+ My primary goal is **science communication**. Namely:
-
-  + Inform, raise awareness and public outreach about the existance of this fascinating but little-known nematode-bacterium symbiosis.  
-  + Communicate key scientific findings of the *Laxus*-Thiosymbion partnership in a simple way.
-
-+ In addition:
-  + Spark interest in further scientific study of this fascinating symbiotic system. 
-  + Generate public engagement to build a network of people excited about marine symbioses.
-
+  + Provide a fun, relaxed and engaging User experience.
+  + Create an entertaining memory game that appeals to a broad audience.
+  + Develop a unique design and thematic experience, such as the galaxy theme, to stand out from generic memory games.
+  + Create a game that helps users improve memory, focus, and cognitive abilities. 
   
-+ The celestial imagery, such as the alien, astronaut, and planetary designs, fits well with the galaxy theme, creating a visually engaging experience.
-The use of vibrant colors is eye-catching and makes the game more appealing.
-
-+ A user looking for a lighthearted way to relax after a busy day may enjoy the simplicity and satisfaction of matching pairs.
-
 ---
 ## User Experience
 
 ### Target audience
 
-+ General public interested in life, nature or biology.
-+ Environmental advocates, because global warming and/or human impact have also an effect on marine meiofauna.
-+ Students, teachers or marine science enthusiasts studying marine biology, ecology, nematology, or microbiology. 
-+ Researchers, scientists.
++ Space enthusiasts, kids or adults.
++ Parents looking for educational and fun games for their children.
++ Children interested in games and space and galaxy themes. 
++ Students or educators that seek tools to improve cognitive abilities.
++ Casual gamers, casual web users or individuals looking for light, engaging games to pass the time.
 
 ### User expectations
 
