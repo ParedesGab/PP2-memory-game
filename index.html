@@ -33,68 +33,55 @@
         <button onclick="playGame()" aria-label="Start the game">Play Game!</button>
         <button onclick="gameIndications()" aria-label="Game indications">Play Instructions</button>
       </div>
+    </section>
 
-      <!-- Game indications -->
-      <div class="hide" id="game-indications">
-        <div id="game-indications-subcontainer">
-          <div id="indications-text">
-            <p>The AI memory game consists of 16 cards featuring 8 unique pairs of pictures.At the start, all the cards
-              are placed face down.</p>
-            <p>On each turn, you select and flip over two cards of your choice. If the pictures on the cards match, they
-              remain face up. If not, they are flipped back face down.</p>
-            <p>The game continues until all the pairs have been matched.</p>
-          </div>
-          <div id="img-legend">
-            <figure>
-              <img src="assets/images/alien.png" alt="crystal ball">
-              <figcaption>Crystal ball</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/images/astronaut.png" alt="crystals">
-              <figcaption>Crystals</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/images/comet.png" alt="crystal ball">
-              <figcaption>Crystal ball</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/images/earth.png" alt="crystal ball">
-              <figcaption>Crystal ball</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/images/launch.png" alt="crystal ball">
-              <figcaption>Crystal ball</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/images/mercury.png" alt="crystal ball">
-              <figcaption>Crystal ball</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/images/saturn.png" alt="crystal ball">
-              <figcaption>Crystal ball</figcaption>
-            </figure>
-            <figure>
-              <img src="assets/images/sun.png	" alt="crystal ball">
-              <figcaption>Crystal ball</figcaption>
-            </figure>
-          </div>
+    <!-- Game indications -->
+    <section class="hide" id="game-indications">
+      <div id="game-indications-subcontainer">
+        <div id="indications-text">
+          <p>The AI memory game consists of 16 cards featuring 8 unique pairs of pictures.At the start, all the cards
+            are placed face down.</p>
+          <p>On each turn, you select and flip over two cards of your choice. If the pictures on the cards match, they
+            remain face up. If not, they are flipped back face down.</p>
+          <p>The game continues until all the pairs have been matched.</p>
         </div>
-
-        <button onclick="showMainMenu()">Home Menu</i></button>
-        <!--button onclick="playGame()" aria-label="Start a new game">Play again!</button-->
+        <div id="img-legend">
+          <figure>
+            <img src="assets/images/alien.png" alt="crystal ball">
+            <figcaption>Crystal ball</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/astronaut.png" alt="crystals">
+            <figcaption>Crystals</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/comet.png" alt="crystal ball">
+            <figcaption>Crystal ball</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/earth.png" alt="crystal ball">
+            <figcaption>Crystal ball</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/launch.png" alt="crystal ball">
+            <figcaption>Crystal ball</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/mercury.png" alt="crystal ball">
+            <figcaption>Crystal ball</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/saturn.png" alt="crystal ball">
+            <figcaption>Crystal ball</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/images/sun.png	" alt="crystal ball">
+            <figcaption>Crystal ball</figcaption>
+          </figure>
+        </div>
       </div>
 
-      <!-- Game Finished - Congratulations -->
-      <div id="game-done-congratulations" class="hide">
-        <div id="congrats-message">
-          <h3>Congratulations You, GALACTIC Wizard!</h3>
-          <p>🎉You finished the game</p>
-          <p>with <span id="total-movements"></span> moves🎉</p>
-        </div>
-        <button onclick="showMainMenu()" aria-label="Show main menu">Home Menu</i></button>
-        <!-- original button onclick="playGame()" aria-label="Start a new game">Play Game!</button-->
-        <button onclick="playGame()" aria-label="Start a new game">Play Again!</button>
-      </div>
+      <button onclick="showMainMenu()">Home Menu</i></button>
     </section>
 
     <!-- Memory Board Game -->
@@ -123,6 +110,18 @@
           </button>
         </div>
       </div>
+    </section>
+
+    <!-- Game Finished - Congratulations -->
+    <section id="game-done-congratulations" class="hide">
+      <div id="congrats-message">
+        <h3>Congratulations You, GALACTIC Wizard!</h3>
+        <p>🎉You finished the game</p>
+        <p>with <span id="total-movements"></span> moves🎉</p>
+      </div>
+      <button onclick="showMainMenu()" aria-label="Show main menu">Home Menu</i></button>
+      <!-- original button onclick="playGame()" aria-label="Start a new game">Play Game!</button-->
+      <button onclick="playGame()" aria-label="Start a new game">Play Again!</button>
     </section>
   </main>
 

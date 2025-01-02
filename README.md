@@ -4,7 +4,9 @@
 
 ![Responsive Mockup image](documentation/website-screenshots/responsive-mockup.png)
 
-Welcome to the Galaxy-Themed Memory Game! Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of galaxy-inspired cards featuring celestial bodies and space explorers. Flip cards to reveal exciting images like aliens, astronauts, Earth, the Sun, and more! Challenge your memory as you journey through the stars.
+**Welcome to the Galaxy-Themed Memory Game!**
+
+Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of galaxy-inspired cards featuring celestial bodies and space explorers. Flip cards to reveal exciting images like aliens, astronauts, Earth, the Sun, and more! Challenge your memory as you journey through the stars.
 
 + The site can be accessed via this [link](https://paredesgab.github.io/PP2-memory-game/)
 
@@ -14,10 +16,10 @@ Welcome to the Galaxy-Themed Memory Game! Immerse yourself in a cosmic adventure
 ### User Goals
 
 + Find a casual and fun activity to pass time or to relax.
-+ Put their memory skills to test with an enjoyable memory game. 
++ Put memory skills to test with an enjoyable memory game. 
 + Enhance memory, concentration, and problem-solving skills.
 + Find a simple, accessible game that doesn’t require downloads or setup.
-+ Find a vibrant, eye-catching game that provides a tvisually engaging experience.
++ Find a vibrant, eye-catching game that provides a visually engaging experience.
 
 ### Site Owner Goals
 
@@ -40,11 +42,10 @@ Welcome to the Galaxy-Themed Memory Game! Immerse yourself in a cosmic adventure
 ### User expectations
 
 + Accessible site.
-+ Fast access to content.
-+ Clean and Intuitive Layout.
 + Understand clearly the purpose of the site.
++ Fast and easy access to content and navigation.
++ Clean and intuitive layout, overall a smooth experience.
 + Have vibrant and eye-catching content that keeps the user engaged.
-+ Easy and intuitive navigation, overall a smooth experience.
 + Expect the game to work seamlessly on various devices, allowing them to enjoy it anytime, anywhere.
 
 ### User stories
@@ -74,44 +75,16 @@ Welcome to the Galaxy-Themed Memory Game! Immerse yourself in a cosmic adventure
 ---
 ## Features 
 
-### Navigation Bar
+### GAME HEADER
 
-![NavBar Tablets and up](documentation/website-screenshots/navigation.png)
+![NavBar Tablets and up](documentation/website-screenshots/game-name.png)
 
-  + It is positioned at the top of the page, and it is found across all pages of the website. 
+  + Game name positioned at the top center of the page.
+  + Found across all pages of the website. 
+  + Clear and easy to read.
+  + It uses a futuristic Google font "Rajdhanithat" and a background style that embraces the cosmic-theme.
 
-  + It is clear and easy to navigate.
-
-  + On the left, it contains the "Laxus & Thiosymbion" logo.
-
-  + On the right, it contains the following four navigation links:
-
-    + **HOME:** Takes you to the home page where users can learn about the *Laxus*-Thiosymbion symbiosis.
-
-    + **LAXUS:** Takes you to the page that features the nematode *Laxus oneistus* and what it might be providing to its bacterial partner.
-
-    + **THIOSYMBION:** Takes you to the page describing the bacterium *Candidatus* Thiosymbion oneisti and what it might provide to its nematode host.
-
-    + **NEWSLETTER:** Takes you to the contact form to subscribe to our newsletter with symbiosis stories.
-
-  + All four navigation links have a hover effect. Namely, an underline to indicate in which page the user is on, and a hover highlight for 992px and up devices, to indicate that they are clickable.
-
-  + In addition, the navigation bar is responsive:
-
-    + **On mobile devices:**
-        
-      + The navbar features the logo on the left, with a hamburger menu from Font Awesome on the right.
-
-    ![Closed NavBar - Mobile](documentation/website-screenshots/navbar-mobile-closed.png)
-
-      + When clicked, the hamburger menu reveals a drop-down with the navigation links displayed (in the same order as described above), and they have an image of *Laxus* as bullet points.
-
-    ![Open NavBar - Mobile](documentation/website-screenshots/navbar-mobile-open.png)
-
-    + **On tablets and larger screens:** 
-      + The logo remains on the left, the hamburger is not displayed anymore, instead you see all the navigation links spaceously distributed on the right.
-
-    ![NavBar Tablets and up](documentation/website-screenshots/navigation.png)
+  + The navigation bar is responsive. Namely, it increases in size in larger screens. Furthermore, it is made smaller in the page where the memory card deck is displayed. 
        
 ---
 ### HOME page
