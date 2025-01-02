@@ -77,62 +77,50 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 
 ### GAME HEADER
 
-![NavBar up to Tablets](documentation/website-screenshots/game-name.png)
+![Game Header up to Tablets](documentation/website-screenshots/game-name.png)
 
-  + Game name positioned at the top center of the page.
-  + Found across all pages of the website. 
-  + Clear and easy to read.
-  + It uses a futuristic Google font "Rajdhanithat" and a background style that embraces the cosmic-theme.
++ It contains two titles (h1 and h2) positioned at the center of the page, and they are the first elements found across all pages.
+    + Clear and easy to read.
+    + It uses a futuristic Google font "Rajdhanithat" and a background style that conveys and embraces the cosmic-theme.
+  
++ Therefore, the user understands directly that theme of the memory game is related to galaxy, space, universe.
 
-  + The navigation bar is responsive. Namely, it increases in size in larger screens (Figure below). Furthermore, it is made smaller in the page where the memory card deck is displayed. 
++ The header position and font-size are responsive across all devices. For example, it increases in size in larger screens (**Figure below**). However, it is made smaller in the page where the memory card deck is displayed. 
 
-  ![NavBar Laptops and up](documentation/website-screenshots/game-name-laptops-up.png)
+![Game Header Laptops and up](documentation/website-screenshots/game-name-laptops-up.png)
        
 ---
-### HOME page
+### HOME MENU MAIN PAGE
 
-  * It presents the symbiosis of *Laxus* and Thiosymbion.
++ The main page of the Galaxy Memory Game, consists of the game heading and the home menu buttons. 
 
-  * It intends to make this topic easy to understand, by:
-    * Presenting it as a love story - it is after all, a relationship.
++ The intention was to have a simple yet impactful background that would immediately introduce the galactic theme of the Memory Game. 
 
-    * Using the analogy of wearing a coat, because the bacteria live on the surface. 
++ In addition, the universe background is impactful and allows the title and buttons to stand out.
 
-  * It highlights the extraordinary features of this partnership, including fun facts to make the content more enjoyable.
+![Home menu main page](documentation/website-screenshots/home-menu-main-page.png)
 
-  * It also introduces the social media channels.
+**Home Menu Buttons**
 
-  * The home page is responsive.
-
-    ![Home Page](documentation/website-screenshots/homepage.png)
-
-#### Hero section
-
-- The hero section is placed on top of the home page below the navbar.
-
-- The intention was to have a simple yet impactful hero section Thus, the black background allows the single nematode picture to shine.
-
- - The title of the website (h2) "A extraordinary symbiosis" is next to the image and it has a yellowish/white color, same as the bacterials symbiont.  
-
- - The background image, the title position and font-size are responsive across all devices. 
-
-    ![Hero Section](documentation/website-screenshots/hero-section.png)
-
-#### Love story section
-
-- This section aims to introduce the symbiosis in a fun and simplified way.
++ The home menu buttons are present on the main page of Memory Game, and they consist on two buttons: Play Game, and Play instructions. 
   
-- It contains: a title (h3), an intro text explaining the website's theme, a video of moving worms, and a video caption. 
++ They are responsive, and across all devices the home menu buttons are found positioned on top of the other (flex-direction: column) (**Figure below**). 
 
-- The "love story" title is an analogy representing symbiosis as a partnership.
++ Clear and easy to read.
++ Consistent styling and easy navigation.
 
-- The text is written to engage all audiences, for example, using the analogy of a winter coat in Caribbean heat to help users imagine life as this nematode coated with its bacteria.
+![Home menu buttons](documentation/website-screenshots/home-menu-buttons.png)
 
-- The video has no audio and it shows several *Laxus oneistus* in motion. The caption, highlights their resemblance with rice noodles but, in fact, the whiteness comes from the bacteria on the surface. 
+
+#### GAME INDICATIONS PAGE
+
+- This section aims to explain the game, what it consists of and the features to expect. 
+  
+- It contains:
 
 - This section is responsive, and in Tablets, Laptops and Desktops flex box with flex direction row was used. 
     
-    ![Love story Section](documentation/website-screenshots/love-story-section.png)
+    ![Game indications](documentation/website-screenshots/love-story-section.png)
 
 #### Extraordinary section
 
