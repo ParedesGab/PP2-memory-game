@@ -182,7 +182,6 @@ It contains two subsections, from top to bottom:
 
 - With javascript, the class smaller-name was added to the header (i.e., game name), to make the whole page more visually organized. 
 
-
 ---
 ## Features left to implement
 
