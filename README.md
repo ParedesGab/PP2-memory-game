@@ -77,14 +77,16 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 
 ### GAME HEADER
 
-![NavBar Tablets and up](documentation/website-screenshots/game-name.png)
+![NavBar up to Tablets](documentation/website-screenshots/game-name.png)
 
   + Game name positioned at the top center of the page.
   + Found across all pages of the website. 
   + Clear and easy to read.
   + It uses a futuristic Google font "Rajdhanithat" and a background style that embraces the cosmic-theme.
 
-  + The navigation bar is responsive. Namely, it increases in size in larger screens. Furthermore, it is made smaller in the page where the memory card deck is displayed. 
+  + The navigation bar is responsive. Namely, it increases in size in larger screens (Figure below). Furthermore, it is made smaller in the page where the memory card deck is displayed. 
+
+  ![NavBar Laptops and up](documentation/website-screenshots/game-name-laptops-up.png)
        
 ---
 ### HOME page
