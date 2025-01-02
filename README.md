@@ -41,11 +41,11 @@ Welcome to the Galaxy-Themed Memory Game! Immerse yourself in a cosmic adventure
 
 + Accessible site.
 + Fast access to content.
++ Clean and Intuitive Layout.
 + Understand clearly the purpose of the site.
-+ Have relevant content that keeps the user engaged.
++ Have vibrant and eye-catching content that keeps the user engaged.
 + Easy and intuitive navigation, overall a smooth experience.
-+ Mobile-friendly, but generally a responsive design that works well on all devices.
-++sers expect the game to work seamlessly on various devices, allowing them to enjoy it anytime, anywhere.
++ Expect the game to work seamlessly on various devices, allowing them to enjoy it anytime, anywhere.
 
 ### User stories
 
