@@ -92,75 +92,66 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 ---
 ### HOME MENU MAIN PAGE
 
+![Home menu main page](documentation/website-screenshots/home-menu-main-page.png)
+
 + The main page of the Galaxy Memory Game, consists of the game heading and the home menu buttons. 
 
 + The intention was to have a simple yet impactful background that would immediately introduce the galactic theme of the Memory Game. 
 
-+ In addition, the universe background is impactful and allows the title and buttons to stand out.
-
-![Home menu main page](documentation/website-screenshots/home-menu-main-page.png)
++ In addition, the fun universe background allows the title and buttons to stand out.
 
 **Home Menu Buttons**
+
+![Home menu buttons](documentation/website-screenshots/home-menu-buttons.png)
 
 + The home menu buttons are present on the main page of Memory Game, and they consist on two buttons: Play Game, and Play instructions. 
   
 + They are responsive, and across all devices the home menu buttons are found positioned on top of the other (flex-direction: column) (**Figure below**). 
 
++ The buttons will rotate slightly and change colors when hovered, creating a smooth, visually appealing interactive effect.
+
 + Clear and easy to read.
 + Consistent styling and easy navigation.
 
-![Home menu buttons](documentation/website-screenshots/home-menu-buttons.png)
-
-
 #### GAME INDICATIONS PAGE
+
+![Game indications](documentation/website-screenshots/love-story-section.png)
 
 - This section aims to explain the game, what it consists of and the features to expect. 
   
 - It contains:
 
 - This section is responsive, and in Tablets, Laptops and Desktops flex box with flex direction row was used. 
-    
-    ![Game indications](documentation/website-screenshots/love-story-section.png)
 
-#### Extraordinary section
+#### MEMORY BOARD GAME 
 
-- As the title suggests, this section aims to highlight extraordinary features of this symbiosis. 
-    
-- Three key features have been selected and displayed using the HTML class attribute: feature1.
-    
-- They allow the user to learn about the habitat, reasons of being together and more importantly, the uniqueness of this symbiosis.
+![Memory board game card deck open](documentation/website-screenshots/memory-game-open.png)
 
-- To make it more interactive, each feature card has a "fun fact" that is highlighted in bold and next to a star from Font Awesome.
+- This section presents the memory game itself: a relaxing and fun memory-matching game designed with a space-related theme.
 
-- These three features are in fact seminal findings of the *Laxus*-Thiosymbion research. As such, they will likely remain as the site is updated, but more features will be added as new research emerges.
+- Players are challenged to match 8 pairs of cards, with a total of 16 cards in the game.
 
-- Two publications are referenced, linked and open in separate windows. 
+ - The game offers a no-pressure environment where players never lose, ensuring a calm and enjoyable experience.
 
-- This section was made responsive. Namely:
+ - The cards will be shuffled and placed face down (**Figure below**), and they have the same hover effect as the home menu buttons. 
 
-  - The title (h3) increases in font size.
+![Memory board game card deck closed](documentation/website-screenshots/memory-game-closed.png)
+ 
+ - The memory board game page also contains a "Control Area" pannel displaying "Moves", "Score" and one button, the "Restart Game", placed on top of the other. 
 
-  - In mobiles: the figure is placed on top of the text, forming a column. 
+ - At the beginning of the game:
+    - The **Moves** are set to 0, and every time the user chooses two cards, the "moves" will increase by 1.
+    - The **Score** is set to 0, and every time there is a match, the player earns 100 points. When the user reaches 800 (i.e., all pairs are matched), the score will show 🎉 800! 🎉.
 
-  - In tablets, the figure and text were placed next to each other (in a row). This was achieved because their container (class feature1) was set to display property: flex.
+- The MEMORY BOARD GAME section is responsive. Namely:
 
-  - In Laptops and Larger screens, this display propery was set to column, to have the features next to each other. 
+  -   The card grid maintains 4 columns and 4 rows across all devices, with the width of the cards increasing on larger screens.
 
-    ![Extraordinary Section](documentation/website-screenshots/extraordinary-section.png)
+  - In tablets and larger screens, the memory card deck and control are placed next to each other (flex-direction: row, by default)
 
-#### Footer
+  - In mobiles: the Control Area is placed below the memory card deck. This was achieved because their container (id memory-game-container) was set to display property: flex, and flex-direction: column 
 
-- The footer section is found across all pages from the website.
-
-- The footer section contains links to the relevant social media sites that feature *Laxus* and Thiosymbion.
-
-- The links will open to a new tab to allow easy navigation for the user. 
-
-- The footer adds value by encouraging users to stay connected through social media.
-
-- The footer has a hover effect, and is responsive, with increasing font sizing and padding as screen width increases.
-
-    ![Footer](documentation/website-screenshots/footer-section.png)
+![memory board game mobiles](documentation/website-screenshots/memory-game-mobiles.png)
 
 ---
 ### LAXUS page
@@ -191,32 +182,6 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
   - The **What Thiosymbion gives to Laxus section**: it is a research study conducted by the developer in 2021. A summary of the main findings of the article is presented, as well as a nutritional model of the interaction of Thiosymbion with the nematode. The study is also linked to the website and it opens in a new window. This section is responsive.  
 
   ![Thiosymbion page](documentation/website-screenshots/thiosymbion-page.png)
-
----
-### NEWSLETTER page
-
-  - This page will allow the user to subscribe to our newsletter, to stay updated on new content, discoveries, or tips related to the *Laxus*-Thiosymbion symbiosis or other "love stories".
-
-  - To subscribe to the newsletter, the user is required to provide their name, email address, feedback,  choose which system is of their interest, and click on the subscribe button. 
-
-  - The subscribe button has a hover effect animation - achieved with the CSS properties: double box shadow and transition duration.
-
-  - This section is responsive, and the resize property of the textarea was disabled by setting it to: none.
-
-![Newsletter page](documentation/website-screenshots/newsletter-page.png)
-
----
-### SUCCESSFUL page
-
-  - After successful subscription the user is redirected to this page.
-
-  - The user is thanked for subscribing, and there is a quote from one of the foremost symbiosis researchers, Lynn Margulis, that highlights the power of teaming up. 
-
-  - This page is responsive, and has a "Return to Home page" button to keep the user in the website. 
-
-  - The "Return to Home page" link has the same hover effects as the subscribe button, but a slightly different style (i.e., round corners).
-
-  ![Successful page](documentation/website-screenshots/successful-page.png)
 
 ---
 ## Features left to implement
