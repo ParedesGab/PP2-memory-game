@@ -6,9 +6,7 @@
 
 Symbiosis is defined as "the living together of differently named organisms" (de Bary, 1879). This website provides information on an extraordinary symbiotic example, the one involving the marine free-living marine nematode *Laxus oneistus* and its inseparable bacterial partner, *Candidatus* Thiosymbion oneisti. 
 
-+ Throughout this documentation, they will be referred as *Laxus* and Thiosymbion. respectively.
-
-+ The site can be accessed via this [link](https://paredesgab.github.io/PP1-Laxus_and_Thiosymbion/)
++ The site can be accessed via this [link](https://paredesgab.github.io/PP2-memory-game/)
 
 ---
 ## Project Goals
