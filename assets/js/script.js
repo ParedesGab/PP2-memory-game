@@ -15,84 +15,84 @@ let shuffledCardDeck = [];
  */
 function cardDeckArray() {
   return [{
-      imgSrc: "assets/images/dice.png",
-      name: "dice",
-      alt: "dice"
+      imgSrc: "assets/images/alien.png",
+      name: "alien",
+      alt: "alien"
     },
     {
-      imgSrc: "assets/images/dice.png",
-      name: "dice",
-      alt: "dice"
+      imgSrc: "assets/images/alien.png",
+      name: "alien",
+      alt: "alien"
     },
     {
-      imgSrc: "assets/images/witch.png",
-      name: "witch",
-      alt: "witch"
+      imgSrc: "assets/images/astronaut.png",
+      name: "astronaut",
+      alt: "astronaut"
     },
     {
-      imgSrc: "assets/images/witch.png",
-      name: "witch",
-      alt: "witch"
+      imgSrc: "assets/images/astronaut.png",
+      name: "astronaut",
+      alt: "astronaut"
     },
     {
-      imgSrc: "assets/images/crystal.png",
-      name: "crystal",
-      alt: "crystal"
+      imgSrc: "assets/images/comet.png",
+      name: "comet",
+      alt: "comet"
     },
     {
-      imgSrc: "assets/images/crystal.png",
-      name: "crystal",
-      alt: "crystal"
+      imgSrc: "assets/images/comet.png",
+      name: "comet",
+      alt: "comet"
     },
     {
-      imgSrc: "assets/images/woman.png",
-      name: "woman",
-      alt: "woman"
+      imgSrc: "assets/images/earth.png",
+      name: "earth",
+      alt: "earth"
     },
     {
-      imgSrc: "assets/images/woman.png",
-      name: "woman",
-      alt: "woman"
+      imgSrc: "assets/images/earth.png",
+      name: "earth",
+      alt: "earth"
     },
     {
-      imgSrc: "assets/images/house.png",
-      name: "house",
-      alt: "house"
+      imgSrc: "assets/images/launch.png",
+      name: "launch",
+      alt: "launch"
     },
     {
-      imgSrc: "assets/images/house.png",
-      name: "house",
-      alt: "house"
+      imgSrc: "assets/images/launch.png",
+      name: "launch",
+      alt: "launch"
     },
     {
-      imgSrc: "assets/images/ball.png",
-      name: "ball",
-      alt: "crystal-ball"
+      imgSrc: "assets/images/mercury.png",
+      name: "mercury",
+      alt: "mercury"
     },
     {
-      imgSrc: "assets/images/ball.png",
-      name: "ball",
-      alt: "crystal-ball"
+      imgSrc: "assets/images/mercury.png",
+      name: "mercury",
+      alt: "mercury"
     },
     {
-      imgSrc: "assets/images/moon.png",
-      name: "moon",
-      alt: "moon"
+      imgSrc: "assets/images/saturn.png",
+      name: "saturn",
+      alt: "saturn"
     },
     {
-      imgSrc: "assets/images/moon.png",
-      name: "moon",
-      alt: "moon"
+      imgSrc: "assets/images/saturn.png",
+      name: "saturn",
+      alt: "saturn"
     },
     {
-      imgSrc: "assets/images/unicorn.png",
-      name: "unicorn",
-      alt: "unicorn"
+      imgSrc: "assets/images/sun.png",
+      name: "sun",
+      alt: "sun"
     },
     {
-      imgSrc: "assets/images/unicorn.png",
-      name: "unicorn",
-      alt: "unicorn"
+      imgSrc: "assets/images/sun.png",
+      name: "sun",
+      alt: "sun"
     },
   ];
 }
