@@ -437,11 +437,11 @@ h3 {
   }
 
   h1 {
-    font-size: 8rem;
+    font-size: 6rem;
   }
 
   h2 {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 
   .smaller-name {
@@ -466,7 +466,7 @@ h3 {
   #home-menu-buttons>button,
   #game-indications>button,
   #game-done-congratulations>button {
-    font-size: 4rem;
+    font-size: 3.5rem;
     width: 600px;
     margin: 50px;
   }
@@ -505,8 +505,8 @@ h3 {
 
   #game-board {
     display: grid;
-    grid-template-columns: repeat(4, 12rem);
-    grid-template-rows: repeat(4, 12rem);
+    grid-template-columns: repeat(4, 9rem);
+    grid-template-rows: repeat(4, 900px);
     gap: 1.2rem;
     margin: 70px 0px;
   }

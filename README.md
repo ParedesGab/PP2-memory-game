@@ -185,19 +185,14 @@ It contains two subsections, from top to bottom:
 ---
 ## Features left to implement
 
-- Make the hamburger icon responsive so it closes automatically. 
+- Implement a more dynamic galaxy-themed background (e.g., moving nebulas).
+- Add a space-themed sound effect by implementing an event listener in JavaScript that triggers whenever a match occurs.
+- Implement visual feedback (e.g., a highlight) for matched pairs.
+- Allow users to navigate back to the home page directly from the memory game. However, this option is intentionally excluded to encourage players to stay on the game page longer, with the added flexibility to restart the game if they wish.
+- I intentionally left out a timer to keep the game relaxed and stress-free. However, if feedback suggests it, I’d be happy to implement it with JavaScript.
+- 
 
-- Use CSS roots to declare global CSS variables and and apply them across the entire project for consistent styling.
 
-- Update the extraordinary section with new research. 
-
-- Better use of image to aspect ratio, and implement it accordingly. 
-
-- Add a carousel to the "Love story" section, and to the "Laxus and Thiosymbion introduction sections", respectively; so that more media can be displayed. 
-
-- And/or, add a gallery section, showing more pictures of nematodes, of the bacteria, of researchers in action, the island in Belize from where they are collected, etc., and use CSS grid to organize it.
-
-- Add a "References" page, that lists all publications related to the *Laxus*-Thiosymbion association.
 
 ---
 ## Design
