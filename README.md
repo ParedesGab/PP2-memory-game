@@ -75,7 +75,7 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 ---
 ## Features 
 
-### GAME HEADER
+### Game Header
 
 ![Game Header up to Tablets](documentation/website-screenshots/game-name.png)
 
@@ -90,7 +90,7 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 ![Game Header Laptops and up](documentation/website-screenshots/game-name-laptops-up.png)
        
 ---
-### HOME MENU MAIN PAGE
+### Main Page
 
 ![Home menu main page](documentation/website-screenshots/home-menu-main-page.png)
 
@@ -115,7 +115,7 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 + Clear and easy to read.
 + Consistent styling and easy navigation.
 
-#### GAME INDICATIONS PAGE
+#### Game Indications Page
 
 ![Game indications](documentation/website-screenshots/love-story-section.png)
 
@@ -125,7 +125,7 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 
 - This section is responsive, and in Tablets, Laptops and Desktops flex box with flex direction row was used. 
 
-#### MEMORY BOARD GAME 
+#### Memory Board Game Page
 
 ![Memory board game card deck open](documentation/website-screenshots/memory-game-open.png)
 
@@ -215,7 +215,6 @@ It contains two subsections, from top to bottom:
 
 - The button with the class btn--restart and the congratulatory message are styled in Sinopia orange to ensure that they stand out. This vibrant choice draws attention to the restart option, making it easy for users to replay the game, and highlights the victory message effectively, celebrating the user's success in a visually striking way.
 
-
 ### Typography
 
 - "Rajdhani" and "Roboto" from Google Fonts were used as the primary and secondary font of the website, respectively. 
@@ -230,27 +229,24 @@ It contains two subsections, from top to bottom:
 
 #### Mobile
 
-- [Mobile: HOME page](documentation/wireframes/mobile-homepage.png)
-- [Mobile: LAXUS page](documentation/wireframes/mobile-laxus-page.png)
-- [Mobile: THIOSYMBION page](documentation/wireframes/mobile-thiosymbion-page.png)
-- [Mobile: NEWSLETTER page](documentation/wireframes/mobile-newsletter-page.png)
-- [Mobile: SUCCESSFUL page](documentation/wireframes/mobile-successful-page.png)
+- [Mobile: Main page](documentation/wireframes/main-page-mobile.png)
+- [Mobile: Memory board page](documentation/wireframes/memory-board-game-mobile.png)
+- [Mobile: Games indications page](documentation/wireframes/game-instructions-mobile.png)
+- [Mobile: Congratulations page](documentation/wireframes/congratulations-mobile.png)
 
 #### Tablets
 
-- [Tablet: HOME page](documentation/wireframes/tablet-homepage.png)
-- [Tablet: LAXUS page. Mobile](documentation/wireframes/tablet-laxus-page.png)
-- [Tablet: THIOSYMBION page](documentation/wireframes/tablet-thiosymbion-page.png)
-- [Tablet: NEWSLETTER page](documentation/wireframes/tablet-newsletter-page.png)
-- [Tablet: SUCCESSFUL page](documentation/wireframes/tablet-successful-page.png)
+- [Tablet: Main page](documentation/wireframes/main-page-tablet.png)
+- [Tablet: Memory board page](documentation/wireframes/memory-board-game-tablet.png)
+- [Tablet: Games indications page](documentation/wireframes/game-instructions-tablet.png)
+- [Tablet: Congratulations page](documentation/wireframes/congratulations-tablet.png)
 
 #### Laptops/Desktop
 
-- [Laptops: HOME page](documentation/wireframes/laptop-home-page.png)
-- [Laptops: LAXUS page](documentation/wireframes/laptop-laxus-page.png)
-- [Laptops: THIOSYMBION page](documentation/wireframes/laptop-thiosymbion-page.png)
-- [Laptops: NEWSLETTER page](documentation/wireframes/laptop-newsletter-page.png)
-- [Laptops: SUCCESSFUL page](documentation/wireframes/laptop-successful-page.png)
+- [Laptops: HOME page](documentation/wireframes/main-page-laptops-up.png)
+- [Laptops: Memory board page](documentation/wireframes/memory-board-game-laptops-up.png)
+- [Laptops: Games indications page](documentation/wireframes/game-instructions-laptops-up.png)
+- [Laptops: Congratulations page](documentation/wireframes/congratulations-laptops-up.png)
 
 ---
 ## Languages
