@@ -162,10 +162,6 @@ button:hover {
   border: 4px solid #f9f9fa;
 }
 
-figure {
-  display: flex;
-}
-
 /*  MEMORY BOARD GAME */
 #memory-game-container {
   display: flex;
@@ -296,7 +292,19 @@ h3 {
 
   /* GAME INDICATIONS */
   #game-indications {
-    max-width: 600px;
+    margin-top: 0px;
+  }
+
+  #indications-text {
+    width: 85%;
+  }
+
+  #game-indications p {
+    font-size: 1rem;
+  }
+
+  #img-legend {
+    margin-bottom: 30px;
   }
 
   /*  MEMORY BOARD GAME */
@@ -365,20 +373,29 @@ h3 {
     width: 300px;
   }
 
-  /* GAME INDICATIONS */
+  /* GAME INDICATIONS*/
   #game-indications {
-    max-width: 1000px;
+    margin-top: 50px;
+  }
+
+  #indications-text {
+    width: 80%;
+    margin-bottom: 50px;
   }
 
   #game-indications p {
-    font-size: 1.2rem;
-    line-height: 1.3;
+    font-size: 1.3rem;
   }
 
-  #game-indications img {
-    width: 40px;
-    height: 40px;
-    padding: 4px;
+  #img-legend {
+    margin-bottom: 30px;
+  }
+
+  /*  MEMORY BOARD GAME */
+  #memory-game-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 
   /*  MEMORY BOARD GAME */
@@ -411,7 +428,7 @@ h3 {
   }
 }
 
-/* Media Query: Extraordinary section in more than 1200px */
+/* Media Query: Extraordinary section in more than 1800px */
 @media screen and (min-width:1800px) {
 
   /* GAME HEADER */
@@ -432,6 +449,14 @@ h3 {
     margin-bottom: 50px !important;
   }
 
+  .smaller-name>h1 {
+    font-size: 8rem;
+  }
+
+  .smaller-name>h2 {
+    font-size: 2.8rem;
+  }
+
   /* HOME MENU */
   #home-menu-buttons {
     margin: 50px;
@@ -446,41 +471,28 @@ h3 {
     margin: 50px;
   }
 
-  /* GAME INDICATIONS */
+  /* GAME INDICATIONS*/
   #game-indications {
-    margin: 50px;
-    max-width: 1500px;
+    margin-top: 100px;
   }
 
-
   #indications-text {
-    padding: 20px;
-    margin-bottom: 40px;
+    width: 90%;
+    margin-bottom: 60px;
+    padding: 30px;
   }
 
   #game-indications p {
-    font-size: 2.4rem;
-    line-height: 1.2;
+    font-size: 3rem;
   }
 
   #img-legend {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-    background-color: #d4eaf1;
-    box-shadow: 0 1px 10px 3px #f9f9fa;
-    margin-bottom: 50px;
+    margin: 40px;
   }
 
-  #game-indications img {
-    width: 80px;
-    height: 80px;
-    padding: 4px;
-  }
-
-  figure {
-    display: flex;
-    font-size: 2.4rem;
+  #img-legend img {
+    flex-basis: 300px;
+    max-height: 300px;
   }
 
   /*  MEMORY BOARD GAME */
@@ -493,8 +505,8 @@ h3 {
 
   #game-board {
     display: grid;
-    grid-template-columns: repeat(4, 10rem);
-    grid-template-rows: repeat(4, 10rem);
+    grid-template-columns: repeat(4, 12rem);
+    grid-template-rows: repeat(4, 12rem);
     gap: 1.2rem;
     margin: 70px 0px;
   }
