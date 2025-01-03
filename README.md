@@ -256,19 +256,18 @@ It contains two subsections, from top to bottom:
 
 ---
 ## Technologies used
-- [Gitpod](https://www.gitpod.io/)
-- [GitHub](https://github.com/)
+- [Gitpod](https://www.gitpod.io/): the development environment to create the project files, folders and html, css and javascript codes.
+- [GitHub](https://github.com/): to store the repository, bug track and see the deployed version.
 - [Balsamiq](https://balsamiq.com/): to create the wireframes.
-- [Google Fonts](https://fonts.google.com/): to import the Arsenal family font.
-- [Font Awesome](https://fontawesome.com/): For the hamburger, star, and social media icons.
+- [Google Fonts](https://fonts.google.com/): to import the Rajdhani and Roboto family fonts.
 - [TinyPNG](https://tinypng.com/): to compress the images.
 - [Favicon.io](https://favicon.io/): to generate the favicon images.
 - [Am I responsive?](https://ui.dev/amiresponsive): to generate the responsive mockup image.
-- [MDN Web Docs](https://developer.mozilla.org/en-US/): resource to check CSS properties.
-- [VEED video editor](https://www.veed.io/tools/video-editor): to compress and edit the video.
+- [MDN Web Docs](https://developer.mozilla.org/en-US/): resource to check CSS properties and javascript syntax and definition descriptions.
 - [Color-hex](https://www.color-hex.com/): to get the rgb color information.
 - [Chrome DevTools](https://developer.chrome.com/docs/devtools?hl=de) and its open source [Lighthouse](https://developer.chrome.com/docs/lighthouse?hl=de).
 -  [W3C HTML](https://validator.w3.org/) and [W3C CSS](https://jigsaw.w3.org/css-validator/) Validation Services. 
+- [JSHint](https://jshint.com/): to detect errors and potential problems in the JavaScript code.
 - [WAVE](https://wave.webaim.org/): to test accessibility.
 - [DeepL Write](https://www.deepl.com/en/write): to spot spelling mistakes in the text. 
 
