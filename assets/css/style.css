@@ -375,6 +375,7 @@ h3 {
   #indications-text {
     width: 80%;
     margin-bottom: 50px;
+    padding: 15px;
   }
 
   #game-indications p {
