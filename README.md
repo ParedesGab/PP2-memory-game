@@ -280,26 +280,18 @@ It contains two subsections, from top to bottom:
 
 ### HTML Validation
 
-**Home Menu Page**
-
-  ![HTML Validation HOME](documentation/validation/homepage-html-validator.png)
-
-**Game Indications Page**
-
-  ![HTML Validation LAXUS](documentation/validation/laxus-page-html-validator.png)
-
-**Memory Board Game Page**
-
-  ![HTML Validation THIOSYMBION](documentation/validation/thiosymbion-page-html-validator.png)
-
-**Game Finished - Congratulations Page**
-
-  ![HTML Validation NEWSLETTER](documentation/validation/newsletter-page-html-validator.png)
++ HTML file
+ ![HTML Validation](documentation/validation/html-file-validator.png)
 
 ### CSS Validator
 
 + CSS stylesheet
 ![CSS Validation](documentation/validation/css-stylesheet-css-validator.png)
+
+### JSHint
+
++ Javascript file
+![JS validation](documentation/validation/css-stylesheet-css-validator.png)
 
 ---
 ### Accessibility 
