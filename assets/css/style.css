@@ -422,10 +422,10 @@ h3 {
   }
 }
 
-/* Media Query: Extraordinary section in more than 1800px */
+/* Media Query: Extraordinary section in more than 1800px
 @media screen and (min-width:1800px) {
 
-  /* GAME HEADER */
+  /* GAME HEADER
   #game-name {
     width: 1000px;
     margin-top: 20px;
@@ -452,7 +452,7 @@ h3 {
     font-size: 2.8rem;
   }
 
-  /* HOME MENU */
+  /* HOME MENU 
   #home-menu-buttons {
     margin: 50px;
     padding: 70px;
@@ -466,7 +466,7 @@ h3 {
     margin: 40px;
   }
 
-  /* GAME INDICATIONS*/
+  /* GAME INDICATIONS
   #game-indications {
     margin-top: 100px;
   }
@@ -490,7 +490,7 @@ h3 {
     max-height: 300px;
   }
 
-  /*  MEMORY BOARD GAME */
+  /*  MEMORY BOARD GAME
   #memory-game-container {
     display: flex;
     flex-direction: row;
@@ -502,7 +502,7 @@ h3 {
     margin: 50px 0px;
   }
 
-  /* Control Area */
+  /* Control Area
   #controls {
     height: 500px;
     margin-left: 50px;
@@ -519,7 +519,7 @@ h3 {
     padding: 15px;
   }
 
-  /* GAME FINISHED - CONGRATULATIONS */
+  /* GAME FINISHED - CONGRATULATIONS
   #game-done-congratulations {
     margin: 50px;
     width: 900px;
@@ -536,4 +536,4 @@ h3 {
   #game-done-congratulations p {
     font-size: 3rem;
   }
-}
+}*/

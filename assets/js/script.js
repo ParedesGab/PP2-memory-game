@@ -251,7 +251,6 @@ function incrementScore() {
 /** 
  * Congratulates the user after finishing the game and displays the number of movements.
  */
-
 function gameFinishedCongratulations() {
 
   //Remove game heading smaller-name class
@@ -350,8 +349,9 @@ function returnHome() {
   document.getElementById("memory-game-container").classList.add("hide");
 }
 
-
-/** Onclick takes you to the home page */
+/** 
+ * Onclick takes you to the home page
+ */
 function showMainMenu() {
   document.getElementById("home-menu-buttons").classList.remove("hide");
   document.getElementById("game-done-congratulations").classList.add("hide");
