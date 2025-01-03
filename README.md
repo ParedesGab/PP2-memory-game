@@ -115,7 +115,8 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 + Clear and easy to read.
 + Consistent styling and easy navigation.
 
-#### Game Indications Page
+---
+### Game Indications Page
 
 - This section explains the user how to play and the features to expect. It also introduces the card images whose pairs need to be found. 
 
@@ -125,7 +126,8 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 
 ![Game indications tablets and up](documentation/website-screenshots/game-indications-tablets-up.png)
 
-#### Memory Board Game Page
+---
+### Memory Board Game Page
 
 ![Memory board game card deck open](documentation/website-screenshots/memory-game-open.png)
 
@@ -299,29 +301,13 @@ It contains two subsections, from top to bottom:
 ---
 ### Accessibility 
 
-- Accessibility  was tested using the Web Accessibility Evaluation Tool  (WAVE). 
+- Accessibility  was tested using the Web Accessibility Evaluation Tool (WAVE). 
 
 - No errors are reported. 
 
-**HOME page**
+**Wave Report**
 
-  ![WAVE report HOME](documentation/wave/wave-report-home-page.png)
-
-**LAXUS page**
-
-  ![WAVE report LAXUS](documentation/wave/wave-report-laxus-page.png)
-
-**THIOSYMBION page**
-
-  ![WAVE report THIOSYMBION](documentation/wave/wave-report-thiosymbion-page.png)
-
-**NEWSLETTER page**
-
-  ![WAVE report NEWSLETTER](documentation/wave/wave-report-newsletter-page.png)
-
-**SUCCESSFUL page**
-
-  ![WAVE report SUCCESSFUL](documentation/wave/wave-report-successful-page.png)
+  ![WAVE report](documentation/wave/wave-report.png)
 
 ---
 ### LightHouse report
