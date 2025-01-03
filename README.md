@@ -205,13 +205,16 @@ It contains two subsections, from top to bottom:
 
 ![Color scheme](documentation/design/color-scheme.png)
 
-- The black and Dutch white colors were used as the main colors of the website. Their choice was inspired by the hero image of the home page.
+- The russian violet (blue), seasalt (white) and davy's gray color where used as the main colors of the website. Their choice was inspired by the universe background image and their used keeps the website cohesive.
 
-- The light coral color was chosen to highlight the H2 titles. This was inspired by the red's association with love. However, red would be too overpowering, while a ligth coral color complements the love story title in a more subtle way.
+- The russian violet (blue) was used for the titles, button names and the paragraph within the Game indications section.
 
-- The grey color is drawn from the background image in the "Extraordinary" section. The goal was to keep the section's color neutral, allowing the featured images to stand out.
+- All buttons except for the button with class btn--restart, used as box shadow the color davy's gray color. 
 
-- To keep the theme cohesive, a grey background image was chosen in the Hero section of the Laxus and Thiosymbion pages, and the same background image was used in the Extraordinary section, and in the What Laxus/Thiosymbion gives to Thiosymbion/Laxus sections.
+- To simulate colors of the universe the hover effect used two colors as gradient: Royal purple ( #7943af) and Sapphire ( #3455af). 
+
+- The button with the class btn--restart and the congratulatory message are styled in Sinopia orange to ensure that they stand out. This vibrant choice draws attention to the restart option, making it easy for users to replay the game, and highlights the victory message effectively, celebrating the user's success in a visually striking way.
+
 
 ### Typography
 

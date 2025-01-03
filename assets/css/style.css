@@ -13,9 +13,8 @@
   --primary-font: "Rajdhani", sans-serif;
   --secondary-font: "Roboto", sans-serif;
   --primary-color: rgb(25, 4, 65);
-  --secondary-color: #f3fff8;
+  --secondary-color: #f9f9fa;
   --highlight-color: #ce4008;
-  --highlight-color-light: #9984e2;
 }
 
 
@@ -24,7 +23,7 @@ body {
   min-height: 100vh;
   background: url("../images/universe.webp") no-repeat center center/cover;
   font-family: var(--primary-font);
-  color: white;
+  color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -208,11 +207,6 @@ button:hover {
   border-radius: 50% 20% / 10% 40%;
   cursor: pointer;
   margin-top: 0px;
-}
-
-.btn--restart:focus {
-  background-color: var(--highlight-color-light);
-  color: var(--primary-color);
 }
 
 img {
