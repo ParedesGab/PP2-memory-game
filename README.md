@@ -6,7 +6,7 @@
 
 **Welcome to the Galaxy-Themed Memory Game!**
 
-Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of galaxy-inspired cards featuring celestial bodies and space explorers. Flip cards to reveal exciting images like aliens, astronauts, Earth, the Sun, and more! Challenge your memory as you journey through the stars.
+Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of galaxy-inspired cards featuring celestial bodies and space explorers. Flip cards to reveal exciting images like aliens, astronauts, Earth, the Sun, and more! This untimed, stress-free game lets you play at your own pace, ensuring everyone emerges a winner. Challenge your memory through you journey through the stars.
 
 + The site can be accessed via this [link](https://paredesgab.github.io/PP2-memory-game/)
 
@@ -186,13 +186,17 @@ It contains two subsections, from top to bottom:
 ## Features left to implement
 
 - Implement a more dynamic galaxy-themed background (e.g., moving nebulas).
+
 - Add a space-themed sound effect by implementing an event listener in JavaScript that triggers whenever a match occurs.
+
+- Add animations for card flips and matches to enhance the user experience.
+
 - Implement visual feedback (e.g., a highlight) for matched pairs.
-- Allow users to navigate back to the home page directly from the memory game. However, this option is intentionally excluded to encourage players to stay on the game page longer, with the added flexibility to restart the game if they wish.
-- I intentionally left out a timer to keep the game relaxed and stress-free. However, if feedback suggests it, I’d be happy to implement it with JavaScript.
-- 
+- Allow users to navigate back to the home page directly from the memory game. Please note that for now this option was intentionally excluded to encourage players to stay on the game page longer, with the added flexibility to restart the game if they wish.
 
+- I intentionally left out a timer to keep the game relaxed and pressure-free. However, if feedback suggests it, I’d be happy to implement it with JavaScript.
 
+- Due to time constraints, I used onclick in all buttons of the HTML document for faster implementation. However, I recognize that mixing structure (HTML) with functionality (JS) is not best practice, as it can make the code harder to maintain and does not facilitate collaboration in team environments. After the project is graded, I plan to refactor the code by removing inline onclick attributes, and instead handling events via JavaScript by adding event listeners, ensuring better separation of concerns and improving maintainability.
 
 ---
 ## Design
@@ -246,6 +250,7 @@ It contains two subsections, from top to bottom:
 ## Languages
 - HTML
 - CSS
+- JavaScript
 
 ---
 ## Technologies used
