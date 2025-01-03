@@ -274,25 +274,26 @@ It contains two subsections, from top to bottom:
 - [DeepL Write](https://www.deepl.com/en/write): to spot spelling mistakes in the text. 
 
 ---
-## Validation
+## Testing
 
+### Validation
 - In this section, the HTML and CSS codes were checked for compliance with industry standards. This was done using the W3C Markup Validation Service for HTML and CSS respectively, using the code from both: the working environment and the the deployed version.
 
 - The result in both reports: no errors were returned.
 
-### HTML Validation
+#### HTML Validation
 
 + HTML file
  ![HTML Validation](documentation/validation/html-file-validator.png)
 
-### CSS Validator
+#### CSS Validator
 
 + CSS stylesheet
 ![CSS Validation](documentation/validation/css-stylesheet-css-validator.png)
 
-### JSHint
+#### JSHint
 
-+ Javascript file
++ Javascript file 
 ![JS validation](documentation/validation/javascript-jshint-validation.png)
 
 + There were no errors found in the javascript using the JS Hint Validator. 
@@ -301,13 +302,10 @@ It contains two subsections, from top to bottom:
 ---
 ### Accessibility 
 
-- Accessibility  was tested using the Web Accessibility Evaluation Tool (WAVE). 
+Accessibility  was tested using the Web Accessibility Evaluation Tool (WAVE), and no errors are reported. 
 
-- No errors are reported. 
-
-**Wave Report**
-
-  ![WAVE report](documentation/wave/wave-report.png)
++ Wave Report
+![WAVE report](documentation/wave/wave-report.png)
 
 ---
 ### LightHouse report
