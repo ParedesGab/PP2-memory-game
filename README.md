@@ -299,9 +299,7 @@ It contains two subsections, from top to bottom:
 ---
 ### Accessibility 
 
-- Accessibility across all pages was tested using the Web Accessibility Evaluation Tool  (WAVE). 
-
-- Initially there was an error in the navigation bar. This was solved and documented in the "Bugs" section below. 
+- Accessibility  was tested using the Web Accessibility Evaluation Tool  (WAVE). 
 
 - No errors are reported. 
 
@@ -360,7 +358,6 @@ It contains two subsections, from top to bottom:
   - Huawei Y9 Prime 2019
   - Iphone XR
   - Iphone 15 pro
-  - Samsung Galaxy Z Flip 5
   - Samsung Galaxy S8
 
 ---
