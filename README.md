@@ -25,8 +25,8 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 
   + Provide a fun, relaxed and engaging User experience.
   + Create an entertaining memory game that appeals to a broad audience.
-  + Develop a unique design and thematic experience, such as the galaxy theme, to stand out from generic memory games.
   + Create a game that helps users improve memory, focus, and cognitive abilities. 
+  + Develop a unique design and thematic experience, such as the galaxy theme, to stand out from generic memory games.
   
 ---
 ## User Experience
@@ -251,13 +251,10 @@ It contains two subsections, from top to bottom:
 - [Laptops: Congratulations page](documentation/wireframes/congratulations-laptops-up.png)
 
 ---
-## Languages
-- HTML
-- CSS
-- JavaScript
-
----
 ## Technologies used
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Gitpod](https://www.gitpod.io/): the development environment to create the project files, folders and html, css and javascript codes.
 - [GitHub](https://github.com/): to store the repository, bug track and see the deployed version.
 - [Balsamiq](https://balsamiq.com/): to create the wireframes.
@@ -283,40 +280,31 @@ It contains two subsections, from top to bottom:
 
 #### HTML Validation
 
-**HTML file**
- ![HTML Validation](documentation/validation/html-file-validator.png)
+![HTML Validation](documentation/validation/html-file-validator.png)
 
 #### CSS Validator
 
-**CSS stylesheet**
 ![CSS Validation](documentation/validation/css-stylesheet-css-validator.png)
 
 #### JSHint
 
-**Javascript file**
 ![JS validation](documentation/validation/javascript-jshint-validation.png)
 
 + There were no errors found in the javascript using the JS Hint Validator. 
 + There was one warning, and the messaged of unused variables. This is documented in the "Bugs" section below.
 
----
 ### Accessibility 
 
-Accessibility  was tested using the Web Accessibility Evaluation Tool (WAVE), and no errors are reported. 
+Accessibility was tested using the Web Accessibility Evaluation Tool (WAVE report below), and no errors were reported. 
 
-**Wave report**
 ![WAVE report](documentation/wave/wave-report.png)
 
----
 ### LightHouse report
 
 Lighthouse tool from Devtools was used to confirm that the website is performing well, is accessible and the colors and fonts chosen are readable.
 
-**LightHouse report**
+![LightHouse report Home menu page](documentation/lighthouse/lighthouse-report-homepage.png.png)
 
-  ![LightHouse report Home menu page](documentation/lighthouse/lighthouse-report-homepage.png.png)
-
----
 ### Device testing
 
 - The website was checked across devices using the chrome extension [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?hl=en). 
@@ -327,6 +315,32 @@ Lighthouse tool from Devtools was used to confirm that the website is performing
   - Iphone 15 pro
   - Samsung Galaxy S8
 
+### Manual Testing
+
+| Feature | Action | Expected result | Tested | Passed | Observations |
+| --- | --- | --- | --- | --- | --- |
+| **Home Menu Page** | | | | | |
+| Logo | Click on the "Laxus & Thiosymbion" logo | No matter the page the user is, they are redirected to the main page | Yes | Yes | - |
+| Burger icon | Display of Burger icon | It appears in mobiles and up to a screen width of 767 px | Yes | Yes | - |
+| Burger icon | Click on the Burger icon | It opens the navigation links in the center next to the laxus image bullet points | Yes | Yes | - |
+| Navbar | Navigation display | Remains fixed at the top of all pages | Yes | Yes | 
+| Navbar link: HOME | Hover and/or click on the "HOME" link | The link is highlighted, the user is redirected to the home page and the link is underlined indicating where the user is | Yes | Yes | 
+| Navbar link: LAXUS | Hover and/or click on the "LAXUS" link | The link is highlighted, the user is redirected to the Laxus page and the link is underlined indicating where the user is | Yes | Yes | 
+| Navbar link: THIOSYMBION | Hover and/or click on the "Thiosymbion" link | The link is highlighted, the user is redirected to the thiosymbion page and the link is underlined indicating where the user is | Yes | Yes | 
+| Navbar link: NEWSLETTER | Hover and/or click on the "NEWSLETTER" link | The link is highlighted, the user is redirected to the newsletter page and the link is underlined indicating where the user is | Yes | Yes | 
+| **Game Indications Page** | | | | | |
+| Hero section | Image and title display | The image loads correctly and title is positioned next to it | Yes | Yes | - |
+| Love story section | Title, text and video display | The title stands out, the content is justified with no spelling mistakes and the no-sound video loads correctly and it does not autoplay  | Yes | Yes | - |
+| Extraordinary section | Title and images display | The title stands out, the images are loading correctly and are located near to their corresponding text, the text in the columns have no spelling mistakes and have the same style. The article links open in a new window | Yes | Yes | - |
+| **LMemory Board Game Page** | | | | | |
+| Hero Laxus section | Title and image display | The image is loaded correctly and the title is positioned on the left side of the screen | Yes | Yes | - |
+| Laxus introduction section | Title and image display | The title stands out, all content is centered and displayed as a column (one on top each other), the text is justified with no spelling mistakes and the image loads correctly with good resolution| Yes | Yes | - |
+| What Laxus gives to Thiosymbion section | Title text and image display | The title stands out, all content is displayed as a column (one on top each other), the text is justified with no spelling mistakes, and the image loads correctly with good resolution. The article link opens in a new page correctly | Yes | Yes | - |
+| **Game Finished - Congratulations Page** | | | | | |
+| Hero thiosymbion section | Title and image display | The image is loaded correctly and the title is positioned on the left side of the screen | Yes | Yes | - |
+| Thiosymbion introduction section | Title and image display | The title stands out, all content is centered and displayed as a column (one on top each other), the text is justified with no spelling mistakes and the image loads correctly with good resolution. The article link opens in a new page correctly | Yes | Yes | - |
+| What Thiosymbion gives to Laxus section | Title text and image display | The title stands, all content is displayed as a column (one on top each other), the text is justified with no spelling mistakes, and the image loads correctly with good resolution. The article link opens in a new page correctly | Yes | Yes | - |
+
 ---
 ## Browser compatibility
 
@@ -336,48 +350,6 @@ The website was tested on the following browsers:
 - Microsof Edge
 
 ---
-### Manual Testing
-
-| Feature | Action | Expected result | Tested | Passed | Observations |
-| --- | --- | --- | --- | --- | --- |
-| **Header** | | | | | |
-| Logo | Click on the "Laxus & Thiosymbion" logo | No matter the page the user is, they are redirected to the main page | Yes | Yes | - |
-| Burger icon | Display of Burger icon | It appears in mobiles and up to a screen width of 767 px | Yes | Yes | - |
-| Burger icon | Click on the Burger icon | It opens the navigation links in the center next to the laxus image bullet points | Yes | Yes | - |
-| Navbar | Navigation display | Remains fixed at the top of all pages | Yes | Yes | 
-| Navbar link: HOME | Hover and/or click on the "HOME" link | The link is highlighted, the user is redirected to the home page and the link is underlined indicating where the user is | Yes | Yes | 
-| Navbar link: LAXUS | Hover and/or click on the "LAXUS" link | The link is highlighted, the user is redirected to the Laxus page and the link is underlined indicating where the user is | Yes | Yes | 
-| Navbar link: THIOSYMBION | Hover and/or click on the "Thiosymbion" link | The link is highlighted, the user is redirected to the thiosymbion page and the link is underlined indicating where the user is | Yes | Yes | 
-| Navbar link: NEWSLETTER | Hover and/or click on the "NEWSLETTER" link | The link is highlighted, the user is redirected to the newsletter page and the link is underlined indicating where the user is | Yes | Yes | 
-| **HOME page** | | | | | |
-| Hero section | Image and title display | The image loads correctly and title is positioned next to it | Yes | Yes | - |
-| Love story section | Title, text and video display | The title stands out, the content is justified with no spelling mistakes and the no-sound video loads correctly and it does not autoplay  | Yes | Yes | - |
-| Extraordinary section | Title and images display | The title stands out, the images are loading correctly and are located near to their corresponding text, the text in the columns have no spelling mistakes and have the same style. The article links open in a new window | Yes | Yes | - |
-| **LAXUS page** | | | | | |
-| Hero Laxus section | Title and image display | The image is loaded correctly and the title is positioned on the left side of the screen | Yes | Yes | - |
-| Laxus introduction section | Title and image display | The title stands out, all content is centered and displayed as a column (one on top each other), the text is justified with no spelling mistakes and the image loads correctly with good resolution| Yes | Yes | - |
-| What Laxus gives to Thiosymbion section | Title text and image display | The title stands out, all content is displayed as a column (one on top each other), the text is justified with no spelling mistakes, and the image loads correctly with good resolution. The article link opens in a new page correctly | Yes | Yes | - |
-| **THIOSYMBION page** | | | | | |
-| Hero thiosymbion section | Title and image display | The image is loaded correctly and the title is positioned on the left side of the screen | Yes | Yes | - |
-| Thiosymbion introduction section | Title and image display | The title stands out, all content is centered and displayed as a column (one on top each other), the text is justified with no spelling mistakes and the image loads correctly with good resolution. The article link opens in a new page correctly | Yes | Yes | - |
-| What Thiosymbion gives to Laxus section | Title text and image display | The title stands, all content is displayed as a column (one on top each other), the text is justified with no spelling mistakes, and the image loads correctly with good resolution. The article link opens in a new page correctly | Yes | Yes | - |
-| **NEWSLETTER page** | | | | | |
-| Subscribe form | Heading display | The form heading is hidden | Yes | Yes |
-| Name input | Enter the user's name | The name is entered | Yes | Yes | If user does not enter the name, a warning message of "please fill out this field" appears |
-| Email input | Enter the user's email | The email is entered | Yes | Yes | If user does not enter the email, a warning message of "please fill out this field" appears |
-| Radio input | User selects what information they want to be informed about | The selection is made (with one possibility) | Yes | Yes | If user doe not select an option, a warning message of "please select one of this options" appears |
-| Text area input | User provides feedback | Feedback is provided | Yes | Yes | If user does not write in here, a warning message of "please fill out this field" appears |
-| Subscribe button | Click on the Subscribe button | The button has hover animation, and when clicked the user is redirected to a thank you page (successful page) | Yes | Yes | - |
-| **SUCESSFUL page** | | | | | |
-| Thank you section | Text display | The thank you messaged is displayed correctly | Yes | Yes | - |
-| "Return to Home page" button | Click on the "Return to Home page" button | The button has a hover effect and the user is redirected to the home page | Yes | Yes | - |
-| **Footer** | | | | | |
-| Footer icons | Highlight when hovered | When hovered, the icons have a highlight hover effect | Yes | Yes | - |
-| Facebook icon | Click on the Facebook icon | The user is redirected to the Facebook page | Yes | Yes | - |
-| Instagram icon | Click on the Instagram icon | The user is redirected to the Instagram page | Yes | Yes | - |
-| Twitter icon | Click on the Twitter icon | The user is redirected to the Twitter page | Yes | Yes | - |
-| LinkedIn icon | Click on the LinkedIn icon | The user is redirected to the LinkedIn page | Yes | Yes | - |
-
 ## Bugs
 + ### Solved bugs
   1. The nav element was initially written as "navigation". 
@@ -410,7 +382,7 @@ The website was tested on the following browsers:
 
 The website has been deployed to GitHub pages following these steps:
 
-1. In the GitHub repository for the Laxus & Thiosymbion page [GitHub repository](https://github.com/ParedesGab/PP1-Laxus_and_Thiosymbion), select the "Settings" tab.
+1. In the GitHub repository for the Laxus & Thiosymbion page [GitHub repository](https://paredesgab.github.io/PP2-memory-game/), select the "Settings" tab.
 
 2. Click on "Pages" from the field "Code and automation" (on the left), and select the below settings:
     - Source: deploy from a branch.
@@ -421,7 +393,7 @@ The website has been deployed to GitHub pages following these steps:
 
 4. On the right side of the page, a "Deployments" section has been activated indicating a successful deployment. 
 
-5. The live link can be accessed [here](https://paredesgab.github.io/PP1-Laxus_and_Thiosymbion/).
+5. The live link can be accessed [here](https://paredesgab.github.io/PP2-memory-game/).
 
 ---
 ## Credits 
@@ -443,51 +415,6 @@ The website has been deployed to GitHub pages following these steps:
 - ReadMe was inspired and guided by the ReadMe documents of my mentor Iuliia Konovalova, of my cohort Kamil Wojciechowski, and of the love running project. 
 
 ### Media
-
-- Ulrich Dirks is the author of the following images:
-
-  - The favicon image and the Laxus navigation links bullet points: 
-      ![Laxus favicon and bullet points](assets/images/1-laxus.webp)
-        
-  - Home page Laxus hero image:
-
-      ![Laxus hero image](assets/images/2-laxus-hero.webp)
-
-- Nicholas Altizer is the author of the Home page first extraordinary image depicting the Carrie Bow Cay field station in Belize:
-      ![Laxus extraordinary image nr1](assets/images/5-habitat-carrie-bow-cay.webp)
-
-- Nikolaus Leisch is the author of the following images:
-
-  - Home page second extraordinary image (image modified from the below original image)
-      ![Laxus extraordinary image nr2](assets/images/6-bacteria-sem.webp)
-  
-  - The background image of the "extraordinary" and "What Laxus gives to Thiosymbion sections"
-      ![Bacterial coat](assets/images/4-bacterial-coat.webp)
-
-- Philipp Weber is the author of the following images:
-
-  - Home page third extraordinary image:
-      ![Laxus extraordinary image nr3](assets/images/7-nematode-ball.webp)
-
-  - Thiosymbion page image (modified from Weber et al., 2019):
-      ![Bacterial coat](assets/images/10-weber-et-al-2019.webp)
-
-- The Developer, Gabriela Paredes, is the author or publication author of the following media:
-
-  - Laxus video:
-      [Laxus video](assets/images/worm_video.mp4)
-
-  - Laxus and Thiosymbion pages hero image:
-      ![Laxus and Thiosymbion hero](assets/images/3-laxus-banner.webp)
-
-  - Laxus head image:
-      ![Laxus head](assets/images/8-worm-head.webp)
-
-  - Laxus nutritional model image:
-      ![Laxus scheme](assets/images/9-laxus-scheme.webp)
-
-  - Thiosymbion nutritional model image:
-      ![Thiosymbion scheme](assets/images/11-thiosymbion-scheme.webp)
   
 
 ## Acknowledgments
@@ -496,4 +423,4 @@ The website has been deployed to GitHub pages following these steps:
 
 - Thank you to Code Institute, specially to Kamil, Lane, Ioan and Darcy, and to the slack community members for the great tips and feedback.
 
-- Thank you to my brother Brando, who recognized my love for coding long before I did. Your beautiful piano music [Brando PR](https://www.youtube.com/@BrandoPR) accompanied me along this project.
+- Thank you to my brother Brando, who recognized my love for coding long before I did. Your beautiful piano music [Brando PR](https://www.youtube.com/@BrandoPR) accompanied me along this project as well.
