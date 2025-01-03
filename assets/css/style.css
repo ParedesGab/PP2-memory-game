@@ -434,14 +434,15 @@ h3 {
   /* GAME HEADER */
   #game-name {
     width: 1000px;
+    margin-top: 20px;
   }
 
   h1 {
-    font-size: 6rem;
+    font-size: 5.5rem;
   }
 
   h2 {
-    font-size: 2.4rem;
+    font-size: 2.2rem;
   }
 
   .smaller-name {
@@ -466,9 +467,9 @@ h3 {
   #home-menu-buttons>button,
   #game-indications>button,
   #game-done-congratulations>button {
-    font-size: 3.5rem;
+    font-size: 3rem;
     width: 600px;
-    margin: 50px;
+    margin: 40px;
   }
 
   /* GAME INDICATIONS*/
@@ -506,14 +507,13 @@ h3 {
   #game-board {
     display: grid;
     grid-template-columns: repeat(4, 9rem);
-    grid-template-rows: repeat(4, 900px);
-    gap: 1.2rem;
+    grid-template-rows: repeat(4, 9rem);
     margin: 70px 0px;
   }
 
   /* Control Area */
   #controls {
-    height: 620px;
+    height: 600px;
     margin-left: 50px;
   }
 
