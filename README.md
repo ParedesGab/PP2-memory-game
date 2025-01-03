@@ -231,23 +231,23 @@ It contains two subsections, from top to bottom:
 
 #### Mobile
 
-- [Mobile: Main page](documentation/wireframes/main-page-mobile.png)
+- [Mobile: Home menu page](documentation/wireframes/main-page-mobile.png)
 - [Mobile: Games indications page](documentation/wireframes/game-instructions-mobile.png)
-- [Mobile: Memory board page](documentation/wireframes/memory-board-game-mobile.png)
+- [Mobile: Memory board game page](documentation/wireframes/memory-board-game-mobile.png)
 - [Mobile: Congratulations page](documentation/wireframes/congratulations-mobile.png)
 
 #### Tablets
 
-- [Tablet: Main page](documentation/wireframes/main-page-tablet.png)
+- [Tablet: Home menu page](documentation/wireframes/main-page-tablet.png)
 - [Tablet: Games indications page](documentation/wireframes/game-instructions-tablet.png)
-- [Tablet: Memory board page](documentation/wireframes/memory-board-game-tablet.png)
+- [Tablet: Memory board game page](documentation/wireframes/memory-board-game-tablet.png)
 - [Tablet: Congratulations page](documentation/wireframes/congratulations-tablet.png)
 
 #### Laptops/Desktop
 
-- [Laptops: HOME page](documentation/wireframes/main-page-laptops-up.png)
+- [Laptops: Home menu page](documentation/wireframes/main-page-laptops-up.png)
 - [Laptops: Games indications page](documentation/wireframes/game-instructions-laptops-up.png)
-- [Laptops: Memory board page](documentation/wireframes/memory-board-game-laptops-up.png)
+- [Laptops: Memory board game page](documentation/wireframes/memory-board-game-laptops-up.png)
 - [Laptops: Congratulations page](documentation/wireframes/congratulations-laptops-up.png)
 
 ---
@@ -283,17 +283,17 @@ It contains two subsections, from top to bottom:
 
 #### HTML Validation
 
-+ HTML file
+**HTML file**
  ![HTML Validation](documentation/validation/html-file-validator.png)
 
 #### CSS Validator
 
-+ CSS stylesheet
+**CSS stylesheet**
 ![CSS Validation](documentation/validation/css-stylesheet-css-validator.png)
 
 #### JSHint
 
-+ Javascript file 
+**Javascript file**
 ![JS validation](documentation/validation/javascript-jshint-validation.png)
 
 + There were no errors found in the javascript using the JS Hint Validator. 
@@ -304,36 +304,19 @@ It contains two subsections, from top to bottom:
 
 Accessibility  was tested using the Web Accessibility Evaluation Tool (WAVE), and no errors are reported. 
 
-+ Wave Report
+**Wave report**
 ![WAVE report](documentation/wave/wave-report.png)
 
 ---
 ### LightHouse report
 
-- Lighthouse tool from Devtools was used to confirm that the website is performing well, is accessible and the colors and fonts chosen are readable.
+Lighthouse tool from Devtools was used to confirm that the website is performing well, is accessible and the colors and fonts chosen are readable.
 
-**HOME page**
+**LightHouse report**
 
-  ![LightHouse report HOME](documentation/lighthouse/lighthouse-report-homepage.png)
-
-**LAXUS page**
-
-  ![LightHouse report LAXUS](documentation/lighthouse/lighthouse-report-laxus-page.png)
-
-**THIOSYMBION page**
-
-  ![LightHouse report THIOSYMBION](documentation/lighthouse/lighthouse-report-thiosymbion-page.png)
-
-**NEWSLETTER page**
-
-  ![LightHouse report NEWSLETTER](documentation/lighthouse/lighthouse-report-newsletter-page.png)
-
-**SUCCESSFUL page**
-
-  ![LightHouse report SUCCESSFUL](documentation/lighthouse/lighthouse-report-successful-page.png)
+  ![LightHouse report Home menu page](documentation/lighthouse/lighthouse-report-homepage.png.png)
 
 ---
-
 ### Device testing
 
 - The website was checked across devices using the chrome extension [Responsive Viewer](https://chromewebstore.google.com/detail/responsive-viewer/inmopeiepgfljkpkidclfgbgbmfcennb?hl=en). 
