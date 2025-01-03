@@ -505,15 +505,12 @@ h3 {
   }
 
   #game-board {
-    display: grid;
-    grid-template-columns: repeat(4, 9rem);
-    grid-template-rows: repeat(4, 9rem);
-    margin: 70px 0px;
+    margin: 50px 0px;
   }
 
   /* Control Area */
   #controls {
-    height: 600px;
+    height: 500px;
     margin-left: 50px;
   }
 
