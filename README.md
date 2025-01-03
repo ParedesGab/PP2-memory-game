@@ -215,9 +215,12 @@ It contains two subsections, from top to bottom:
 
 ### Typography
 
-- Arsenal from Google Fonts was used as the main font of the website, with the generic family name "Sans-serif"
+- "Rajdhani" and "Roboto" from Google Fonts were used as the primary and secondary font of the website, respectively. 
+- The generic family name is "Sans-serif".
+- For the titles (h1 and h2) letter-spacing CSS property with a value of 0.3rem was used, to add a slight space between letters in the text.
 
-![Main Font](documentation/design/typography.png)
+![Primary Font](documentation/design/primary-font.png)
+![Secondary Font](documentation/design/secondary-font.png)
 
 ---
 ## Wireframes
