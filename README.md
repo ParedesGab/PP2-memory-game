@@ -90,7 +90,7 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 ![Game Header Laptops and up](documentation/website-screenshots/game-name-laptops-up.png)
        
 ---
-### Main Page
+### Home Menu Page
 
 ![Home menu main page](documentation/website-screenshots/home-menu-main-page.png)
 
@@ -166,7 +166,7 @@ It contains two subsections, from top to bottom:
 ![memory board game mobiles](documentation/website-screenshots/memory-game-mobiles.png)
 
 ---
-### Game Finished - Congratulations!
+### Game Finished - Congratulations Page
 
 ![congratulations page](documentation/website-screenshots/congratulations-message.png)
 
@@ -230,22 +230,22 @@ It contains two subsections, from top to bottom:
 #### Mobile
 
 - [Mobile: Main page](documentation/wireframes/main-page-mobile.png)
-- [Mobile: Memory board page](documentation/wireframes/memory-board-game-mobile.png)
 - [Mobile: Games indications page](documentation/wireframes/game-instructions-mobile.png)
+- [Mobile: Memory board page](documentation/wireframes/memory-board-game-mobile.png)
 - [Mobile: Congratulations page](documentation/wireframes/congratulations-mobile.png)
 
 #### Tablets
 
 - [Tablet: Main page](documentation/wireframes/main-page-tablet.png)
-- [Tablet: Memory board page](documentation/wireframes/memory-board-game-tablet.png)
 - [Tablet: Games indications page](documentation/wireframes/game-instructions-tablet.png)
+- [Tablet: Memory board page](documentation/wireframes/memory-board-game-tablet.png)
 - [Tablet: Congratulations page](documentation/wireframes/congratulations-tablet.png)
 
 #### Laptops/Desktop
 
 - [Laptops: HOME page](documentation/wireframes/main-page-laptops-up.png)
-- [Laptops: Memory board page](documentation/wireframes/memory-board-game-laptops-up.png)
 - [Laptops: Games indications page](documentation/wireframes/game-instructions-laptops-up.png)
+- [Laptops: Memory board page](documentation/wireframes/memory-board-game-laptops-up.png)
 - [Laptops: Congratulations page](documentation/wireframes/congratulations-laptops-up.png)
 
 ---
@@ -280,25 +280,21 @@ It contains two subsections, from top to bottom:
 
 ### HTML Validation
 
-**HOME page**
+**Home Menu Page**
 
   ![HTML Validation HOME](documentation/validation/homepage-html-validator.png)
 
-**LAXUS page**
+**Game Indications Page**
 
   ![HTML Validation LAXUS](documentation/validation/laxus-page-html-validator.png)
 
-**THIOSYMBION page**
+**Memory Board Game Page**
 
   ![HTML Validation THIOSYMBION](documentation/validation/thiosymbion-page-html-validator.png)
 
-**NEWSLETTER page**
+**Game Finished - Congratulations Page**
 
   ![HTML Validation NEWSLETTER](documentation/validation/newsletter-page-html-validator.png)
-
-**SUCCESSFUL page**
-
-  ![HTML Validation SUCCESSFUL](documentation/validation/successful-page-html-validator.png)
 
 ### CSS Validator
 
