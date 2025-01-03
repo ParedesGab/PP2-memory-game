@@ -117,13 +117,13 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 
 #### Game Indications Page
 
-![Game indications](documentation/website-screenshots/love-story-section.png)
+- This section explains the user how to play and the features to expect. It also introduces the card images whose pairs need to be found. 
 
-- This section aims to explain the game, what it consists of and the features to expect. 
-  
-- It contains:
+- This section is responsive and the images use the flex-wrap property. Top image and bottom images: mobiles and tablets (and larger devices), respectively:
 
-- This section is responsive, and in Tablets, Laptops and Desktops flex box with flex direction row was used. 
+![Game indications mobiles](documentation/website-screenshots/game-indications-mobile.png)
+
+![Game indications tablets and up](documentation/website-screenshots/game-indications-tablets-up.png)
 
 #### Memory Board Game Page
 
