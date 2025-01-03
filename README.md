@@ -291,7 +291,10 @@ It contains two subsections, from top to bottom:
 ### JSHint
 
 + Javascript file
-![JS validation](documentation/validation/css-stylesheet-css-validator.png)
+![JS validation](documentation/validation/javascript-jshint-validation.png)
+
++ There were no errors found in the javascript using the JS Hint Validator. 
++ There was one warning, and the messaged of unused variables. This is documented in the "Bugs" section below.
 
 ---
 ### Accessibility 

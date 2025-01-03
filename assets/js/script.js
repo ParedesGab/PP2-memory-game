@@ -161,11 +161,8 @@ function handleCardFlip(cardIdNumber) {
     // Handle the second card
   } else if (flippedCards === 1) {
     revealedCard = revealCard(cardIdNumber);
-    console.log(typeof revealedCard);
-
 
     secondButtonCard = revealedCard[0];
-    console.log(secondButtonCard);
     secondImageRevealed = revealedCard[1];
 
     flippedCards++;
@@ -292,8 +289,8 @@ function showHtmlElement(id) {
 function resetGame() {
   // Reset game variables
   flippedCards = 0;
-  firstButtonCard; //object
-  secondButtonCard;
+  firstButtonCard = {};
+  secondButtonCard = {};
   firstsImageRevealed = {};
   secondImageRevealed = {};
 
