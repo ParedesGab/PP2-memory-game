@@ -5,7 +5,7 @@ const gameContainer = document.getElementById("game-board");
 let flippedCards = 0; // This variable will increase by 1 every time a user clicks a card
 let firstButtonCard; //html element: <button ...></button>
 let secondButtonCard; //html element: <button ...></button>
-let revealedCard;
+let revealedCardArray;
 let firstsImageRevealed = {};
 let secondImageRevealed = {};
 let shuffledCardDeck = [];
@@ -115,7 +115,7 @@ function randomizeCardDeck() {
 }
 
 /** 
- * Create 16 button cards with class name "btn" and id string values from 0 to 15 
+ * Creates  16 button cards with class name "btn" and id string values from 0 to 15 
  */
 function createMemoryCards() {
   for (let i = 0; i < shuffledCardDeck.length; i++) {
@@ -144,7 +144,9 @@ function createMemoryCards() {
   }
 }
 
-// Define a function to create the click handler
+/**
+ * Function that creates the click handler
+ */
 function createClickHandler(cardIdNumber) {
   return function () {
     handleCardFlip(cardIdNumber);
@@ -158,19 +160,19 @@ function handleCardFlip(cardIdNumber) {
 
   // Handle the first card
   if (flippedCards === 0) {
-    revealedCard = revealCard(cardIdNumber);
+    revealedCardArray = revealCard(cardIdNumber);
 
-    firstButtonCard = revealedCard[0];
-    firstsImageRevealed = revealedCard[1];
+    firstButtonCard = revealedCardArray[0];
+    firstsImageRevealed = revealedCardArray[1];
 
     flippedCards++;
 
     // Handle the second card
   } else if (flippedCards === 1) {
-    revealedCard = revealCard(cardIdNumber);
+    revealedCardArray = revealCard(cardIdNumber);
 
-    secondButtonCard = revealedCard[0];
-    secondImageRevealed = revealedCard[1];
+    secondButtonCard = revealedCardArray[0];
+    secondImageRevealed = revealedCardArray[1];
 
     flippedCards++;
 
@@ -201,6 +203,7 @@ function revealCard(cardIdNumber) {
 
   // Disable the clicked card  so it cannot be clicked again
   memoryCardByID.disabled = true;
+
   memoryCardByID.classList.add('no-hover');
 
   return [memoryCardByID, cardObjectDetails]; // Return the <button ...></button> card, and an object of the carDeck array, respectively.
