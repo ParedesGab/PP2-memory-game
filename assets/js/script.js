@@ -119,11 +119,11 @@ function randomizeCardDeck() {
  */
 function createMemoryCards() {
   for (let i = 0; i < shuffledCardDeck.length; i++) {
-    //Create a memory card
+    // Create a memory card
     const memoryCard = document.createElement("button");
     memoryCard.classList.add("btn");
 
-    //Assing them the attributes id and data-id
+    // Assing them the attributes id and data-id
     const idValue = String(i); // Convert i to a string
     memoryCard.id = idValue; // Assign the id: "0", "1", ..., "15"
     memoryCard.setAttribute("data-id", idValue);
@@ -132,16 +132,23 @@ function createMemoryCards() {
     const ariaLabelIndex = i + 1;
     memoryCard.setAttribute("aria-label", `memory card ${ariaLabelIndex}`);
 
-    // Attach the click event listener
-    memoryCard.addEventListener("click", function () {
-      handleCardFlip(i); // Flip the clicked card
-    });
+    // Add the event listener
+    const clickHandler = createClickHandler(i); // Create a handler with the current value of i
+    memoryCard.addEventListener("click", clickHandler);
 
-    //Append the buttons to game board
+    // Append the buttons to game board
     gameContainer.appendChild(memoryCard);
 
+    // Show the Control Area
     document.getElementById("controls").classList.remove("hide");
   }
+}
+
+// Define a function to create the click handler
+function createClickHandler(cardIdNumber) {
+  return function () {
+    handleCardFlip(cardIdNumber);
+  };
 }
 
 /** 

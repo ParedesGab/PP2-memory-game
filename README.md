@@ -359,13 +359,25 @@ The website was tested on the following browsers:
 ---
 ## Bugs
 + ### Solved bugs
-  1. The nav element was initially written as "navigation". 
+  1. The W3C Markup validation detected the below error in the HTML code:
+  ![bug HTML code](documentation/bugs/bug-error-html-code.png)
         - Solution: this mistake was spotted and corrected. 
 
-  2. The flex:1 0 auto was used to not shrink the main content, and push the footer down. However, this did not work.
-        - Solution: A Devtools warning message showed that the CSS body selector had the declaration written incorrectly. Namely it was as flex:display instead of display:flex. This was corrected accordingly.
+  2. The W3C Markup validation detected the below warnings in the HTML code:
+    ![warnings HTML code](documentation/bugs/bug-warnings-html-code.png)
+        - Solution: To enhance the HTML syntax, a hidden H2 heading was added to each section without an existing heading.
 
-  3. At some point when testing responsiveness, the header width was larger than the main section width. As a result, the use of the responsive dimensions of devtools was not possible. 
+  3. JSHint showed the following warnings
+  ![warnings JS code](documentation/bugs/bug-warning1-jshint.png)
+        - Solution: JSHint is flagging this as potentially confusing semantics. Altought 
+
+            // Attach the click event listener
+    memoryCard.addEventListener("click", function () {
+      handleCardFlip(i); // Flip the clicked card
+    });
+
+
+  ![warnings JS code](documentation/bugs/bug-warning2-jshint.png)
         - Solution: A red background color was used to check where the error might be coming from, and it was due to the size of one picture. Given that the header had a CSS width property of 100%, it was a adjusting to the width of this picture. This was resolved by resizing the picture. 
 
   4. WAVE showed the below error in the navigation bar. 
@@ -429,5 +441,5 @@ The website has been deployed to GitHub pages following these steps:
 - My sincere gratitude to my mentor, Iuliia Konovalova, for her valuable feedback.  
 
 - Thank you to Code Institute, specially to Kamil, Lane, Ioan and Darcy, and to the slack community members for the great tips and feedback.
-
+- thank the new cohort
 - Thank you to my brother Brando, who recognized my love for coding long before I did. Your beautiful piano music [Brando PR](https://www.youtube.com/@BrandoPR) accompanied me along this project as well.
