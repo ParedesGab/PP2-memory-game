@@ -106,7 +106,7 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 
 + The home menu buttons are present on the main page of Memory Game, and they consist on two buttons: Play Game, and Play instructions. 
   
-+ They are responsive, and across all devices the home menu buttons are found positioned on top of the other (flex-direction: column) (**Figure below**). 
++ They are responsive, and across all devices the home menu buttons are found positioned on top of the other (flex-direction: column).
 
 + The buttons will rotate slightly and change colors when hovered, creating a smooth, visually appealing interactive effect.
 
@@ -121,9 +121,13 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 
 - This section provides the user with an introductory explanation of the game, shows visual representations of the game cards, and gives them an option to return to the main menu.
 
-- This section is responsive and the images use the flex-wrap property. Top image and bottom images: mobiles and tablets (and larger devices), respectively:
+- This section is responsive and the images use the flex-wrap property. 
+
+Design for mobiles:
 
 ![Game indications mobiles](documentation/website-screenshots/game-indications-mobile.png)
+
+Design for Tablets and larger devices:
 
 ![Game indications tablets and up](documentation/website-screenshots/game-indications-tablets-up.png)
 
@@ -133,8 +137,6 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 ![Memory board game card deck open](documentation/website-screenshots/memory-game-open.png)
 
 It contains two subsections, from top to bottom:
-
-- With javascript, the class smaller-name was added to the header (i.e., game name), to make the whole page more visually organized. 
 
 **Subsection: Game Board**
 
@@ -146,23 +148,27 @@ It contains two subsections, from top to bottom:
 
  - The game offers a no-pressure environment where players never lose, ensuring a calm and enjoyable experience.
 
- - The cards will be shuffled and placed face down (**Figure below**), and they have the same hover effect as the home menu buttons. 
+ - When the game starts (or if it is restarted) the cards will be shuffled and placed face down (**Figure below**), and they have the same hover effect as the home menu buttons. 
 
 ![Memory board game card deck closed](documentation/website-screenshots/memory-game-closed.png)
- 
- - The memory board game page also contains a "Control Area" section displaying "Moves", "Score" and one button, the "Restart Game", placed on top of the other. 
 
- - The Restart Game button has the same hover effects as the home menu buttons, and to encourage the user to restart the game as much as they want, the button was made to stand out in orange. 
+**Subsection: Control Area**
+ 
+ - This subsection displays the "Moves", "Score" and one button, the "Restart Game".
+
+ - These elements are placed on top of the other. 
+
+ - The Restart Game button has the same hover effects as the home menu buttons, and to encourage the user to restart the game as much as they want, the button stands out in orange. 
 
  - At the beginning of the game:
     - The **Moves** are set to 0, and every time the user chooses two cards, the "moves" will increase by 1.
     - The **Score** is set to 0, and every time there is a match, the player earns 100 points. When the user reaches 800 (i.e., all pairs are matched), the score will show 🎉 800! 🎉.
 
-- The MEMORY BOARD GAME section is responsive. Namely:
+- The Memory Board Game page is responsive. Namely:
 
-  -   The card grid maintains 4 columns and 4 rows across all devices, with the width of the cards increasing on larger screens.
+  -   The card grid maintains 4 columns and 4 rows across all devices, with the width and height of the cards increasing on larger screens.
 
-  - In tablets and larger screens, the memory card deck and control are placed next to each other (flex-direction: row, by default)
+  - In tablets and larger screens, the memory card deck and control are placed next to each other (flex-direction: row).
 
   - In mobiles: the Control Area is placed below the memory card deck. This was achieved because their container (id memory-game-container) was set to display property: flex, and flex-direction: column 
 
