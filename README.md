@@ -382,6 +382,7 @@ The website was tested on the following browsers:
         - Solution: To enhance the HTML syntax, a hidden H2 heading was added to each section without an existing heading.
 
   3. JSHint showed the following warning:
+
     ![warnings JS code](documentation/bugs/bug-warning1-jshint.png)
         - Solution: Although the original code was functioning correctly, the event listener logic was updated to avoid any potentially confusing semantics. A separate click handler function was created. This change ensures the correct card index is captured using a closure for the handleCardFlip function.
 
@@ -390,7 +391,8 @@ The website was tested on the following browsers:
   1. JSHint showed the following warning:
 
     ![warnings JS code](documentation/bugs/bug-warning2-jshint.png)
-      - As described in the "Features left to implement" section, due to time constraints, I used onclick in all buttons of the HTML document for faster implementation. However, I recognize that mixing structure (HTML) with functionality (JS) is not best practice, as it can make the code harder to maintain and does not facilitate collaboration in team environments. After the project is graded, I plan to refactor the code by removing inline onclick attributes, and instead handling events via JavaScript by adding event listeners, ensuring better separation of concerns and improving maintainability.
+    
+    - As described in the "Features left to implement" section, due to time constraints, I used onclick in all buttons of the HTML document for faster implementation. However, I recognize that mixing structure (HTML) with functionality (JS) is not best practice, as it can make the code harder to maintain and does not facilitate collaboration in team environments. After the project is graded, I plan to refactor the code by removing inline onclick attributes, and instead handling events via JavaScript by adding event listeners, ensuring better separation of concerns and improving maintainability.
   
 ---
 ## Deployment
