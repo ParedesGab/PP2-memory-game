@@ -379,12 +379,11 @@ The website was tested on the following browsers:
 
   2. The W3C Markup validation detected the below warnings in the HTML code:
     ![warnings HTML code](documentation/bugs/bug-warnings-html-code.png)
-        - Solution: To enhance the HTML syntax, a hidden H2 heading was added to each section without an existing heading.
+      - Solution: To enhance the HTML syntax, a hidden H2 heading was added to each section without an existing heading.
 
   3. JSHint showed the following warning:
-
     ![warnings JS code](documentation/bugs/bug-warning1-jshint.png)
-        - Solution: Although the original code was functioning correctly, the event listener logic was updated to avoid any potentially confusing semantics. A separate click handler function was created. This change ensures the correct card index is captured using a closure for the handleCardFlip function.
+      - Solution: Although the original code was functioning correctly, the event listener logic was updated to avoid any potentially confusing semantics. A separate click handler function was created. This change ensures the correct card index is captured using a closure for the handleCardFlip function.
 
 + ### Unfixed bugs
 
