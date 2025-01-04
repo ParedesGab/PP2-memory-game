@@ -369,16 +369,14 @@ The website was tested on the following browsers:
         - Solution: To enhance the HTML syntax, a hidden H2 heading was added to each section without an existing heading.
 
   3. JSHint showed the following warning:
-
-  ![warnings JS code](documentation/bugs/bug-warning1-jshint.png)
+    ![warnings JS code](documentation/bugs/bug-warning1-jshint.png)
         - Solution: Although the original code was functioning correctly, the event listener logic was updated to avoid any potentially confusing semantics. A separate click handler function was created. This change ensures the correct card index is captured using a closure for the handleCardFlip function.
 
 + ### Unfixed bugs
 
   1. JSHint showed the following warning:
-  ![warnings JS code](documentation/bugs/bug-warning2-jshint.png)
-
-  - As described in the "Features left to implement" section, due to time constraints, I used onclick in all buttons of the HTML document for faster implementation. However, I recognize that mixing structure (HTML) with functionality (JS) is not best practice, as it can make the code harder to maintain and does not facilitate collaboration in team environments. After the project is graded, I plan to refactor the code by removing inline onclick attributes, and instead handling events via JavaScript by adding event listeners, ensuring better separation of concerns and improving maintainability.
+    ![warnings JS code](documentation/bugs/bug-warning2-jshint.png)
+      - As described in the "Features left to implement" section, due to time constraints, I used onclick in all buttons of the HTML document for faster implementation. However, I recognize that mixing structure (HTML) with functionality (JS) is not best practice, as it can make the code harder to maintain and does not facilitate collaboration in team environments. After the project is graded, I plan to refactor the code by removing inline onclick attributes, and instead handling events via JavaScript by adding event listeners, ensuring better separation of concerns and improving maintainability.
   
 ---
 ## Deployment
@@ -422,27 +420,36 @@ To have a copy of the project in your repositories:
 
 ### Content 
 
-- The Code institute ci-full-template was used to create the GitHub repository of the Laxus & Thiosymbion website.
+- The Code institute ci-full-template was used to create the GitHub repository of the Cosmic Match Memory Game website.
 
-- Text was checked with DeepL Write for spelling mistakes. 
+- [W3 Schools](https://www.w3schools.com/jsref/met_win_settimeout.asp) showed me how to use the setTimeout() method. 
 
-- Inspiration to add the small *Laxus* bullet points is from the YouTube channel [Six Minutes. Smarter.](https://www.youtube.com/@SixMinutesSmarter)
+- [W3 Schools](https://www.w3schools.com/jsref/prop_html_id.asp) showed me how to return the id property. 
 
-- Inspiration for the hover animation of the Subscription button and the Return and home page link is from the YouTube channel [Smoljames](https://www.youtube.com/@Smoljames).
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius) showed me how to create elliptical corner radius used in the Control Area of the Memory Board Game section.
 
-- MDN Web Docs showed me different ways to use the background-position property.
+- I got further clarificaion on the used of Parameters vs Arguments from the from the YouTube channel [Anna McDougall](https://www.youtube.com/watch?v=5o4P8lESTF0).
 
 - Stack Overflow solutions was also used to resolve doubts.
 
-- ReadMe was inspired and guided by the ReadMe documents of my mentor Iuliia Konovalova, of my cohort Kamil Wojciechowski, and of the love running project. 
+- Text was checked with DeepL Write for spelling mistakes. 
+
+- I learned how to add other pages (e.g., home menu page, games indications and congratulations pages) with Javascript by reading the project of my cohort [Kristyna Wach](https://github.com/Cushione/four-seasons-memory-game)
+
+- Inspiration for memory game logic comes from the YouTube Channels [developedbyed](https://www.youtube.com/watch?v=-tlb4tv4mC4&t=3095s) and [CodingTube](https://www.youtube.com/watch?v=TMWkKPlUUJ4&t=1264s)
+
+- ReadMe was inspired and guided by the ReadMe documents of my mentor Iuliia Konovalova, of my previous Kamil Wojciechowski, and of the love running project. 
 
 ### Media
   
+- The universe background image is from [Federico Beccari](https://unsplash.com/de/@federize?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash).
+
+- All memory card images are from [Icongeek26](https://www.flaticon.com/authors/icongeek26).
 
 ## Acknowledgments
 
 - My sincere gratitude to my mentor, Iuliia Konovalova, for her valuable feedback.  
-- Thank you to Code Institute, specially to Kamil,  Kristyna Wach, and Lane for the great tips and feedback.
+- Thank you to Code Institute, specially to Kamil, Kristyna, and Lane for the great tips and feedback.
 - Thank you to my brother Brando, Your beautiful piano music [Brando PR](https://www.youtube.com/@BrandoPR) accompanied me along this project as well.
 - I am deeply grateful to Geddi and Alexis for their insightful JavaScript fundamentals guidance.
 - A heartfelt thanks to my husband Johannes for playing ("testing") the game more times than I can count. 
