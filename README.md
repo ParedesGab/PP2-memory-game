@@ -6,7 +6,7 @@
 
 **Welcome to the Galaxy-Themed Memory Game!**
 
-Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of galaxy-inspired cards featuring celestial bodies and space explorers. Flip cards to reveal exciting images like aliens, astronauts, Earth, the Sun, and more! This untimed, stress-free game lets you play at your own pace, ensuring everyone emerges a winner. Challenge your memory through you journey through the stars.
+Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of galaxy-inspired cards featuring celestial bodies and space explorers. Flip cards to reveal exciting images like aliens, astronauts, Earth, the Sun, and more! This untimed, stress-free game lets you play at your own pace, ensuring everyone emerges a winner. Challenge your memory as you journey through the stars.
 
 + The site can be accessed via this [link](https://paredesgab.github.io/PP2-the-cosmic-match-memory-game/)
 
@@ -16,9 +16,9 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 ### User Goals
 
 + Find a casual and fun activity to pass time or to relax.
-+ Put memory skills to test with an enjoyable memory game. 
++ Test memory skills with an enjoyable memory game. 
 + Enhance memory, concentration, and problem-solving skills.
-+ Find a simple, accessible game that doesn’t require downloads or setup.
++ Find a simple, accessible game that doesn't require downloads or setup.
 + Find a vibrant, eye-catching game that provides a visually engaging experience.
 
 ### Site Owner Goals
@@ -43,7 +43,7 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 
 + Accessible site.
 + Understand clearly the purpose of the site.
-+ Fast and easy access to content and navigation.
++ Quick and easy access to content and navigation.
 + Clean and intuitive layout, overall a smooth experience.
 + Have vibrant and eye-catching content that keeps the user engaged.
 + Expect the game to work seamlessly on various devices, allowing them to enjoy it anytime, anywhere.
@@ -56,7 +56,7 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
   + Dive into the game without confusion.
   + Have a smooth, enjoyable experience without delays or glitches.
   + Easily navigate the website and find the content interesting.
-  + To be drawn into the game's theme by having an engaging and visually appealing experience.
+  + Be drawn into the game's theme by having an engaging and visually appealing experience.
   + Know how many movements I am doing during and a summary after the game.
 
 + **As a returning user, I want to:**
@@ -85,7 +85,7 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
   
 + Therefore, the user understands directly that theme of the memory game is related to galaxy, space, universe.
 
-+ The header position and font-size are responsive across all devices. For example, it increases in size in larger screens (**Figure below**). However, it is made smaller in the page where the memory card deck is displayed. 
++ The header position and font-size are responsive across all devices. For example, it increases in size in larger screens (**Figure below**). However, it is made smaller in all the other pages.
 
 ![Game Header Laptops and up](documentation/website-screenshots/game-name-laptops-up.png)
        
@@ -98,9 +98,7 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 
 + The intention was to have a simple yet impactful background that would immediately introduce the galactic theme of the Memory Game.
 
-+ Importantly, the same background is used across all pages. 
-
-+ In addition, the fun universe background allows the title and buttons to stand out.
++ This same background is used across all pages and it allows the title and buttons to stand out.
 
 **Home Menu Buttons**
 
@@ -113,6 +111,7 @@ Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of
 + The buttons will rotate slightly and change colors when hovered, creating a smooth, visually appealing interactive effect.
 
 + Clear and easy to read.
+
 + Consistent styling and easy navigation.
 
 ---
@@ -434,9 +433,9 @@ To have a copy of the project in your repositories:
 
 - Text was checked with DeepL Write for spelling mistakes. 
 
-- I learned how to add other pages (e.g., home menu page, games indications and congratulations pages) with Javascript by reading the project of my cohort [Kristyna Wach](https://github.com/Cushione/four-seasons-memory-game)
+- I learned how to add other pages (e.g., home menu page, games indications and congratulations pages) with Javascript by reading the project of [Kristyna Wach](https://github.com/Cushione/four-seasons-memory-game) and testing it myself within my javascript code.
 
-- Inspiration for memory game logic comes from the YouTube Channels [developedbyed](https://www.youtube.com/watch?v=-tlb4tv4mC4&t=3095s) and [CodingTube](https://www.youtube.com/watch?v=TMWkKPlUUJ4&t=1264s)
+- Inspiration for memory game logic comes from the YouTube Channels [developedbyed](https://www.youtube.com/watch?v=-tlb4tv4mC4&t=3095s) and [Victor Talamantes](https://www.youtube.com/watch?v=c0eigGnotm0). However, I did  not relied on them and customized it my way.
 
 - ReadMe was inspired and guided by the ReadMe documents of my mentor Iuliia Konovalova, of my previous Kamil Wojciechowski, and of the love running project. 
 
