@@ -306,8 +306,8 @@ It contains two subsections, from top to bottom:
 
 ![JS validation](documentation/validation/javascript-jshint-validation.png)
 
-+ There were no errors found in the javascript using the JS Hint Validator. 
-+ There was one warning, and the messaged of unused variables. This is documented in the "Bugs" section below.
++ There were no errors found in the javascript code using the JS Hint Validator. 
++ There was one warning and a message of unused variables. This is documented in the "Bugs" section below.
 
 ### Accessibility 
 
@@ -346,7 +346,7 @@ Lighthouse tool from Devtools was used to confirm that the website is performing
 | Game indications text | Text display| The paragraph stands out, the content is justified with no spelling mistakes | Yes | Yes | - |
 | Images | Images display | The images are loading correctly, they have the same style and dimensions, and are located  below the text| Yes | Yes | - |
 | Home Menu button | Click on the Home Menu button | Redirects to the Home Menu page | Yes | Yes | - |
-| **LMemory Board Game Page** | | | | | |
+| **Memory Board Game Page** | | | | | |
 | Header | Game name display | The title is centered and positioned as the topmost element on the page and it is readable | Yes | Yes | - |- |
 | Game Board | Game board display | It stands out and it is centered | Yes | Yes | - |
 | Memory cards | Cards display | They have identical dimensions and are arranged in a grid layout. Initially, they appear "closed" with a white background. A hover effect is applied, and the cursor changes to indicate that they are clickable.| Yes | Yes | - |
@@ -388,6 +388,7 @@ The website was tested on the following browsers:
 + ### Unfixed bugs
 
   1. JSHint showed the following warning:
+
     ![warnings JS code](documentation/bugs/bug-warning2-jshint.png)
       - As described in the "Features left to implement" section, due to time constraints, I used onclick in all buttons of the HTML document for faster implementation. However, I recognize that mixing structure (HTML) with functionality (JS) is not best practice, as it can make the code harder to maintain and does not facilitate collaboration in team environments. After the project is graded, I plan to refactor the code by removing inline onclick attributes, and instead handling events via JavaScript by adding event listeners, ensuring better separation of concerns and improving maintainability.
   
@@ -465,4 +466,5 @@ To have a copy of the project in your repositories:
 - Thank you to Code Institute, specially to Kamil, Kristyna, and Lane for the great tips and feedback.
 - Thank you to my brother Brando, Your beautiful piano music [Brando PR](https://www.youtube.com/@BrandoPR) accompanied me along this project as well.
 - I am deeply grateful to Geddi and Alexis for their insightful JavaScript fundamentals guidance.
-- A heartfelt thanks to my husband Johannes for playing ("testing") the game more times than I can count. 
+- A heartfelt thanks to my husband Johannes for "playing! (testing)
+ the game more times than I can count. 
