@@ -262,7 +262,8 @@ It contains two subsections, from top to bottom:
 - [Balsamiq](https://balsamiq.com/): to create the wireframes.
 - [Google Fonts](https://fonts.google.com/): to import the Rajdhani and Roboto family fonts.
 - [TinyPNG](https://tinypng.com/): to compress the images.
-- [Favicon.io](https://favicon.io/): to generate the favicon images.
+- [Flaticon](https://www.flaticon.com/): source of the memory card images.
+- [Favicon.io](https://favicon.io/): source of the favicon images.
 - [Am I responsive?](https://ui.dev/amiresponsive): to generate the responsive mockup image.
 - [MDN Web Docs](https://developer.mozilla.org/en-US/): resource to check CSS properties and javascript syntax and definition descriptions.
 - [Color-hex](https://www.color-hex.com/): to get the rgb color information.
@@ -441,7 +442,7 @@ To have a copy of the project in your repositories:
 ## Acknowledgments
 
 - My sincere gratitude to my mentor, Iuliia Konovalova, for her valuable feedback.  
-
-- Thank you to Code Institute, specially to Kamil, Lane, Ioan and Darcy, and to the slack community members for the great tips and feedback.
-- thank the new cohort
-- Thank you to my brother Brando, who recognized my love for coding long before I did. Your beautiful piano music [Brando PR](https://www.youtube.com/@BrandoPR) accompanied me along this project as well.
+- Thank you to Code Institute, specially to Kamil,  Kristyna Wach, and Lane for the great tips and feedback.
+- Thank you to my brother Brando, Your beautiful piano music [Brando PR](https://www.youtube.com/@BrandoPR) accompanied me along this project as well.
+- I am deeply grateful to Geddi and Alexis for their insightful JavaScript fundamentals guidance.
+- A heartfelt thanks to my husband Johannes for playing ("testing") the game more times than I can count. 
