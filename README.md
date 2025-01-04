@@ -8,7 +8,7 @@
 
 Immerse yourself in a cosmic adventure where your mission is to match 8 pairs of galaxy-inspired cards featuring celestial bodies and space explorers. Flip cards to reveal exciting images like aliens, astronauts, Earth, the Sun, and more! This untimed, stress-free game lets you play at your own pace, ensuring everyone emerges a winner. Challenge your memory through you journey through the stars.
 
-+ The site can be accessed via this [link](https://paredesgab.github.io/PP2-memory-game/)
++ The site can be accessed via this [link](https://paredesgab.github.io/PP2-the-cosmic-match-memory-game/)
 
 ---
 ## Project Goals
@@ -384,7 +384,7 @@ The website was tested on the following browsers:
 
 The website has been deployed to GitHub pages following these steps:
 
-1. In the GitHub repository for the Laxus & Thiosymbion page [GitHub repository](https://paredesgab.github.io/PP2-memory-game/), select the "Settings" tab.
+1. In the GitHub repository for The Cosmic Match Memory Game [GitHub repository](https://github.com/ParedesGab/PP2-the-cosmic-match-memory-game), select the "Settings" tab.
 
 2. Click on "Pages" from the field "Code and automation" (on the left), and select the below settings:
     - Source: deploy from a branch.
@@ -395,7 +395,26 @@ The website has been deployed to GitHub pages following these steps:
 
 4. On the right side of the page, a "Deployments" section has been activated indicating a successful deployment. 
 
-5. The live link can be accessed [here](https://paredesgab.github.io/PP2-memory-game/).
+5. The live link can be accessed [here](https://paredesgab.github.io/PP2-the-cosmic-match-memory-game/).
+
+## Local Deployment
+
+### Forking
+
+To have a copy of the project in your repositories:
+1. Log in or sign up to GitHub.
+3. Navigate to the [project repository](https://github.com/ParedesGab/PP2-the-cosmic-match-memory-game).
+4. In the top right corner, click the "Fork" button.
+5. A new page titled "Create a new fork" will appear. Optionally, you can edit the repository name.
+6. At the bottom of the page, click "Create fork."
+
+### Cloning
+
+1. Log in or sign up to GitHub.
+2. Go to the [project repository](https://github.com/ParedesGab/PP2-the-cosmic-match-memory-game).
+3. Click the green button "Code" and choose your preferred cloning method (for example: HTTPS, SSH, or GitHub CLI) and copy the provided url.
+4. Open the terminal in your preferred code editor and change the current working directory to the one where you want the cloned directory
+5. Run git clone in the terminal, paste the copied link, and press Enter.
 
 ---
 ## Credits 
