@@ -179,17 +179,19 @@ It contains two subsections, from top to bottom:
 
 ![congratulations page](documentation/website-screenshots/congratulations-message.png)
 
-- After 4s that user has matched all cards (score: 🎉 800! 🎉), the user is redirected to this page that congratulates them for their victory. 
+- After 4 seconds, once the user has matched all the cards (score: 🎉 800! 🎉), they are redirected to a page that congratulates them on their victory.
 
-- In addition, the congratulations message displays in bold the amount of moves the user made.
+- The congratulations message also stands out in orange.
+
+- In addition, it displays in bold the amount of moves the user made.
 
 - This section contains two buttons:
-  - Home Menu: Directs you back to to the Home Menu page.
-  - Play again!: Starts a new game. 
+  - **Home Menu:** Directs you back to to the Home Menu page.
+  - **Play again!:** Starts a new game. 
 
 - The buttons use the same style as the home menu buttons. 
 
-- With javascript, the class smaller-name was added to the header (i.e., game name), to make the whole page more visually organized. 
+- With Javascript, the class smaller-name was added to the header (i.e., game name), to make the whole page more visually organized. 
 
 ---
 ## Features left to implement
@@ -212,13 +214,19 @@ It contains two subsections, from top to bottom:
 
 ### Color scheme
 
-![Color scheme](documentation/design/color-scheme.png)
+**Main color scheme**
+
+![Main Color scheme](documentation/design/main-color-scheme.png)
 
 - The russian violet (blue), seasalt (white) and davy's gray color where used as the main colors of the website. Their choice was inspired by the universe background image and their used keeps the website cohesive.
 
 - The russian violet (blue) was used for the titles, button names and the paragraph within the Game indications section.
 
 - All buttons except for the button with class btn--restart, used as box shadow the color davy's gray color. 
+
+**Secondary color scheme**
+
+![Secondary Color scheme](documentation/design/secondary-color-scheme.png)
 
 - To simulate colors of the universe the hover effect used two colors as gradient: Royal purple ( #7943af) and Sapphire ( #3455af). 
 
