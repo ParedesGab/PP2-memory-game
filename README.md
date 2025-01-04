@@ -367,35 +367,18 @@ The website was tested on the following browsers:
     ![warnings HTML code](documentation/bugs/bug-warnings-html-code.png)
         - Solution: To enhance the HTML syntax, a hidden H2 heading was added to each section without an existing heading.
 
-  3. JSHint showed the following warnings
+  3. JSHint showed the following warning:
+
   ![warnings JS code](documentation/bugs/bug-warning1-jshint.png)
-        - Solution: JSHint is flagging this as potentially confusing semantics. Altought 
-
-            // Attach the click event listener
-    memoryCard.addEventListener("click", function () {
-      handleCardFlip(i); // Flip the clicked card
-    });
-
-
-  ![warnings JS code](documentation/bugs/bug-warning2-jshint.png)
-        - Solution: A red background color was used to check where the error might be coming from, and it was due to the size of one picture. Given that the header had a CSS width property of 100%, it was a adjusting to the width of this picture. This was resolved by resizing the picture. 
-
-  4. WAVE showed the below error in the navigation bar. 
-        - Solution: The error was googled and it happened because wave is likely not recognizing the i tag of the Font Awesome link. This was solved by adding a span element.
-      ![bug WAVE](documentation/bugs/bug-wave.png)
-
-  5. HTML validator showed that the meta keywords were missing for the newsletter page. 
-        - Solution: This was added accordingly. 
-
-  6. In the successful page, the "Return to home page" was initially a button element placed as descendant of an anchor element. HTML validator showed this error. 
-        - Solution: This was corrected by removing the button element, and using only the anchor element. 
-    ![bug WAVE](documentation/bugs/bug-successful-page.png)
+        - Solution: Although the original code was functioning correctly, the event listener logic was updated to avoid any potentially confusing semantics. A separate click handler function was created. This change ensures the correct card index is captured using a closure for the handleCardFlip function.
 
 + ### Unfixed bugs
 
-  -  The successful.html file has a different indentation than the other html files. Namely, 1 tab is 8 spaces instead of 4. This "error" was googled, consulted with the mentor, and the indent-rainbow extension was installed but this issue persisted. The file could be deleted and a new one created, but it was decided to report this as an unfixed bug so that it could be discussed. 
-  ![bug WAVE](documentation/bugs/unfixed-indentatoin.png)
+  1. JSHint showed the following warning:
+  ![warnings JS code](documentation/bugs/bug-warning2-jshint.png)
 
+  - As described in the "Features left to implement" section, due to time constraints, I used onclick in all buttons of the HTML document for faster implementation. However, I recognize that mixing structure (HTML) with functionality (JS) is not best practice, as it can make the code harder to maintain and does not facilitate collaboration in team environments. After the project is graded, I plan to refactor the code by removing inline onclick attributes, and instead handling events via JavaScript by adding event listeners, ensuring better separation of concerns and improving maintainability.
+  
 ---
 ## Deployment
 
